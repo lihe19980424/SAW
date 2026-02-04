@@ -1,8 +1,8 @@
-# SAW: Statistical Adaptive Watermarking for Large Language Models
+# SAW: Scaling Watermarking for Large Language Models
 
 This repository contains the official implementation and experimental code for the paper: **"[Title of Your Paper]"**.
 
-This project implements **SAW** (Statistical Adaptive Watermarking), a novel watermarking framework, and compares it against state-of-the-art baselines including KGW, SWEET, SIR, and SynthID. The codebase is built upon the [MarkLLM](https://github.com/THU-BPM/MarkLLM) framework.
+This project implements **SAW** (Scaling Watermarking), a novel watermarking framework, and compares it against state-of-the-art baselines including KGW, SWEET, SIR, and SynthID. The codebase is built upon the [MarkLLM](https://github.com/THU-BPM/MarkLLM) framework.
 
 ## 🌟 Key Features
 
@@ -105,7 +105,7 @@ You can modify these JSON files or pass some arguments directly via command line
 
 | Algorithm | Config File | Description |
 | --- | --- | --- |
-| **SAW** (Ours) | `config/SAW.json` | Statistical Adaptive Watermarking |
+| **SAW** (Ours) | `config/SAW.json` | Scaling Watermarking |
 | **KGW** | `config/KGW.json` | Kirchenbauer et al. (2023) |
 | **SWEET** | `config/SWEET.json` | Entropy-based watermarking |
 | **SIR** | `config/SIR.json` | Robust watermarking with context scaling |
