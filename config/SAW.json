@@ -1,0 +1,23 @@
+{
+    "algorithm_name": "SAW",
+    "noise": "gaussian",
+    "beta": 0.9,
+    "std": 0.055,
+    "temperature_inner": 1.0,
+    "topk": 50272,
+    "left_rand": 0.0,
+    "gamma": 0.5,
+    "delta": 2.0,
+    "hash_key": 15485863,
+    "prefix_length": 1,
+    "prev_n": 1,
+    "z_threshold": 1.03,          
+    "f_scheme": "time",
+    "window_scheme": "left",
+    "ignore_history": true,
+    "p": 0.3,
+    "α": 1.0,
+    "mean": 1.0,
+    "a": 1.0,
+    "theta": 0.0
+}
