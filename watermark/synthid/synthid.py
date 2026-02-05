@@ -54,7 +54,7 @@ class SynthIDConfig(BaseConfig):
             raise InvalidWatermarkModeError(self.watermark_mode)
         
         self.top_k = getattr(self.transformers_config, 'top_k', -1)
-        self.temperature = getattr(self.transformers_config, 'temperature', 0.9)
+        self.temperature = getattr(self.transformers_config, 'temperature', 0.95)
         
     @property
     def algorithm_name(self) -> str:

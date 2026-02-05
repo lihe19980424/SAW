@@ -84,8 +84,19 @@ class PPLCalculator(DirectTextQualityAnalyzer):
     # 核心代码
     def analyze(self, text: str):
         """Calculate the perplexity of the given text."""
+        # 【新增代码 1】检查文本是否为空
+        if not text or not text.strip():
+            # print("Warning: Empty text passed to PPLCalculator. Returning default PPL.")
+            return 0.0 # 或者返回 None / float('nan')
+        
         criterion = torch.nn.CrossEntropyLoss()
         encoded_text = self.tokenizer(text, return_tensors="pt", add_special_tokens=False)["input_ids"][0].to(self.device)
+        
+        # 【新增代码 2】检查 Token 数量是否足够计算 PPL (至少需要 2 个 token)
+        if len(encoded_text) < 2:
+            # print(f"Warning: Text too short for PPL calculation (len={len(encoded_text)}). Returning 0.0.")
+            return 0.0
+        
         logits = self.model(torch.unsqueeze(encoded_text, 0), return_dict=True).logits[0]
         loss = criterion(logits[:-1], encoded_text[1:])
         ppl = torch.exp(loss)

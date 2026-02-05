@@ -422,6 +422,12 @@ class ContextAwareSynonymSubstitution(TextEditor):
         """Randomly replace words with synonyms from WordNet based on the context."""
         words = text.split()
         num_words = len(words)
+        
+        # 【新增代码开始】检查 num_words 是否为 0，防止除零错误
+        if num_words == 0:
+            return text
+        # 【新增代码结束】
+        
         replaceable_indices = []
 
         for i, word in enumerate(words):
