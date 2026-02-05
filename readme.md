@@ -2,7 +2,7 @@
 
 This repository contains the official implementation and experimental code for the paper: **"[Title of Your Paper]"**.
 
-This project implements **SAW** (Scaling Watermarking), a novel watermarking framework, and compares it against state-of-the-art baselines including KGW, SWEET, SIR, and SynthID. The codebase is built upon the [MarkLLM](https://github.com/THU-BPM/MarkLLM) framework.
+This project implements **SAW** (Scaling Watermarking), a novel watermarking framework, and compares it against state-of-the-art baselines including KGW, SWEET, SIR, and SynthID. The codebase is built upon the [MarkLLM] framework.
 
 ## 🌟 Key Features
 
@@ -123,27 +123,13 @@ The pipeline automatically evaluates the watermark against various attacks:
 
 Results including TPR (True Positive Rate), F1 Score, and Z-scores under attack are logged in the `output/` directory.
 
-## 📝 Citation
-
-If you find this code useful for your research, please cite our paper:
-
-```bibtex
-@inproceedings{YourName2026SAW,
-  title={SAW: Robust and High-Fidelity LLM Watermarking via Hybrid Global-Local Noise Scaling},
-  author={Author One and Author Two and Author Three},
-  booktitle={Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)},
-  year={2026}
-}
-
-```
-
 ## ⚖️ License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
-This codebase is built upon the open-source framework [MarkLLM](https://github.com/THU-BPM/MarkLLM). We thank the original authors for their contribution to the community.
+This codebase is built upon the open-source framework [MarkLLM]. We thank the original authors for their contribution to the community.
 
 ---
 
