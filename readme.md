@@ -1,8 +1,8 @@
 # SAW: Scaling Watermarking for Large Language Models
 
-This repository contains the official implementation and experimental code for the paper: **"[Title of Your Paper]"**.
+This repository contains the official implementation and experimental code for the paper: **"[Robust and High-Fidelity LLM Watermarking via Hybrid Global-Local Noise Scaling]"**.
 
-This project implements **SAW** (Scaling Watermarking), a novel watermarking framework, and compares it against state-of-the-art baselines including KGW, SWEET, SIR, and SynthID. The codebase is built upon the [MarkLLM] framework.
+This project implements **SAW** (Scaling Watermarking), a novel watermarking framework, and compares it against state-of-the-art baselines including KGW, SWEET, SIR, MorphMark and SynthID. The codebase is built upon the [MarkLLM] framework.
 
 ## 🌟 Key Features
 
@@ -70,13 +70,13 @@ The main entry point for running experiments is `pipeline_saw.py`.
 
 ### Basic Usage
 
-To run the **SAW** watermark on the **WMT16 (German-to-English)** dataset using the **NLLB-200** model:
+To run the **SAW** watermark on the **C4** dataset using the **OPT-1.3B** model:
 
 ```bash
 python3 pipeline_saw.py \
     --algorithm SAW \
-    --dataset wmt16_de_en \
-    --model nllb-200-distilled-600M \
+    --dataset c4 \
+    --model opt-1.3b \
     --max_new_tokens 200 \
     --min_length 200 \
     --data_lines 100
@@ -111,6 +111,7 @@ You can modify these JSON files or pass some arguments directly via command line
 | **SIR** | `config/SIR.json` | Robust watermarking with context scaling |
 | **SynthID** | `config/SynthID.json` | DeepMind's non-distortionary watermarking |
 | **EWD** | `config/EWD.json` | Exponential Weighting Distribution |
+| **MorphMark** | `config/MorphMark.json` | Trade-off |
 
 ## 🛡️ Robustness Evaluation
 
