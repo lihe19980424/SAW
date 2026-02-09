@@ -52,17 +52,15 @@ class SAWConfig:
         
         self.p = config_dict['p']
         self.prev_n = config_dict['prev_n']
-        self.topk = config_dict['topk']
         self.α = config_dict['α']
         self.beta = config_dict['beta']
         self.mean = config_dict['mean']
         self.std = config_dict['std']
+        self.topk = config_dict['topk']
         self.left_rand = config_dict['left_rand']
         self.a = config_dict['a']
         self.theta = config_dict['theta']
         self.noise = config_dict['noise']
-        
-        self.temperature_inner = config_dict['temperature_inner']
 
         self.generation_model = transformers_config.model
         self.generation_tokenizer = transformers_config.tokenizer
@@ -70,9 +68,7 @@ class SAWConfig:
         self.device = transformers_config.device
         self.gen_kwargs = transformers_config.gen_kwargs
         
-        self.temperature = 1.0
-        
-        print("algorithm_name:", config_dict["algorithm_name"], "beta:", config_dict["beta"], "std:", config_dict["std"], " temperature_inner", self.temperature_inner, "topk:", config_dict["topk"], "left_rand:", config_dict["left_rand"])
+        print("algorithm_name:", config_dict["algorithm_name"], "beta:", config_dict["beta"], "noise:", config_dict['noise'], "mean:", config_dict["mean"], "std:", config_dict["std"], "topk:", config_dict["topk"], "left_rand:", config_dict["left_rand"])
         
 
 class SAWUtils:
@@ -286,7 +282,7 @@ class SAWUtils:
                 # SAW4使用的全局张量    前一半用全局固定种子来生成随机数张量，检测时的代码
                 # 直接在 CUDA 上生成均值为1，标准差为std的满足均匀分布的全局随机张量
                 a = self.config.std * (12 ** 0.5)
-                b = 1 - a / 2
+                b = self.config.mean - a / 2
                 global_rand = a * torch.rand(self.config.vocab_size, device=self.config.device, generator=self.global_rng) + b
             elif self.config.noise == 'gaussian':   
                 # SAW5使用的全局张量 
@@ -309,7 +305,7 @@ class SAWUtils:
                 # SAW4 后一半根据前一个token生成局部种子，检测时用如下代码
                 # 直接在 CUDA 上生成均值为1，标准差为std的满足均匀分布的局部随机张量
                 a = self.config.std * (12 ** 0.5)
-                b = 1 - a / 2
+                b = self.config.mean - a / 2
                 local_rand = a * torch.rand(self.config.vocab_size, device=self.config.device, generator=self.local_rng) + b
                 # SAW4 检测时代码结束的位置
             elif self.config.noise == 'gaussian':   
@@ -553,7 +549,7 @@ class SAWLogitsProcessor(LogitsProcessor):
         if self.config.noise == 'uniform':
             # SAW4：生成均值为1标准差为std的满足均匀分布的全局随机张量开始的位置
             a = self.config.std * (12 ** 0.5)
-            b = 1 - a / 2
+            b = self.config.mean - a / 2
             global_rand = a * torch.rand(self.config.vocab_size, device=self.config.device, generator=self.global_rng) + b
             # SAW4：生成均值为1标准差为std的满足均匀分布的全局随机张量结束的位置
         elif self.config.noise == 'gaussian':
@@ -580,7 +576,7 @@ class SAWLogitsProcessor(LogitsProcessor):
         if self.config.noise == 'uniform':       
             # 直接在 CUDA 上生成均值为1，标准差为std的满足均匀分布的局部随机张量
             a = self.config.std * (12 ** 0.5)
-            b = 1 - a / 2
+            b = self.config.mean - a / 2
             local_rand = a * torch.rand(self.config.vocab_size, device=self.config.device, generator=self.local_rng) + b
         elif self.config.noise == 'gaussian':
             # 直接在 CUDA 上生成的满足高斯分布的局部随机张量
@@ -595,17 +591,16 @@ class SAWLogitsProcessor(LogitsProcessor):
             min_rand = rand
         else:
             min_rand = torch.clamp(rand, min=self.config.left_rand)  
-        if self.config.topk == 50272:
-            reweighted_scores = scores * min_rand
-        else:
-            # 找到 前topk 个最大值的索引
-            topk_indices = torch.topk(scores, self.config.topk).indices
-            # 创建一个新的张量，将非 前topk 大的值设为 float('-inf')  
-            topk_scores = torch.full_like(scores, float('-inf'), device=self.config.device)
-            # 将 前topk 个最大值的索引位置赋值为对应的clamp_scores
-            topk_scores[0, topk_indices] = scores[0, topk_indices]
-            # 计算新的加权得分, Ri 属于 [0,2]
-            reweighted_scores = topk_scores * min_rand
+        
+        
+        # 找到 前topk 个最大值的索引
+        topk_indices = torch.topk(scores, self.config.topk).indices
+        # 创建一个新的张量，将非 前topk 大的值设为 float('-inf')  
+        topk_scores = torch.full_like(scores, float('-inf'), device=self.config.device)
+        # 将 前topk 个最大值的索引位置赋值为对应的clamp_scores
+        topk_scores[0, topk_indices] = scores[0, topk_indices]
+        # 计算新的加权得分, Ri 属于 [0,2]
+        reweighted_scores = topk_scores * min_rand
         # SAW生成局部种子的代码的代码结束的位置
             
         # 返回掩码和重新加权后的得分
@@ -614,7 +609,7 @@ class SAWLogitsProcessor(LogitsProcessor):
 
     def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor) -> torch.FloatTensor:
         """Process logits to add watermark."""
-        scores = scores / self.config.temperature
+        scores = scores
         # 如果输入序列长度小于前缀长度，则直接返回原始 scores #input_ids.shape=[1, 30]
         if input_ids.shape[-1] < self.config.prefix_length:
             return scores
@@ -699,7 +694,7 @@ class SAW(BaseWatermark):
         encoded_prompt = self.config.generation_tokenizer(prompt, return_tensors="pt", add_special_tokens=True).to(self.config.device)
 
         # Generate watermarked text 
-        encoded_watermarked_text = generate_with_watermark(**encoded_prompt,temperature=self.config.temperature_inner, pad_token_id=self.config.generation_tokenizer.eos_token_id)
+        encoded_watermarked_text = generate_with_watermark(**encoded_prompt, pad_token_id=self.config.generation_tokenizer.eos_token_id)
         # Decode  将生成的编码文本解码为字符串
         watermarked_text = self.config.generation_tokenizer.batch_decode(encoded_watermarked_text, skip_special_tokens=True)[0]
         # print("watermarked_text:")
@@ -711,8 +706,8 @@ class SAW(BaseWatermark):
         if len(text) == 0:
             # raise ValueError("Text cannot be empty")
             print("Text is empty")
-            z_score = 0.5
-            is_watermarked = z_score > self.config.z_threshold
+            z_score = 1.0
+            is_watermarked = z_score > (self.config.mean + self.config.std)
 
             # Return results based on the return_dict flag
             if return_dict:
@@ -731,17 +726,17 @@ class SAW(BaseWatermark):
         # 根据阈值判断是否有水印 核心代码 原来是0.2
         # is_watermarked = (diff_avg < self.config.gamma)
         
-        # 计算 z_score，用于检测水印
-        z_score, _ = self.utils.score_sequence(encoded_text)
+        # 计算 avg，用于检测水印
+        avg, _ = self.utils.score_sequence(encoded_text)
         
-        # Determine if the z_score indicates a watermark  
-        is_watermarked = z_score > self.config.z_threshold
+        # Determine if the avg indicates a watermark  
+        is_watermarked = avg > (self.config.mean + self.config.std)
         
         # 设置返回结果的格式 # 根据 return_dict 参数决定返回结果的格式
         if return_dict:
-            return {"is_watermarked": is_watermarked, "score": z_score}  # 返回字典格式的结果
+            return {"is_watermarked": is_watermarked, "score": avg}  # 返回字典格式的结果
         else:
-            return (is_watermarked, z_score)  # 返回元组格式的结果
+            return (is_watermarked, avg)  # 返回元组格式的结果
     
         # add end
         

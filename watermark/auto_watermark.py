@@ -20,6 +20,7 @@ WATERMARK_MAPPING_NAMES={
     'DIP': 'watermark.dip.DIP',
     'TS': 'watermark.ts.TS',
     'SynthID': 'watermark.synthid.SynthID',
+    'MorphMark': 'watermark.morphmark.MorphMark',
     
     # add more watermark algorithms here by wang 
     "KGW_plus_UNI":"watermark.kgw_plus_uni.KGW_plus_UNI",

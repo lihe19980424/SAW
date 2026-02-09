@@ -24,7 +24,7 @@ from watermark.base import BaseWatermark, BaseConfig
 
 from transformers import BlipProcessor, BlipForConditionalGeneration
 
-device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 print(device)
 
 def assess(args):
@@ -45,10 +45,10 @@ def assess(args):
         config_dict["beta"] = args.beta
         config_dict["std"] = args.std
         config_dict["noise"] = args.noise
-
-    # config_dict["temperature_inner"] = args.temperature_inner
+        config_dict["mean"] = args.mean  
+        config_dict["topk"] = args.topk
     
-    config_algorithm = "algorithm: " + str(args.algorithm) + " dataset: " + str(args.dataset) + " model: " + str(args.model) + " max_new_tokens: " + str(args.max_new_tokens) + " min_length: " + str(args.min_length) +" data_lines: " + str(args.data_lines) 
+    config_algorithm = "algorithm: " + str(args.algorithm) + " dataset: " + str(args.dataset) + " model: " + str(args.model) + " max_new_tokens: " + str(args.max_new_tokens) + " min_length: " + str(args.min_length) +" data_lines: " + str(args.data_lines) +" temperature_inner: " + str(args.temperature_inner)
     
     model_dipper = T5ForConditionalGeneration.from_pretrained('./models/paraphrase-dipper-no-ctx').to(device) # , device_map='auto'  .to(device)
     tokenizer_dipper = T5Tokenizer.from_pretrained('./models/t5-large', legacy=False)
@@ -91,17 +91,17 @@ def assess(args):
         # my_vocab_size = 128256
         my_vocab_size = model_path.get_output_embeddings().weight.shape[0]
     elif args.model =='compositional-bert-large-uncased':
-        model_path = AutoModelForCausalLM.from_pretrained("./models/compositional-bert-large-uncased", device_map='auto')
+        model_path = AutoModelForCausalLM.from_pretrained("./models/compositional-bert-large-uncased").to(device)
         tokenizer_path = AutoTokenizer.from_pretrained("./models/compositional-bert-large-uncased", legacy=False)
         # my_vocab_size = 30522
         my_vocab_size = model_path.get_output_embeddings().weight.shape[0]
     elif args.model =='roberta-base':
-        model_path = AutoModelForCausalLM.from_pretrained("./models/roberta-base", device_map='auto')
+        model_path = AutoModelForCausalLM.from_pretrained("./models/roberta-base").to(device)
         tokenizer_path = AutoTokenizer.from_pretrained("./models/roberta-base", legacy=False)
         # my_vocab_size = 50265
         my_vocab_size = model_path.get_output_embeddings().weight.shape[0]
     elif args.model =='t5-v1_1-xxl':
-        model_path = T5ForConditionalGeneration.from_pretrained('./models/dipper-paraphraser-xxl',device_map='auto') # ,device_map='auto'  .to(device)
+        model_path = T5ForConditionalGeneration.from_pretrained('./models/dipper-paraphraser-xxl').to(device) # ,device_map='auto'  .to(device)
         tokenizer_path = T5Tokenizer.from_pretrained('./models/t5-v1_1-xxl', legacy=False)
         # my_vocab_size = 32128
         my_vocab_size = model_path.get_output_embeddings().weight.shape[0]
@@ -122,7 +122,7 @@ def assess(args):
         my_vocab_size = model_path.get_output_embeddings().weight.shape[0]
     elif args.model =='Qwen2.5-Omni-7B':     
         # model_path = Qwen2_5OmniForConditionalGeneration.from_pretrained('./models/Qwen2.5-Omni-7B').to(device)
-        model_path = AutoModelForCausalLM.from_pretrained('./models/Qwen2.5-Omni-7B',torch_dtype=torch.float16,device_map="auto")
+        model_path = AutoModelForCausalLM.from_pretrained('./models/Qwen2.5-Omni-7B',torch_dtype=torch.float16).to(device)
         # tokenizer_path = Qwen2_5OmniProcessor.from_pretrained("./models/Qwen2.5-Omni-7B")
         tokenizer_path = AutoModelForCausalLM.AutoTokenizer.from_pretrained("./models/Qwen2.5-Omni-7B")
         # my_vocab_size = 152064
@@ -161,16 +161,16 @@ def assess(args):
                                                 # forced_bos_token_id=tokenizer.lang_code_to_id["eng_Latn"]
                                                 # forced_bos_token_id = tokenizer.encode("eng_Latn")[0]
                                                 forced_bos_token_id = tokenizer_path.convert_tokens_to_ids("eng_Latn"),
-                                                do_sample=False,
+                                                do_sample=True,
+                                                temperature=args.temperature_inner 
                                                 )
     elif args.model =='starcoder':
         transformers_config = TransformersConfig(
             model=model_path,
             tokenizer=tokenizer_path,
             device=device,
-            # min_length=200,
-            # max_length=400,
-            do_sample=True
+            do_sample=True,
+            temperature=args.temperature_inner 
         )
     elif args.model =='BLIP':
         transformers_config = TransformersConfig(
@@ -181,29 +181,29 @@ def assess(args):
             max_new_tokens=args.max_new_tokens,
             min_length=args.min_length,
             do_sample=True,
+            temperature=args.temperature_inner, 
             no_repeat_ngram_size=4,
             num_beams=5
-        ) 
-    elif args.model =='Qwen2.5-7B':
-        transformers_config = TransformersConfig(
-            model=model_path,
-            tokenizer=tokenizer_path,
-            vocab_size=152064,
-            device=device,
-            max_new_tokens=args.max_new_tokens,
-            min_length=args.min_length,
-            do_sample=True,
-            no_repeat_ngram_size=4
-        )     
+        )   
     else:        
-        transformers_config = TransformersConfig(model=model_path,
-                                                tokenizer=tokenizer_path,
-                                                vocab_size=my_vocab_size,
-                                                device=device,
-                                                max_new_tokens=args.max_new_tokens,
-                                                min_length=args.min_length,
-                                                do_sample=True,
-                                                no_repeat_ngram_size=4)      
+        if args.dataset == 'cnn_daily_mail':
+            transformers_config = TransformersConfig(model=model_path,
+                                                    tokenizer=tokenizer_path,
+                                                    vocab_size=my_vocab_size,
+                                                    device=device,
+                                                    do_sample=True,
+                                                    temperature=args.temperature_inner, 
+                                                    no_repeat_ngram_size=4)  
+        else:
+            transformers_config = TransformersConfig(model=model_path,
+                                                    tokenizer=tokenizer_path,
+                                                    vocab_size=my_vocab_size,
+                                                    device=device,
+                                                    max_new_tokens=args.max_new_tokens,
+                                                    min_length=args.min_length,
+                                                    do_sample=True,
+                                                    temperature=args.temperature_inner, 
+                                                    no_repeat_ngram_size=4)      
 
     if args.algorithm == "KGW" or args.algorithm == "DIP" or args.algorithm == 'EXP' or args.algorithm == 'TS' or args.algorithm == 'SynthID' or args.algorithm == 'SIR' or args.algorithm == 'MorphMark':
         my_watermark = AutoWatermark.load(f'{args.algorithm}',  
@@ -247,7 +247,7 @@ def assess(args):
     
     # print("\n水印算法名称:", algorithm_name,"最小生成长度:230","z_threshold: ", config_dict['z_threshold'])
     # print("topk:", config_dict['topk'], "α:", config_dict['α'], ", alpha:", config_dict['alpha'], ", mean:", config_dict['mean'], ", epsilon:", config_dict['epsilon'])
-    unwatermark_evaluate, watermark_evaluate, attack_watermark_evaluate_Word_D_3, attack_watermark_evaluate_Word_D_5, attack_watermark_evaluate_Word_D_7, attack_watermark_evaluate_Word_S_7, attack_watermark_evaluate_Word_S_context_3, attack_watermark_evaluate_typo, attack_watermark_evaluate_doc_P_dipper, ppl_evaluation_result, logdiversity_evaluation_result, BLEU_evaluation_result, BERTScore_evaluation_result, GPT_evaluation_result, Pass_evaluation_result, execution_time_unwatermarked_200_sum, execution_time_watermarked_200_sum, execution_time_unwatermarked_200_avg, execution_time_watermarked_200_avg, execution_time_detect_unwatermarked_sum, execution_time_detect_watermarked_sum, execution_time_detect_unwatermarked_avg, execution_time_detect_watermarked_avg = pipline_watermark.evaluate(my_watermark, args.dataset, args.data_lines)
+    unwatermark_evaluate, watermark_evaluate, attack_watermark_evaluate_Word_D_3, attack_watermark_evaluate_Word_D_5, attack_watermark_evaluate_Word_D_7, attack_watermark_evaluate_Word_S_7, attack_watermark_evaluate_Word_S_context_3, attack_watermark_evaluate_typo, attack_watermark_evaluate_doc_P_dipper, ppl_evaluation_result, logdiversity_evaluation_result, BLEU_evaluation_result, BERTScore_evaluation_result, ROUGE_evaluation_result, GPT_evaluation_result, Pass_evaluation_result, execution_time_unwatermarked_200_sum, execution_time_watermarked_200_sum, execution_time_unwatermarked_200_avg, execution_time_watermarked_200_avg, execution_time_detect_unwatermarked_sum, execution_time_detect_watermarked_sum, execution_time_detect_unwatermarked_avg, execution_time_detect_watermarked_avg = pipline_watermark.evaluate(my_watermark, args.dataset, args.data_lines)
     # print("The average time required to generate each text: ", execution_time_watermarked_200_avg, "(s)")
     
     # 打印算法名称和参数
@@ -363,7 +363,7 @@ def assess(args):
     # result_attack_lowercase, threshold_attack_lowercase = calculator.calculate([float(result.detect_result['score']) for result in attack_watermark_evaluate_lowercase], [float(result.detect_result['score']) for result in unwatermark_evaluate])
     # print(result_attack_lowercase) 
     
-    if args.dataset =='c4' or args.dataset =='eli5' or args.dataset =='multinews' or args.dataset =='rocstories' or args.dataset =='flickr30k' or args.dataset =='cnn_daily_mail':
+    if args.dataset =='c4' or args.dataset =='eli5' or args.dataset =='multinews' or args.dataset =='rocstories' or args.dataset =='flickr30k':
         # print("\n文本质量的信息如下:", ", 评估指标:", "ppl")
         # 计算并输出水印和非水印文本的文本质量
         result_PPL = {'watermarked': sum([result.watermarked_quality_score for result in ppl_evaluation_result]) / len(ppl_evaluation_result), 
@@ -384,8 +384,8 @@ def assess(args):
         
         # <--- 新增：计算 BERTScore 平均值
         # print("\n文本质量的信息如下:", ", 评估指标:", "BERTScore")
-        result_BERTScore = {'watermarked': sum([result.watermarked_quality_score for result in BERTScore_evaluation_result]) / len(BERTScore_evaluation_result), 
-                            'unwatermarked': sum([result.unwatermarked_quality_score for result in BERTScore_evaluation_result]) / len(BERTScore_evaluation_result)}
+        # result_BERTScore = {'watermarked': sum([result.watermarked_quality_score for result in BERTScore_evaluation_result]) / len(BERTScore_evaluation_result), 
+        #                     'unwatermarked': sum([result.unwatermarked_quality_score for result in BERTScore_evaluation_result]) / len(BERTScore_evaluation_result)}
         # print(result_BERTScore)
     elif args.dataset =='wmt16_de_en':
         # print("\n文本质量的信息如下:", ", 评估指标:", "log")
@@ -393,6 +393,18 @@ def assess(args):
         result_BLEU = {'watermarked': sum([result.watermarked_quality_score for result in BLEU_evaluation_result]) / len(BLEU_evaluation_result), 
                         'unwatermarked': sum([result.unwatermarked_quality_score for result in BLEU_evaluation_result]) / len(BLEU_evaluation_result)}
         # print(result_BLEU)
+        
+        # <--- 新增：计算 BERTScore 平均值
+        # print("\n文本质量的信息如下:", ", 评估指标:", "BERTScore")
+        result_BERTScore = {'watermarked': sum([result.watermarked_quality_score for result in BERTScore_evaluation_result]) / len(BERTScore_evaluation_result), 
+                            'unwatermarked': sum([result.unwatermarked_quality_score for result in BERTScore_evaluation_result]) / len(BERTScore_evaluation_result)}
+        # print(result_BERTScore)
+    elif args.dataset =='cnn_daily_mail':
+            # print("\n文本质量的信息如下:", ", 评估指标:", "log")
+        # 计算并输出水印和非水印文本的文本质量
+        result_ROUGE = {'watermarked': sum([result.watermarked_quality_score for result in ROUGE_evaluation_result]) / len(ROUGE_evaluation_result), 
+                        'unwatermarked': sum([result.unwatermarked_quality_score for result in ROUGE_evaluation_result]) / len(ROUGE_evaluation_result)}
+        # print(result_ROUGE)
         
         # <--- 新增：计算 BERTScore 平均值
         # print("\n文本质量的信息如下:", ", 评估指标:", "BERTScore")
@@ -411,25 +423,33 @@ def assess(args):
         # result_GPT = {'result_GPT': sum([result.watermarked_quality_score for result in GPT_evaluation_result]) / len(GPT_evaluation_result)}
         # print(result_GPT)
     
-    with open("output_saw_KDD_c4_Llama-3-8B-Instruct_7attacks_temp_1_tokens_200_datalines_100.txt", "a") as file:
+    with open("output_saw_KDD_c4_opt_7attacks_temp_1_tokens_200_datalines_100_ablition_0208.txt", "a") as file:
         file.write("\nparameter of config as follows:\n") 
         file.write(config_algorithm) 
         file.write("\nparameter of algorithm as follows:\n") 
         file.write(str(config_dict)) 
 
-        if args.dataset =='c4' or args.dataset =='eli5' or args.dataset =='multinews' or args.dataset =='rocstories' or args.dataset =='flickr30k' or args.dataset =='cnn_daily_mail':
+        if args.dataset =='c4' or args.dataset =='eli5' or args.dataset =='multinews' or args.dataset =='rocstories' or args.dataset =='flickr30k':
             file.write("\nPPL:\n")  
             file.write(str(result_PPL))
             file.write("\nLog_Diversity:\n")  
             file.write(str(result_Log_Diversity))  
             # file.write("\nBLEU:\n")  
             # file.write(str(result_BLEU)) 
+            # 写入 BERTScore
+            # file.write("\nBERTScore:\n")
+            # file.write(str(result_BERTScore))
+        elif args.dataset =='wmt16_de_en': 
+            file.write("\nBLEU:\n")  
+            file.write(str(result_BLEU)) 
+            #file.write("\nGPT:\n")  
+            #file.write(str(result_GPT)) 
             # <--- 新增：写入 BERTScore
             file.write("\nBERTScore:\n")
             file.write(str(result_BERTScore))
-        elif args.dataset =='wmt16_de_en':
-            file.write("\nBLEU:\n")  
-            file.write(str(result_BLEU)) 
+        elif args.dataset =='cnn_daily_mail':  
+            file.write("\nROUGE:\n")  
+            file.write(str(result_ROUGE)) 
             #file.write("\nGPT:\n")  
             #file.write(str(result_GPT)) 
             # <--- 新增：写入 BERTScore
@@ -558,14 +578,15 @@ if __name__ == '__main__':
     import argparse  
     # algorithm_config=f'config/{algorithm_name}.json'
     parser = argparse.ArgumentParser()
-    # KGW SWEET SIR SAW EWD SynthID DIP                  MorphMark Unbiased SMOOTH  Unigram  EXP 
+    # KGW SWEET EWD DIP SynthID SIR SAW MorphMark               Unbiased SMOOTH  Unigram  EXP 
     parser.add_argument('--algorithm', type=str, default='KGW')  # 水印算法名称 
-    parser.add_argument('--dataset', type=str, default='c4')      # c4       cnn_daily_mail      rocstories    eli5                                  wmt16_de_en              human_eval 
-    parser.add_argument('--model', type=str, default='Llama-3-8B-Instruct')  # opt-1.3b Llama-3-8B-Instruct Qwen2.5-0.5B Qwen2.5-7B DeepSeek-R1-Distill-Qwen-7B nllb-200-distilled-600M  starcoder    
+    parser.add_argument('--dataset', type=str, default='cnn_daily_mail')      # c4       cnn_daily_mail      rocstories    eli5                                  wmt16_de_en              human_eval 
+    parser.add_argument('--model', type=str, default='opt-1.3b')  # opt-1.3b Llama-3-8B-Instruct Qwen2.5-0.5B Qwen2.5-7B DeepSeek-R1-Distill-Qwen-7B nllb-200-distilled-600M  starcoder    
     parser.add_argument('--max_new_tokens', type=int, default=200)
     parser.add_argument('--min_length', type=int, default=200)
-    parser.add_argument('--data_lines', type=int, default=10)
-    parser.add_argument('--temperature_inner', type=float, default='1.0')  
+    parser.add_argument('--data_lines', type=int, default=100)
+    parser.add_argument('--temperature_inner', type=float, default='1.0') 
+
 
     # parser.add_argument('--resilience', type=str, default='soft') # hard soft
     # parser.add_argument('--alpha', type=float, default='0.34')
@@ -577,9 +598,12 @@ if __name__ == '__main__':
     # parser.add_argument('--entropy_threshold', type=float, default='0.9')
     # parser.add_argument('--z_threshold', type=float, default='4.0') 
     
-    parser.add_argument('--noise', type=str, default='uniform')  # gaussian  uniform
-    parser.add_argument('--beta', type=float, default='0.7') 
+    parser.add_argument('--noise', type=str, default='gaussian')  # gaussian  uniform
+    parser.add_argument('--beta', type=float, default='1.0') 
     parser.add_argument('--std', type=float, default='0.05') 
+    parser.add_argument('--mean', type=float, default='1.1')  
+    parser.add_argument('--topk', type=int, default='100')    
+
 
     parser.add_argument('--labels', nargs='+', default=['TPR', 'TNR', 'FPR', 'FNR', 'P', 'R', 'F1', 'ACC'])
     parser.add_argument('--rules', type=str, default='best') # target_fpr

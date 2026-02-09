@@ -28,7 +28,7 @@ from evaluation.tools.text_editor import TruncatePromptTextEditor, WordDeletion,
 from evaluation.tools.text_editor import TruncateTaskTextEditor
 from evaluation.tools.text_editor import CodeGenerationTextEditor
 from evaluation.tools.text_editor import MisspellingAttack, TypoAttack, ContractionAttack, SwapAttack, LowercaseAttack, ExpansionAttack
-from evaluation.tools.text_quality_analyzer import PPLCalculator, LogDiversityAnalyzer, BLEUCalculator, PassOrNotJudger, GPTTextDiscriminator, BERTScoreCalculator
+from evaluation.tools.text_quality_analyzer import PPLCalculator, LogDiversityAnalyzer, BLEUCalculator, ROUGECalculator, PassOrNotJudger, GPTTextDiscriminator, BERTScoreCalculator
 from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, LlamaForCausalLM, T5ForConditionalGeneration, BertForMaskedLM, AutoTokenizer, LlamaTokenizer, T5Tokenizer, BertTokenizer  # 导入transformers库的模型和tokenizer类
 import torch
 import time
@@ -290,13 +290,13 @@ class WatermarkDetectionPipeline:
         for text_editor in [TruncatePromptTextEditor(), SynonymSubstitution(ratio=0.7)]:
             text = text_editor.edit(text, prompt)  # 使用文本编辑器对文本进行编辑
         return text  # 返回编辑后的文本
-    
-    def _edit_text_word_S_7_NoTruncatePrompt(self, text: str, prompt: str = None):
+
+    def _edit_text_word_S_1_NoTruncatePrompt(self, text: str, prompt: str = None):
         """Edit text using text editors."""  """使用文本编辑器编辑文本。"""
         # 遍历所有的文本编辑器，依次对文本进行处理
-        for text_editor in [SynonymSubstitution(ratio=0.7)]:
+        for text_editor in [SynonymSubstitution(ratio=0.1)]:
             text = text_editor.edit(text, prompt)  # 使用文本编辑器对文本进行编辑
-        return text  # 返回编辑后的文本
+        return text  # 返回编辑后的文本 
     
     def _edit_text_word_S_3_NoTruncatePrompt(self, text: str, prompt: str = None):
         """Edit text using text editors."""  """使用文本编辑器编辑文本。"""
@@ -309,6 +309,13 @@ class WatermarkDetectionPipeline:
         """Edit text using text editors."""  """使用文本编辑器编辑文本。"""
         # 遍历所有的文本编辑器，依次对文本进行处理
         for text_editor in [SynonymSubstitution(ratio=0.5)]:
+            text = text_editor.edit(text, prompt)  # 使用文本编辑器对文本进行编辑
+        return text  # 返回编辑后的文本
+    
+    def _edit_text_word_S_7_NoTruncatePrompt(self, text: str, prompt: str = None):
+        """Edit text using text editors."""  """使用文本编辑器编辑文本。"""
+        # 遍历所有的文本编辑器，依次对文本进行处理
+        for text_editor in [SynonymSubstitution(ratio=0.7)]:
             text = text_editor.edit(text, prompt)  # 使用文本编辑器对文本进行编辑
         return text  # 返回编辑后的文本
     
@@ -326,22 +333,22 @@ class WatermarkDetectionPipeline:
             text = text_editor.edit(text, prompt)  # 使用文本编辑器对文本进行编辑
         return text  # 返回编辑后的文本
     
-    def _edit_text_word_S_context(self, text: str, prompt: str = None):
+    def _edit_text_word_S_context_3(self, text: str, prompt: str = None):
         """Edit text using text editors."""  """使用文本编辑器编辑文本。"""
         
         # 遍历所有的文本编辑器，依次对文本进行处理
-        for text_editor in [TruncatePromptTextEditor(), ContextAwareSynonymSubstitution(ratio=0.7,
+        for text_editor in [TruncatePromptTextEditor(), ContextAwareSynonymSubstitution(ratio=0.3,
                                                                                         tokenizer=self.tokenizer_Bert,
                                                                                         model=self.model_Bert,
                                                                                         device=self.device)]:
             text = text_editor.edit(text, prompt)  # 使用文本编辑器对文本进行编辑
         return text  # 返回编辑后的文本
   
-    def _edit_text_word_S_context_NoTruncatePrompt(self, text: str, prompt: str = None):
+    def _edit_text_word_S_context_3_NoTruncatePrompt(self, text: str, prompt: str = None):
         """Edit text using text editors."""  """使用文本编辑器编辑文本。"""
         
         # 遍历所有的文本编辑器，依次对文本进行处理
-        for text_editor in [ContextAwareSynonymSubstitution(ratio=0.7,
+        for text_editor in [ContextAwareSynonymSubstitution(ratio=0.3,
                                                             tokenizer=self.tokenizer_Bert,
                                                             model=self.model_Bert,
                                                             device=self.device)]:
@@ -534,14 +541,14 @@ class WatermarkDetectionPipeline:
         unwatermark_evaluation_result = []
         evaluation_result = []  # 用于存储评估结果
         # evaluation_result_word_D_1 = []
-        # evaluation_result_word_D_3 = []
-        # evaluation_result_word_D_5 = []
+        evaluation_result_word_D_3 = []
+        evaluation_result_word_D_5 = []
         evaluation_result_word_D_7 = []
         # evaluation_result_word_S_1 = []
         # evaluation_result_word_S_3 = []
         # evaluation_result_word_S_5 = []
         evaluation_result_word_S_7 = []
-        evaluation_result_word_S_context = []
+        evaluation_result_word_S_context_3 = []
         evaluation_result_doc_P_dipper = []
         # evaluation_result_doc_P_GPT = []
         # evaluation_result_misspelling = []
@@ -554,6 +561,7 @@ class WatermarkDetectionPipeline:
         logdiversity_evaluation_result = []
         BLEU_evaluation_result = []
         BERTScore_evaluation_result = []
+        ROUGE_evaluation_result = []
         GPT_evaluation_result = []
         Pass_evaluation_result = []
         
@@ -563,13 +571,16 @@ class WatermarkDetectionPipeline:
         logdiversity_analyzer = LogDiversityAnalyzer()  
         BLEU_analyzer =  BLEUCalculator() 
         
-        my_local_bert_path = "/home/lihe/models/roberta-base"
+        my_local_bert_path = "./models/roberta-base"
         # 初始化时传入 model_type 和 num_layers
         # compositional-bert-large-uncased 是 large 模型，通常有 24 层
         # roberta-base 是 base 模型，通常有 12 层
         BERTScore_analyzer = BERTScoreCalculator(device=self.device, 
                                                  model_type=my_local_bert_path, 
                                                  num_layers=12)
+        
+        ROUGE_analyzer =  ROUGECalculator() 
+        
         # GPT_analyzer = GPTTextDiscriminator(openai_model='gpt-4', task_description='Translate the following German text to English.') 
         Pass_analyzer = PassOrNotJudger()
         
@@ -591,6 +602,8 @@ class WatermarkDetectionPipeline:
             elif dataset =='rocstories':
                 natural_text = self.dataset.get_natural_text(index)
                 prompt = f"Your task is to continue the story beginning with {prompt} Incorporate the words {natural_text} seamlessly to develop a coherent and compelling narrative."  
+            elif dataset =='cnn_daily_mail':
+                prompt = f"You are an expert journalist, please write a summary based on the content: {prompt} "  
 
             reference = self.dataset.get_reference(index) 
             # 生成无水印文本的核心代码
@@ -635,8 +648,8 @@ class WatermarkDetectionPipeline:
             # 单词删除和替换攻击的文本编辑
             if dataset =='c4' or dataset =='eli5'or dataset =='multinews' or dataset =='rocstories' or dataset =='cnn_daily_mail':
                 # edited_text_word_D_1 = self._edit_text_word_D_1(generated_or_retrieved_text, prompt)
-                # edited_text_word_D_3 = self._edit_text_word_D_3(generated_or_retrieved_text, prompt)
-                # edited_text_word_D_5 = self._edit_text_word_D_5(generated_or_retrieved_text, prompt)
+                edited_text_word_D_3 = self._edit_text_word_D_3(generated_or_retrieved_text, prompt)
+                edited_text_word_D_5 = self._edit_text_word_D_5(generated_or_retrieved_text, prompt)
                 edited_text_word_D_7 = self._edit_text_word_D_7(generated_or_retrieved_text, prompt)
                 
                 # edited_text_word_S_1 = self._edit_text_word_S_1(generated_or_retrieved_text, prompt)
@@ -644,7 +657,7 @@ class WatermarkDetectionPipeline:
                 # edited_text_word_S_5 = self._edit_text_word_S_5(generated_or_retrieved_text, prompt)
                 edited_text_word_S_7 = self._edit_text_word_S_7(generated_or_retrieved_text, prompt)
                 
-                edited_text_word_S_context = self._edit_text_word_S_context(generated_or_retrieved_text, prompt)
+                edited_text_word_S_context_3 = self._edit_text_word_S_context_3(generated_or_retrieved_text, prompt)
                 
                 # edited_text_misspelling = self._edit_text_misspelling(generated_or_retrieved_text, prompt)
                 edited_text_typo = self._edit_text_typo(generated_or_retrieved_text, prompt)
@@ -652,11 +665,15 @@ class WatermarkDetectionPipeline:
                 # edited_text_swap = self._edit_text_swap(generated_or_retrieved_text, prompt)
                 # edited_text_lowercase = self._edit_text_lowercase(generated_or_retrieved_text, prompt)
             elif dataset =='wmt16_de_en' or dataset =='flickr30k':
-                # edited_text_word_D_5 = self._edit_text_word_D_5_NoTruncatePrompt(generated_or_retrieved_text, prompt)
+                # edited_text_word_D_1 = self._edit_text_word_D_1_NoTruncatePrompt(generated_or_retrieved_text, prompt)
+                edited_text_word_D_3 = self._edit_text_word_D_3_NoTruncatePrompt(generated_or_retrieved_text, prompt)
+                edited_text_word_D_5 = self._edit_text_word_D_5_NoTruncatePrompt(generated_or_retrieved_text, prompt)
                 edited_text_word_D_7 = self._edit_text_word_D_7_NoTruncatePrompt(generated_or_retrieved_text, prompt)
+                # edited_text_word_S_1 = self._edit_text_word_S_1_NoTruncatePrompt(generated_or_retrieved_text, prompt)
+                # edited_text_word_S_3 = self._edit_text_word_S_3_NoTruncatePrompt(generated_or_retrieved_text, prompt)
                 # edited_text_word_S_5 = self._edit_text_word_S_5_NoTruncatePrompt(generated_or_retrieved_text, prompt)
                 edited_text_word_S_7 = self._edit_text_word_S_7_NoTruncatePrompt(generated_or_retrieved_text, prompt)
-                edited_text_word_S_context = self._edit_text_word_S_context_NoTruncatePrompt(generated_or_retrieved_text, prompt)
+                edited_text_word_S_context_3 = self._edit_text_word_S_context_3_NoTruncatePrompt(generated_or_retrieved_text, prompt)
                 # edited_text_misspelling = self._edit_text_misspelling_NoTruncatePrompt(generated_or_retrieved_text, prompt)
                 edited_text_typo = self._edit_text_typo_NoTruncatePrompt(generated_or_retrieved_text, prompt)
                 # edited_text_contraction = self._edit_text_contraction_NoTruncatePrompt(generated_or_retrieved_text, prompt)
@@ -703,8 +720,8 @@ class WatermarkDetectionPipeline:
                 
             # 检测单词删除和替换攻击时的水印 
             # detect_result_word_D_1 = self._detect_watermark(edited_text_word_D_1, watermark)
-            # detect_result_word_D_3 = self._detect_watermark(edited_text_word_D_3, watermark)
-            # detect_result_word_D_5 = self._detect_watermark(edited_text_word_D_5, watermark)
+            detect_result_word_D_3 = self._detect_watermark(edited_text_word_D_3, watermark)
+            detect_result_word_D_5 = self._detect_watermark(edited_text_word_D_5, watermark)
             detect_result_word_D_7 = self._detect_watermark(edited_text_word_D_7, watermark)
                         
             # detect_result_word_S_1 = self._detect_watermark(edited_text_word_S_1, watermark)
@@ -712,7 +729,7 @@ class WatermarkDetectionPipeline:
             # detect_result_word_S_5 = self._detect_watermark(edited_text_word_S_5, watermark)
             detect_result_word_S_7 = self._detect_watermark(edited_text_word_S_7, watermark)
             
-            detect_result_word_S_context = self._detect_watermark(edited_text_word_S_context, watermark)
+            detect_result_word_S_context_3 = self._detect_watermark(edited_text_word_S_context_3, watermark)
 
             # detect_result_misspelling = self._detect_watermark(edited_text_misspelling, watermark)
             detect_result_typo = self._detect_watermark(edited_text_typo, watermark)
@@ -731,8 +748,8 @@ class WatermarkDetectionPipeline:
             evaluation_result.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text, detect_result))  
 
             # evaluation_result_word_D_1.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_D_1, detect_result_word_D_1))
-            # evaluation_result_word_D_3.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_D_3, detect_result_word_D_3))
-            # evaluation_result_word_D_5.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_D_5, detect_result_word_D_5))
+            evaluation_result_word_D_3.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_D_3, detect_result_word_D_3))
+            evaluation_result_word_D_5.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_D_5, detect_result_word_D_5))
             evaluation_result_word_D_7.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_D_7, detect_result_word_D_7))
                 
             # evaluation_result_word_S_1.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_S_1, detect_result_word_S_1))
@@ -740,7 +757,7 @@ class WatermarkDetectionPipeline:
             # evaluation_result_word_S_5.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_S_5, detect_result_word_S_5))
             evaluation_result_word_S_7.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_S_7, detect_result_word_S_7))
             
-            evaluation_result_word_S_context.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_S_context, detect_result_word_S_context))
+            evaluation_result_word_S_context_3.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_word_S_context_3, detect_result_word_S_context_3))
         
             # evaluation_result_misspelling.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_misspelling, detect_result_misspelling))
             evaluation_result_typo.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_typo, detect_result_typo))
@@ -752,7 +769,7 @@ class WatermarkDetectionPipeline:
             # evaluation_result_doc_P_GPT.append(WatermarkDetectionResult(generated_or_retrieved_text, edited_text_doc_P_GPT, detect_result_doc_P_GPT))
             
             # 分析编辑后的文本的质量
-            if dataset =='c4' or dataset =='eli5' or dataset =='multinews' or dataset =='rocstories' or dataset == 'flickr30k' or dataset =='cnn_daily_mail':
+            if dataset =='c4' or dataset =='eli5' or dataset =='multinews' or dataset =='rocstories' or dataset == 'flickr30k':
                 ppl_watermarked_quality_score = ppl_analyzer.analyze(edited_text)
                 ppl_unwatermarked_quality_score = ppl_analyzer.analyze(unwatermark_edited_text)
                 logdiversity_watermarked_quality_score = logdiversity_analyzer.analyze(edited_text)
@@ -779,9 +796,35 @@ class WatermarkDetectionPipeline:
             elif dataset =='wmt16_de_en':
                 BLEU_watermarked_quality_score = BLEU_analyzer.analyze(generated_or_retrieved_text, unwatermark_generated_or_retrieved_text)  # reference
                 BLEU_unwatermarked_quality_score = BLEU_analyzer.analyze(unwatermark_generated_or_retrieved_text, unwatermark_generated_or_retrieved_text)   # reference
-                #GPT_quality_score = GPT_analyzer.analyze(edited_text, unwatermark_edited_text, prompt)
                 BLEU_evaluation_result.append(TextQualityComparisonResult(generated_or_retrieved_text, unwatermark_generated_or_retrieved_text, 
                                                                         BLEU_watermarked_quality_score, BLEU_unwatermarked_quality_score))
+                
+                # ==================== 新增代码开始 ====================
+                # 补充 BERTScore 的计算逻辑，防止列表为空导致除零错误
+                BERTScore_watermarked_quality_score = BERTScore_analyzer.analyze(edited_text, unwatermark_edited_text)
+                BERTScore_unwatermarked_quality_score = 1.0
+                BERTScore_evaluation_result.append(TextQualityComparisonResult(edited_text, unwatermark_edited_text, 
+                                                                                BERTScore_watermarked_quality_score, BERTScore_unwatermarked_quality_score))
+                # ==================== 新增代码结束 ====================
+                
+                #GPT_quality_score = GPT_analyzer.analyze(edited_text, unwatermark_edited_text, prompt)
+                #GPT_evaluation_result.append(TextQualityComparisonResult(edited_text, unwatermark_edited_text, 
+                #                                                        GPT_quality_score, GPT_quality_score))
+            elif dataset =='cnn_daily_mail':
+                ROUGE_watermarked_quality_score = ROUGE_analyzer.analyze(edited_text, unwatermark_edited_text)  # reference
+                ROUGE_unwatermarked_quality_score = 1.0
+                ROUGE_evaluation_result.append(TextQualityComparisonResult(edited_text, unwatermark_edited_text, 
+                                                                        ROUGE_watermarked_quality_score, ROUGE_unwatermarked_quality_score))
+                
+                # ==================== 新增代码开始 ====================
+                # 补充 BERTScore 的计算逻辑，防止列表为空导致除零错误
+                BERTScore_watermarked_quality_score = BERTScore_analyzer.analyze(edited_text, unwatermark_edited_text)
+                BERTScore_unwatermarked_quality_score = 1.0
+                BERTScore_evaluation_result.append(TextQualityComparisonResult(edited_text, unwatermark_edited_text, 
+                                                                                BERTScore_watermarked_quality_score, BERTScore_unwatermarked_quality_score))
+                # ==================== 新增代码结束 ====================
+                
+                #GPT_quality_score = GPT_analyzer.analyze(edited_text, unwatermark_edited_text, prompt)
                 #GPT_evaluation_result.append(TextQualityComparisonResult(edited_text, unwatermark_edited_text, 
                 #                                                        GPT_quality_score, GPT_quality_score))
             else:
@@ -820,7 +863,7 @@ class WatermarkDetectionPipeline:
         
         # 根据return_type选择返回不同的评估结果
         if self.return_type == DetectionPipelineReturnType.FULL:
-            return unwatermark_evaluation_result, evaluation_result, evaluation_result_word_D_7, evaluation_result_word_S_7, evaluation_result_word_S_context, evaluation_result_typo, evaluation_result_doc_P_dipper, ppl_evaluation_result, logdiversity_evaluation_result, BLEU_evaluation_result, BERTScore_evaluation_result, GPT_evaluation_result, Pass_evaluation_result, execution_time_unwatermarked_200_sum, execution_time_watermarked_200_sum, execution_time_unwatermarked_200_avg, execution_time_watermarked_200_avg, execution_time_detect_unwatermarked_sum, execution_time_detect_watermarked_sum, execution_time_detect_unwatermarked_avg, execution_time_detect_watermarked_avg  # 返回完整的评估结果
+            return unwatermark_evaluation_result, evaluation_result, evaluation_result_word_D_3, evaluation_result_word_D_5, evaluation_result_word_D_7, evaluation_result_word_S_7, evaluation_result_word_S_context_3, evaluation_result_typo, evaluation_result_doc_P_dipper, ppl_evaluation_result, logdiversity_evaluation_result, BLEU_evaluation_result, BERTScore_evaluation_result, ROUGE_evaluation_result, GPT_evaluation_result, Pass_evaluation_result, execution_time_unwatermarked_200_sum, execution_time_watermarked_200_sum, execution_time_unwatermarked_200_avg, execution_time_watermarked_200_avg, execution_time_detect_unwatermarked_sum, execution_time_detect_watermarked_sum, execution_time_detect_unwatermarked_avg, execution_time_detect_watermarked_avg  # 返回完整的评估结果
         elif self.return_type == DetectionPipelineReturnType.SCORES:
             return [result.detect_result['score'] for result in evaluation_result]  # 仅返回每个结果的得分
         elif self.return_type == DetectionPipelineReturnType.IS_WATERMARKED:

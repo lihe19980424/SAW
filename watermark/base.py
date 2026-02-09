@@ -71,7 +71,7 @@ class BaseWatermark:
         # Encode prompt
         encoded_prompt = self.config.generation_tokenizer(prompt, return_tensors="pt", add_special_tokens=True).to(self.config.device)
         # Generate unwatermarked text
-        encoded_unwatermarked_text = self.config.generation_model.generate(**encoded_prompt, **self.config.gen_kwargs, temperature=self.config.temperature_inner, pad_token_id=self.config.generation_tokenizer.eos_token_id) # pad_token_id=self.config.generation_tokenizer.eos_token_id  
+        encoded_unwatermarked_text = self.config.generation_model.generate(**encoded_prompt, **self.config.gen_kwargs, pad_token_id=self.config.generation_tokenizer.eos_token_id) # pad_token_id=self.config.generation_tokenizer.eos_token_id  
         # Decode
         unwatermarked_text = self.config.generation_tokenizer.batch_decode(encoded_unwatermarked_text, skip_special_tokens=True)[0]
         return unwatermarked_text
