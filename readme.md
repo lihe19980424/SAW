@@ -79,7 +79,11 @@ python3 pipeline_saw.py \
     --model opt-1.3b \
     --max_new_tokens 200 \
     --min_length 200 \
-    --data_lines 100
+    --data_lines 100 \
+    --noise gaussian \
+    --std 0.05 \
+    --mean 1.02 \
+    --topk 100
 
 ```
 
