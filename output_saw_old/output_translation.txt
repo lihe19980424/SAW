@@ -1,0 +1,60 @@
+
+parameter of config as follows:
+algorithm: Rethinking_uni dataset: wmt16_de_en model: nllb-200-distilled-600M temperature_inner: 0.9 max_new_tokens: 100 min_length: 100 data_lines: 200
+parameter of algorithm as follows:
+{'algorithm_name': 'Rethinking', 'beta': 0.9, 'std': 0.06, 'temperature_inner': 0.9, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+BLEU:
+{'watermarked': 28.34861111798156, 'unwatermarked': 31.80782650863643}
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.625, 'TNR': 0.755, 'FPR': 0.245, 'FNR': 0.375, 'P': 0.5605381165919282, 'R': 0.625, 'F1': 0.5910165484633569, 'ACC': 0.7116666666666667}
+z-score of attack_Word-D_3:1.0103784203529358
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.7, 'TNR': 0.53, 'FPR': 0.47, 'FNR': 0.3, 'P': 0.4268292682926829, 'R': 0.7, 'F1': 0.5303030303030303, 'ACC': 0.5866666666666667}
+z-score of attack_Word-S_3:1.0057905316352844
+detection accuracy of attack_doc_P_dipper:
+{'TPR': 1.0, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.0, 'P': 0.3333333333333333, 'R': 1.0, 'F1': 0.5, 'ACC': 0.3333333333333333}
+z-score of attack_doc_P_dipper:0.0
+detection accuracy of fpr=best :
+{'TPR': 0.84, 'TNR': 0.445, 'FPR': 0.555, 'FNR': 0.16, 'P': 0.6021505376344086, 'R': 0.84, 'F1': 0.7014613778705637, 'ACC': 0.6425}
+z-score of fpr=best :1.0028396248817444
+detection accuracy of fpr=1% :
+{'TPR': 0.085, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.915, 'P': 0.8947368421052632, 'R': 0.085, 'F1': 0.1552511415525114, 'ACC': 0.5375}
+z-score of fpr=1% :1.0341519713401794
+detection accuracy of fpr=10% :
+{'TPR': 0.43, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.57, 'P': 0.8113207547169812, 'R': 0.43, 'F1': 0.5620915032679739, 'ACC': 0.665}
+z-score of fpr=10% :1.016049087047577
+execution_time_unwatermarked_sum:45.62449765205383
+execution_time_unwatermarked_avg:0.22812248826026915
+execution_time_watermarked_sum:48.73191714286804
+execution_time_watermarked_avg:0.2436595857143402
+=========================
+
+parameter of config as follows:
+algorithm: Rethinking_gaosi dataset: wmt16_de_en model: nllb-200-distilled-600M temperature_inner: 0.9 max_new_tokens: 100 min_length: 100 data_lines: 200
+parameter of algorithm as follows:
+{'algorithm_name': 'Rethinking', 'beta': 0.9, 'std': 0.055, 'temperature_inner': 0.9, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+BLEU:
+{'watermarked': 28.872744108540388, 'unwatermarked': 31.80782650863643}
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.575, 'TNR': 0.815, 'FPR': 0.185, 'FNR': 0.425, 'P': 0.6084656084656085, 'R': 0.575, 'F1': 0.5912596401028277, 'ACC': 0.735}
+z-score of attack_Word-D_3:1.0081214308738708
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.87, 'TNR': 0.365, 'FPR': 0.635, 'FNR': 0.13, 'P': 0.40654205607476634, 'R': 0.87, 'F1': 0.554140127388535, 'ACC': 0.5333333333333333}
+z-score of attack_Word-S_3:0.9947965741157532
+detection accuracy of attack_doc_P_dipper:
+{'TPR': 1.0, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.0, 'P': 0.3333333333333333, 'R': 1.0, 'F1': 0.5, 'ACC': 0.3333333333333333}
+z-score of attack_doc_P_dipper:0.0
+detection accuracy of fpr=best :
+{'TPR': 0.885, 'TNR': 0.34, 'FPR': 0.66, 'FNR': 0.115, 'P': 0.5728155339805825, 'R': 0.885, 'F1': 0.6954813359528488, 'ACC': 0.6125}
+z-score of fpr=best :0.993867039680481
+detection accuracy of fpr=1% :
+{'TPR': 0.065, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.935, 'P': 0.8666666666666667, 'R': 0.065, 'F1': 0.12093023255813953, 'ACC': 0.5275}
+z-score of fpr=1% :1.0307693481445312
+detection accuracy of fpr=10% :
+{'TPR': 0.345, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.655, 'P': 0.7752808988764045, 'R': 0.345, 'F1': 0.47750865051903113, 'ACC': 0.6225}
+z-score of fpr=10% :1.0138001441955566
+execution_time_unwatermarked_sum:46.11356973648071
+execution_time_unwatermarked_avg:0.23056784868240357
+execution_time_watermarked_sum:51.18641948699951
+execution_time_watermarked_avg:0.25593209743499756
+=========================

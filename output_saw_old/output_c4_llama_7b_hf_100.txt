@@ -1,0 +1,650 @@
+
+parameter as follows:
+algorithm: KGW dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'KGW', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0, 'f_scheme': 'time', 'window_scheme': 'left', 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：715.0055022239685
+平均生成每一条无水印文本需要的时间/秒：7.150055022239685
+生成100条有水印文本需要的总时间/秒：726.2684576511383
+平均生成每一条有水印文本需要的时间/秒：7.262684576511383
+文本质量PPL指标如下:
+{'watermarked': 9.834955043792725, 'unwatermarked': 7.435344061851501}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.838358812916773, 'unwatermarked': 7.920900306121065}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:3.798653163476037
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:2.4869390284456085
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:0.7853113669340959
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-D_1攻击的最佳z-score阈值是:2.4421226500580357
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-D_3攻击的最佳z-score阈值是:2.319431439832963
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.02, 'P': 0.98, 'R': 0.98, 'F1': 0.98, 'ACC': 0.98}
+attack_Word-D_5攻击的最佳z-score阈值是:1.5469338924779819
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.95, 'TNR': 0.82, 'FPR': 0.18, 'FNR': 0.05, 'P': 0.8407079646017699, 'R': 0.95, 'F1': 0.892018779342723, 'ACC': 0.885}
+attack_Word-D_7攻击的最佳z-score阈值是:0.3594202323888689
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-S_1攻击的最佳z-score阈值是:2.253654291037687
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-S_3攻击的最佳z-score阈值是:2.065817350082492
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.01, 'P': 0.9801980198019802, 'R': 0.99, 'F1': 0.9850746268656716, 'ACC': 0.985}
+attack_Word-S_5攻击的最佳z-score阈值是:1.496346745215202
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.06, 'P': 0.94, 'R': 0.94, 'F1': 0.94, 'ACC': 0.94}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0646164579400756
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.85, 'TNR': 0.93, 'FPR': 0.07, 'FNR': 0.15, 'P': 0.9239130434782609, 'R': 0.85, 'F1': 0.8854166666666666, 'ACC': 0.89}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.009397896229809
+==========分割线==========
+
+parameter as follows:
+algorithm: SWEET dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'SWEET', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'z_threshold': 4.0, 'prefix_length': 1, 'entropy_threshold': 0.9, 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：721.7759280204773
+平均生成每一条无水印文本需要的时间/秒：7.217759280204773
+生成100条有水印文本需要的总时间/秒：738.0574321746826
+平均生成每一条有水印文本需要的时间/秒：7.380574321746826
+文本质量PPL指标如下:
+{'watermarked': 9.922540655136109, 'unwatermarked': 7.650185067653656}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.140625326558732, 'unwatermarked': 8.19619089785799}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:3.8865456950887536
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:1.8343340795902732
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:0.8772830032367984
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:2.7172191329016884
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-D_3攻击的最佳z-score阈值是:1.6154525840769303
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+attack_Word-D_5攻击的最佳z-score阈值是:1.4442508690496407
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.85, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.15, 'P': 0.9340659340659341, 'R': 0.85, 'F1': 0.8900523560209425, 'ACC': 0.895}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0158076952155597
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:3.238039705135355
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-S_3攻击的最佳z-score阈值是:1.6997616242030884
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+attack_Word-S_5攻击的最佳z-score阈值是:1.3890844045410318
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 0.95, 'FPR': 0.05, 'FNR': 0.02, 'P': 0.9514563106796117, 'R': 0.98, 'F1': 0.9655172413793104, 'ACC': 0.965}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0784083972618768
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'TNR': 0.89, 'FPR': 0.11, 'FNR': 0.1, 'P': 0.8910891089108911, 'R': 0.9, 'F1': 0.8955223880597015, 'ACC': 0.895}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.7301961930500953
+==========分割线==========
+
+parameter as follows:
+algorithm: EWD dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'EWD', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0, 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：720.8789942264557
+平均生成每一条无水印文本需要的时间/秒：7.2087899422645565
+生成100条有水印文本需要的总时间/秒：734.1552345752716
+平均生成每一条有水印文本需要的时间/秒：7.341552345752716
+文本质量PPL指标如下:
+{'watermarked': 10.116768078804016, 'unwatermarked': 7.654335589408874}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.271638840043181, 'unwatermarked': 8.127568215077284}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:4.5212225914001465
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:2.0341288447380066
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:0.7728961706161499
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:4.240338563919067
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:2.6104432344436646
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+attack_Word-D_5攻击的最佳z-score阈值是:1.7826198935508728
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.1, 'P': 0.9574468085106383, 'R': 0.9, 'F1': 0.9278350515463918, 'ACC': 0.93}
+attack_Word-D_7攻击的最佳z-score阈值是:0.9837863445281982
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:3.629484176635742
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-S_3攻击的最佳z-score阈值是:2.5711991786956787
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.02, 'P': 0.98, 'R': 0.98, 'F1': 0.98, 'ACC': 0.98}
+attack_Word-S_5攻击的最佳z-score阈值是:1.4546685218811035
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.95, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.05, 'P': 0.9595959595959596, 'R': 0.95, 'F1': 0.9547738693467337, 'ACC': 0.955}
+attack_Word-S_7攻击的最佳z-score阈值是:0.9934296905994415
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.06, 'P': 0.8245614035087719, 'R': 0.94, 'F1': 0.8785046728971962, 'ACC': 0.87}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.28432223200798035
+==========分割线==========
+
+parameter as follows:
+algorithm: Unigram dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'Unigram', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'z_threshold': 4.0, 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：721.8524768352509
+平均生成每一条无水印文本需要的时间/秒：7.218524768352508
+生成100条有水印文本需要的总时间/秒：729.100338935852
+平均生成每一条有水印文本需要的时间/秒：7.29100338935852
+文本质量PPL指标如下:
+{'watermarked': 10.34370967388153, 'unwatermarked': 7.535552914142609}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.120255721023645, 'unwatermarked': 8.04819431214533}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.8297740686017012
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0208510717567822
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:-0.46978455478777703
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:1.7018847342288224
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-D_3攻击的最佳z-score阈值是:1.017062171574373
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_5攻击的最佳z-score阈值是:1.712600193672372
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-D_7攻击的最佳z-score阈值是:0.9659258262890684
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:1.6533109783467776
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-S_3攻击的最佳z-score阈值是:1.3807653710964956
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.01, 'P': 1.0, 'R': 0.99, 'F1': 0.9949748743718593, 'ACC': 0.995}
+attack_Word-S_5攻击的最佳z-score阈值是:1.4010970668688514
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.02, 'P': 1.0, 'R': 0.98, 'F1': 0.98989898989899, 'ACC': 0.99}
+attack_Word-S_7攻击的最佳z-score阈值是:1.372607491767338
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.95, 'TNR': 0.92, 'FPR': 0.08, 'FNR': 0.05, 'P': 0.9223300970873787, 'R': 0.95, 'F1': 0.9359605911330049, 'ACC': 0.935}
+attack_doc_P_dipper攻击的最佳z-score阈值是:-0.43160332088363956
+==========分割线==========
+
+parameter as follows:
+algorithm: DIP dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'DIP', 'gamma': 0.5, 'alpha': 0.45, 'key': 42, 'prefix_length': 5, 'z_threshold': 1.513, 'ignore_history_generation': 0, 'ignore_history_detection': 0, 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：715.6440725326538
+平均生成每一条无水印文本需要的时间/秒：7.156440725326538
+生成100条有水印文本需要的总时间/秒：736.5372214317322
+平均生成每一条有水印文本需要的时间/秒：7.365372214317322
+文本质量PPL指标如下:
+{'watermarked': 8.551152582168578, 'unwatermarked': 7.7747217607498165}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.314350262450674, 'unwatermarked': 7.899380617545489}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.4330589175224304
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:0.9533492624759674
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:0.6044739782810211
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+attack_Word-D_1攻击的最佳z-score阈值是:0.9002696573734283
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.73, 'TNR': 0.79, 'FPR': 0.21, 'FNR': 0.27, 'P': 0.776595744680851, 'R': 0.73, 'F1': 0.7525773195876289, 'ACC': 0.76}
+attack_Word-D_3攻击的最佳z-score阈值是:0.3025151789188385
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.84, 'TNR': 0.38, 'FPR': 0.62, 'FNR': 0.16, 'P': 0.5753424657534246, 'R': 0.84, 'F1': 0.6829268292682927, 'ACC': 0.61}
+attack_Word-D_5攻击的最佳z-score阈值是:-0.20226161926984787
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.01, 'FPR': 0.99, 'FNR': 0.0, 'P': 0.5025125628140703, 'R': 1.0, 'F1': 0.6688963210702341, 'ACC': 0.505}
+attack_Word-D_7攻击的最佳z-score阈值是:-1.3410959839820862
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-S_1攻击的最佳z-score阈值是:0.9414387047290802
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.93, 'TNR': 0.79, 'FPR': 0.21, 'FNR': 0.07, 'P': 0.8157894736842105, 'R': 0.93, 'F1': 0.8691588785046729, 'ACC': 0.86}
+attack_Word-S_3攻击的最佳z-score阈值是:0.2990467995405197
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.84, 'TNR': 0.46, 'FPR': 0.54, 'FNR': 0.16, 'P': 0.6086956521739131, 'R': 0.84, 'F1': 0.7058823529411765, 'ACC': 0.65}
+attack_Word-S_5攻击的最佳z-score阈值是:-0.08512193337082863
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.93, 'TNR': 0.28, 'FPR': 0.72, 'FNR': 0.07, 'P': 0.5636363636363636, 'R': 0.93, 'F1': 0.7018867924528301, 'ACC': 0.605}
+attack_Word-S_7攻击的最佳z-score阈值是:-0.31955938041210175
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.91, 'TNR': 0.21, 'FPR': 0.79, 'FNR': 0.09, 'P': 0.5352941176470588, 'R': 0.91, 'F1': 0.674074074074074, 'ACC': 0.56}
+attack_doc_P_dipper攻击的最佳z-score阈值是:-0.45779135823249817
+==========分割线==========
+
+parameter as follows:
+algorithm: EXP dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'EXP', 'prefix_length': 4, 'hash_key': 15485863, 'threshold': 0.0001, 'sequence_length': 200, 'top_k': 0, 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：713.5662310123444
+平均生成每一条无水印文本需要的时间/秒：7.135662310123443
+生成100条有水印文本需要的总时间/秒：462.70369362831116
+平均生成每一条有水印文本需要的时间/秒：4.627036936283112
+文本质量PPL指标如下:
+{'watermarked': 13.488222594261169, 'unwatermarked': 7.499576992988587}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.737624085778517, 'unwatermarked': 8.077797978587377}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:0.0034455030498254722
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:0.016745908659113802
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:0.1480744248669445
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:0.0034455220092784234
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.02, 'P': 0.98989898989899, 'R': 0.98, 'F1': 0.9849246231155779, 'ACC': 0.985}
+attack_Word-D_3攻击的最佳z-score阈值是:0.02582073915261318
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'TNR': 0.84, 'FPR': 0.16, 'FNR': 0.06, 'P': 0.8545454545454545, 'R': 0.94, 'F1': 0.8952380952380953, 'ACC': 0.89}
+attack_Word-D_5攻击的最佳z-score阈值是:0.2719708999487055
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.87, 'TNR': 0.46, 'FPR': 0.54, 'FNR': 0.13, 'P': 0.6170212765957447, 'R': 0.87, 'F1': 0.7219917012448133, 'ACC': 0.665}
+attack_Word-D_7攻击的最佳z-score阈值是:0.62291384492882
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:0.003445503051355656
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-S_3攻击的最佳z-score阈值是:0.019287515407421553
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'TNR': 0.97, 'FPR': 0.03, 'FNR': 0.08, 'P': 0.968421052631579, 'R': 0.92, 'F1': 0.9435897435897436, 'ACC': 0.945}
+attack_Word-S_5攻击的最佳z-score阈值是:0.0958456700590044
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'TNR': 0.87, 'FPR': 0.13, 'FNR': 0.06, 'P': 0.8785046728971962, 'R': 0.94, 'F1': 0.9082125603864735, 'ACC': 0.905}
+attack_Word-S_7攻击的最佳z-score阈值是:0.21819173290256028
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.79, 'TNR': 0.87, 'FPR': 0.13, 'FNR': 0.21, 'P': 0.8586956521739131, 'R': 0.79, 'F1': 0.8229166666666666, 'ACC': 0.83}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.22252944172927822
+==========分割线==========
+
+parameter of config as follows:
+algorithm: SynthID dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 300 data_lines: 100
+parameter of algorithm as follows:
+{'algorithm_name': 'SynthID', 'ngram_len': 5, 'keys': [654, 400, 836, 123, 340, 443, 597, 160, 57, 29, 590, 639, 13, 715, 468, 990, 966, 226, 324, 585, 118, 504, 421, 521, 129, 669, 732, 225, 90, 960], 'sampling_table_size': 65536, 'sampling_table_seed': 0, 'watermark_mode': 'non-distortionary', 'num_leaves': 2, 'context_history_size': 1024, 'detector_type': 'mean', 'threshold': 0.52, 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 12.52477451324463, 'unwatermarked': 7.709095721244812}
+Log_Diversity:
+{'watermarked': 9.243869595007432, 'unwatermarked': 8.154863624122422}
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:0.5256299609012332
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.99, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.01, 'P': 1.0, 'R': 0.99, 'F1': 0.9949748743718593, 'ACC': 0.995}
+z-score of attack_Word-D_3:0.5156682750774784
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.87, 'TNR': 0.88, 'FPR': 0.12, 'FNR': 0.13, 'P': 0.8787878787878788, 'R': 0.87, 'F1': 0.8743718592964824, 'ACC': 0.875}
+z-score of attack_Word-D_5:0.5060205640102547
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.75, 'TNR': 0.62, 'FPR': 0.38, 'FNR': 0.25, 'P': 0.6637168141592921, 'R': 0.75, 'F1': 0.704225352112676, 'ACC': 0.685}
+z-score of attack_Word-D_7:0.5012729334157906
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:0.5264676139701235
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.0, 'P': 0.9615384615384616, 'R': 1.0, 'F1': 0.9803921568627451, 'ACC': 0.98}
+z-score of attack_Word-S_3:0.5092726139601139
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.93, 'TNR': 0.91, 'FPR': 0.09, 'FNR': 0.07, 'P': 0.9117647058823529, 'R': 0.93, 'F1': 0.9207920792079208, 'ACC': 0.92}
+z-score of attack_Word-S_5:0.5073218448218448
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.86, 'TNR': 0.86, 'FPR': 0.14, 'FNR': 0.14, 'P': 0.86, 'R': 0.86, 'F1': 0.86, 'ACC': 0.86}
+z-score of attack_Word-S_7:0.5050280347084
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.84, 'TNR': 0.69, 'FPR': 0.31, 'FNR': 0.16, 'P': 0.7304347826086957, 'R': 0.84, 'F1': 0.7813953488372093, 'ACC': 0.765}
+z-score of attack_doc_P_dipper0.5024886260704875
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :0.5340307487702094
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+z-score of fpr=1% :0.5151770846865147
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :0.507051282051282
+execution_time_unwatermarked_sum:763.9806215763092
+execution_time_unwatermarked_avg:7.639806215763092
+execution_time_watermarked_sum:833.551216840744
+execution_time_watermarked_avg:8.33551216840744
+=========================
+
+parameter as follows:
+algorithm: SIR dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'SIR', 'delta': 1.0, 'chunk_length': 10, 'scale_dimension': 300, 'z_threshold': 0.2, 'transform_model_input_dim': 1024, 'transform_model_name': 'watermark/sir/model/transform_model_cbert.pth', 'embedding_model_path': './models/compositional-bert-large-uncased/', 'mapping_name': 'watermark/sir/mapping/300_mapping_32000.json', 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：717.4106760025024
+平均生成每一条无水印文本需要的时间/秒：7.174106760025024
+生成100条有水印文本需要的总时间/秒：1379.7782266139984
+平均生成每一条有水印文本需要的时间/秒：13.797782266139984
+文本质量PPL指标如下:
+{'watermarked': 9.72463505268097, 'unwatermarked': 7.751211104393005}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.637815614284599, 'unwatermarked': 8.30089516262872}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.99, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.01, 'P': 1.0, 'R': 0.99, 'F1': 0.9949748743718593, 'ACC': 0.995}
+无攻击(fpr=best)的最佳z-score阈值是:0.14696728300776057
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+无攻击(fpr=1%)的最佳z-score阈值是:0.11462852129752192
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.99, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.01, 'P': 0.908256880733945, 'R': 0.99, 'F1': 0.9473684210526315, 'ACC': 0.945}
+无攻击(fpr=10%)的最佳z-score阈值是:0.06371922256915896
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.95, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.05, 'P': 1.0, 'R': 0.95, 'F1': 0.9743589743589743, 'ACC': 0.975}
+attack_Word-D_1攻击的最佳z-score阈值是:0.12220648524420664
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.91, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.09, 'P': 0.9891304347826086, 'R': 0.91, 'F1': 0.9479166666666666, 'ACC': 0.95}
+attack_Word-D_3攻击的最佳z-score阈值是:0.11334479436783373
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.71, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.29, 'P': 1.0, 'R': 0.71, 'F1': 0.8304093567251462, 'ACC': 0.855}
+attack_Word-D_5攻击的最佳z-score阈值是:0.12084413055334575
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.6, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.4, 'P': 0.8571428571428571, 'R': 0.6, 'F1': 0.7058823529411765, 'ACC': 0.75}
+attack_Word-D_7攻击的最佳z-score阈值是:0.059699824154689135
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.02, 'P': 1.0, 'R': 0.98, 'F1': 0.98989898989899, 'ACC': 0.99}
+attack_Word-S_1攻击的最佳z-score阈值是:0.12300667531943042
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.06, 'P': 0.9038461538461539, 'R': 0.94, 'F1': 0.9215686274509803, 'ACC': 0.92}
+attack_Word-S_3攻击的最佳z-score阈值是:0.060696576488205145
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.82, 'TNR': 0.85, 'FPR': 0.15, 'FNR': 0.18, 'P': 0.845360824742268, 'R': 0.82, 'F1': 0.8324873096446701, 'ACC': 0.835}
+attack_Word-S_5攻击的最佳z-score阈值是:0.04674170691172276
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.79, 'TNR': 0.65, 'FPR': 0.35, 'FNR': 0.21, 'P': 0.6929824561403509, 'R': 0.79, 'F1': 0.7383177570093458, 'ACC': 0.72}
+attack_Word-S_7攻击的最佳z-score阈值是:0.004588719789517783
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.87, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.13, 'P': 0.8969072164948454, 'R': 0.87, 'F1': 0.883248730964467, 'ACC': 0.885}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.061550548370901334
+==========分割线==========
+
+parameter as follows:
+algorithm: Unbiased dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'Unbiased', 'gamma': 0.5, 'key': 42, 'prefix_length': 5, 'z_threshold': 1.513, 'ignore_history': 1, 'temperature_inner': 1.0}
+生成100条无水印文本需要的总时间/秒：711.9158523082733
+平均生成每一条无水印文本需要的时间/秒：7.119158523082733
+生成100条有水印文本需要的总时间/秒：732.6225140094757
+平均生成每一条有水印文本需要的时间/秒：7.326225140094757
+文本质量PPL指标如下:
+{'watermarked': 8.531268453598022, 'unwatermarked': 7.961415464878082}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.312857401232126, 'unwatermarked': 8.207100259020363}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=best)的最佳z-score阈值是:0.9182934463024139
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:0.9182934463024139
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:0.4965839982032776
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.02, 'P': 0.98, 'R': 0.98, 'F1': 0.98, 'ACC': 0.98}
+attack_Word-D_1攻击的最佳z-score阈值是:0.8606080412864685
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.87, 'TNR': 0.88, 'FPR': 0.12, 'FNR': 0.13, 'P': 0.8787878787878788, 'R': 0.87, 'F1': 0.8743718592964824, 'ACC': 0.875}
+attack_Word-D_3攻击的最佳z-score阈值是:0.4150470197200775
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.04, 'P': 0.5161290322580645, 'R': 0.96, 'F1': 0.6713286713286714, 'ACC': 0.53}
+attack_Word-D_5攻击的最佳z-score阈值是:-0.5187113285064697
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.03, 'FPR': 0.97, 'FNR': 0.01, 'P': 0.5051020408163265, 'R': 0.99, 'F1': 0.668918918918919, 'ACC': 0.51}
+attack_Word-D_7攻击的最佳z-score阈值是:-1.03289395570755
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.01, 'P': 0.9801980198019802, 'R': 0.99, 'F1': 0.9850746268656716, 'ACC': 0.985}
+attack_Word-S_1攻击的最佳z-score阈值是:0.8575221300125122
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.89, 'TNR': 0.92, 'FPR': 0.08, 'FNR': 0.11, 'P': 0.9175257731958762, 'R': 0.89, 'F1': 0.9035532994923858, 'ACC': 0.905}
+attack_Word-S_3攻击的最佳z-score阈值是:0.5133423507213593
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.1, 'P': 0.6428571428571429, 'R': 0.9, 'F1': 0.75, 'ACC': 0.7}
+attack_Word-S_5攻击的最佳z-score阈值是:-0.0560201033949852
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.89, 'TNR': 0.28, 'FPR': 0.72, 'FNR': 0.11, 'P': 0.5527950310559007, 'R': 0.89, 'F1': 0.6819923371647509, 'ACC': 0.585}
+attack_Word-S_7攻击的最佳z-score阈值是:-0.317685067653656
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'TNR': 0.28, 'FPR': 0.72, 'FNR': 0.12, 'P': 0.55, 'R': 0.88, 'F1': 0.676923076923077, 'ACC': 0.58}
+attack_doc_P_dipper攻击的最佳z-score阈值是:-0.3089747577905655
+==========分割线==========
+
+parameter as follows:
+algorithm: Rethinking_uni dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.055, 'temperature_inner': 1.0, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成100条无水印文本需要的总时间/秒：710.7160665988922
+平均生成每一条无水印文本需要的时间/秒：7.107160665988922
+生成100条有水印文本需要的总时间/秒：721.1259851455688
+平均生成每一条有水印文本需要的时间/秒：7.211259851455688
+文本质量PPL指标如下:
+{'watermarked': 9.098488326072692, 'unwatermarked': 7.704138691425324}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.890589990236193, 'unwatermarked': 8.046608929441216}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0159177780151367
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:1.013767421245575
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0091679692268372
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0137403011322021
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0158344507217407
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.01, 'P': 1.0, 'R': 0.99, 'F1': 0.9949748743718593, 'ACC': 0.995}
+attack_Word-D_5攻击的最佳z-score阈值是:1.015571117401123
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.01, 'P': 1.0, 'R': 0.99, 'F1': 0.9949748743718593, 'ACC': 0.995}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0155301094055176
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-S_1攻击的最佳z-score阈值是:1.01357764005661
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0125399231910706
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.01, 'P': 0.9611650485436893, 'R': 0.99, 'F1': 0.9753694581280788, 'ACC': 0.975}
+attack_Word-S_5攻击的最佳z-score阈值是:1.010050117969513
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.95, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.05, 'P': 0.9595959595959596, 'R': 0.95, 'F1': 0.9547738693467337, 'ACC': 0.955}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0100045800209045
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 0.77, 'FPR': 0.23, 'FNR': 0.02, 'P': 0.8099173553719008, 'R': 0.98, 'F1': 0.8868778280542986, 'ACC': 0.875}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0055749416351318
+==========分割线==========
+
+parameter as follows:
+algorithm: Rethinking_gaosi dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.055, 'temperature_inner': 1.0, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成100条无水印文本需要的总时间/秒：714.7072970867157
+平均生成每一条无水印文本需要的时间/秒：7.147072970867157
+生成100条有水印文本需要的总时间/秒：723.7689692974091
+平均生成每一条有水印文本需要的时间/秒：7.23768969297409
+文本质量PPL指标如下:
+{'watermarked': 8.926096477508544, 'unwatermarked': 7.706382570266723}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.482955298899211, 'unwatermarked': 8.083141142215803}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0159855484962463
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0128734707832336
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0089063048362732
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:1.014680564403534
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0157185196876526
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0154172778129578
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-D_7攻击的最佳z-score阈值是:1.013550043106079
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0152025818824768
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0113723278045654
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.97, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.03, 'P': 0.9797979797979798, 'R': 0.97, 'F1': 0.9748743718592965, 'ACC': 0.975}
+attack_Word-S_5攻击的最佳z-score阈值是:1.011495292186737
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.02, 'P': 0.9074074074074074, 'R': 0.98, 'F1': 0.9423076923076923, 'ACC': 0.94}
+attack_Word-S_7攻击的最佳z-score阈值是:1.008759617805481
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.008872151374817
+==========分割线==========
+
+parameter of config as follows:
+algorithm: Rethinking_uni dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+parameter of algorithm as follows:
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.04, 'temperature_inner': 1.0, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+PPL:
+{'watermarked': 8.356651706695557, 'unwatermarked': 7.759549586772919}
+Log_Diversity:
+{'watermarked': 7.955632747770694, 'unwatermarked': 8.053225741583214}
+detection success rate of attack_Word-D_1:
+{'TPR': 0.98, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.02, 'P': 0.98, 'R': 0.98, 'F1': 0.98, 'ACC': 0.98}
+z-score of attack_Word-D_1:1.0093326568603516
+detection success rate of attack_Word-D_3:
+{'TPR': 0.98, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.02, 'P': 0.98989898989899, 'R': 0.98, 'F1': 0.9849246231155779, 'ACC': 0.985}
+z-score of attack_Word-D_3:1.0099951028823853
+detection success rate of attack_Word-D_5:
+{'TPR': 0.99, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.01, 'P': 0.9611650485436893, 'R': 0.99, 'F1': 0.9753694581280788, 'ACC': 0.975}
+z-score of attack_Word-D_5:1.008003056049347
+detection success rate of attack_Word-D_7:
+{'TPR': 0.97, 'TNR': 0.95, 'FPR': 0.05, 'FNR': 0.03, 'P': 0.9509803921568627, 'R': 0.97, 'F1': 0.9603960396039604, 'ACC': 0.96}
+z-score of attack_Word-D_7:1.007409930229187
+detection success rate of attack_Word-S_1:
+{'TPR': 0.99, 'TNR': 0.95, 'FPR': 0.05, 'FNR': 0.01, 'P': 0.9519230769230769, 'R': 0.99, 'F1': 0.9705882352941176, 'ACC': 0.97}
+z-score of attack_Word-S_1:1.0073989033699036
+detection success rate of attack_Word-S_3:
+{'TPR': 0.99, 'TNR': 0.89, 'FPR': 0.11, 'FNR': 0.01, 'P': 0.9, 'R': 0.99, 'F1': 0.9428571428571428, 'ACC': 0.94}
+z-score of attack_Word-S_3:1.00590980052948
+detection success rate of attack_Word-S_5:
+{'TPR': 0.93, 'TNR': 0.89, 'FPR': 0.11, 'FNR': 0.07, 'P': 0.8942307692307693, 'R': 0.93, 'F1': 0.9117647058823529, 'ACC': 0.91}
+z-score of attack_Word-S_5:1.005762755870819
+detection success rate of attack_Word-S_7:
+{'TPR': 0.88, 'TNR': 0.88, 'FPR': 0.12, 'FNR': 0.12, 'P': 0.88, 'R': 0.88, 'F1': 0.88, 'ACC': 0.88}
+z-score of attack_Word-S_7:1.0055391788482666
+detection success rate of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 0.74, 'FPR': 0.26, 'FNR': 0.1, 'P': 0.7758620689655172, 'R': 0.9, 'F1': 0.8333333333333334, 'ACC': 0.82}
+z-score of attack_doc_P_dipper1.0040255188941956
+detection success rate of fpr=best :
+{'TPR': 0.99, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.01, 'P': 0.9801980198019802, 'R': 0.99, 'F1': 0.9850746268656716, 'ACC': 0.985}
+z-score of fpr=best :1.0092406868934631
+detection success rate of fpr=1% :
+{'TPR': 0.98, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.02, 'P': 0.98989898989899, 'R': 0.98, 'F1': 0.9849246231155779, 'ACC': 0.985}
+z-score of fpr=1% :1.0097360610961914
+detection success rate of fpr=10% :
+{'TPR': 0.99, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.01, 'P': 0.908256880733945, 'R': 0.99, 'F1': 0.9473684210526315, 'ACC': 0.945}
+z-score of fpr=10% :1.0063308477401733
+execution_time_unwatermarked_sum:746.398001909256
+execution_time_unwatermarked_avg:7.46398001909256
+execution_time_watermarked_sum:756.2524600028992
+execution_time_watermarked_avg:7.562524600028992
+=========================
+
+parameter of config as follows:
+algorithm: Rethinking_gaosi dataset: c4 model: llama-7b-hf temperature_inner: 1.0 max_new_tokens: 300 min_length: 330 data_lines: 100
+parameter of algorithm as follows:
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.04, 'temperature_inner': 1.0, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+PPL:
+{'watermarked': 8.243067026138306, 'unwatermarked': 7.556610932350159}
+Log_Diversity:
+{'watermarked': 7.739099480622407, 'unwatermarked': 8.00492569527102}
+detection success rate of attack_Word-D_1:
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+z-score of attack_Word-D_1:1.0105918645858765
+detection success rate of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.0, 'P': 0.9615384615384616, 'R': 1.0, 'F1': 0.9803921568627451, 'ACC': 0.98}
+z-score of attack_Word-D_3:1.0086912512779236
+detection success rate of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.0, 'P': 0.9615384615384616, 'R': 1.0, 'F1': 0.9803921568627451, 'ACC': 0.98}
+z-score of attack_Word-D_5:1.008615255355835
+detection success rate of attack_Word-D_7:
+{'TPR': 0.93, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.07, 'P': 0.9587628865979382, 'R': 0.93, 'F1': 0.9441624365482234, 'ACC': 0.945}
+z-score of attack_Word-D_7:1.0088542699813843
+detection success rate of attack_Word-S_1:
+{'TPR': 0.99, 'TNR': 0.97, 'FPR': 0.03, 'FNR': 0.01, 'P': 0.9705882352941176, 'R': 0.99, 'F1': 0.9801980198019802, 'ACC': 0.98}
+z-score of attack_Word-S_1:1.0095882415771484
+detection success rate of attack_Word-S_3:
+{'TPR': 0.98, 'TNR': 0.92, 'FPR': 0.08, 'FNR': 0.02, 'P': 0.9245283018867925, 'R': 0.98, 'F1': 0.9514563106796117, 'ACC': 0.95}
+z-score of attack_Word-S_3:1.0071529746055603
+detection success rate of attack_Word-S_5:
+{'TPR': 0.9, 'TNR': 0.89, 'FPR': 0.11, 'FNR': 0.1, 'P': 0.8910891089108911, 'R': 0.9, 'F1': 0.8955223880597015, 'ACC': 0.895}
+z-score of attack_Word-S_5:1.0067545175552368
+detection success rate of attack_Word-S_7:
+{'TPR': 0.98, 'TNR': 0.81, 'FPR': 0.19, 'FNR': 0.02, 'P': 0.8376068376068376, 'R': 0.98, 'F1': 0.9032258064516129, 'ACC': 0.895}
+z-score of attack_Word-S_7:1.0057228207588196
+detection success rate of attack_doc_P_dipper
+{'TPR': 0.93, 'TNR': 0.67, 'FPR': 0.33, 'FNR': 0.07, 'P': 0.7380952380952381, 'R': 0.93, 'F1': 0.8230088495575221, 'ACC': 0.8}
+z-score of attack_doc_P_dipper1.0038796663284302
+detection success rate of fpr=best :
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+z-score of fpr=best :1.0105347633361816
+detection success rate of fpr=1% :
+{'TPR': 0.99, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.01, 'P': 0.99, 'R': 0.99, 'F1': 0.99, 'ACC': 0.99}
+z-score of fpr=1% :1.0105347633361816
+detection success rate of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.006955623626709
+execution_time_unwatermarked_sum:750.3990964889526
+execution_time_unwatermarked_avg:7.503990964889526
+execution_time_watermarked_sum:758.6605048179626
+execution_time_watermarked_avg:7.586605048179626
+=========================

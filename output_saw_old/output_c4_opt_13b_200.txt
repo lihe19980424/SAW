@@ -1,0 +1,450 @@
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'KGW', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0, 'f_scheme': 'time', 'window_scheme': 'left'}
+生成200条无水印文本需要的总时间/秒：537.6752858161926
+平均生成每一条无水印文本需要的时间/秒：2.688376429080963
+生成200条有水印文本需要的总时间/秒：561.8417680263519
+平均生成每一条有水印文本需要的时间/秒：2.8092088401317596
+文本质量PPL指标如下:
+{'watermarked': 12.869205842018127, 'unwatermarked': 10.198237440586091}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.487072227933618, 'unwatermarked': 7.557708670947036}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:4.315486254592083
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.697104098416426
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:2.3802978572906666
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:3.9700937840059156
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:2.9735623501538875
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.97, 'F1': 0.97}
+attack_Word-D_5攻击的最佳z-score阈值是:2.1136064868651387
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.87, 'F1': 0.8446601941747572}
+attack_Word-D_7攻击的最佳z-score阈值是:1.1257702389256057
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:3.9620680059099316
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_3攻击的最佳z-score阈值是:2.834373763566977
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.95, 'F1': 0.9693877551020408}
+attack_Word-S_5攻击的最佳z-score阈值是:2.304544691697787
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.915, 'F1': 0.9312977099236641}
+attack_Word-S_7攻击的最佳z-score阈值是:1.92108416882153
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.935, 'F1': 0.88}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.1208756433625635
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'SWEET', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'z_threshold': 4.0, 'prefix_length': 1, 'entropy_threshold': 0.9}
+生成200条无水印文本需要的总时间/秒：530.2924029827118
+平均生成每一条无水印文本需要的时间/秒：2.651462014913559
+生成200条有水印文本需要的总时间/秒：562.2745394706726
+平均生成每一条有水印文本需要的时间/秒：2.811372697353363
+文本质量PPL指标如下:
+{'watermarked': 12.51536247253418, 'unwatermarked': 10.16709762096405}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.588458480932065, 'unwatermarked': 7.661413914482623}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:4.840599440287976
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.5449629289356293
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:2.6238572819662718
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:4.421159829258803
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+attack_Word-D_3攻击的最佳z-score阈值是:2.6155408002733838
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.9586374695863747}
+attack_Word-D_5攻击的最佳z-score阈值是:1.7553455129730307
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.89, 'F1': 0.8298368298368298}
+attack_Word-D_7攻击的最佳z-score阈值是:0.8621513112414182
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:3.7657043958795473
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9949748743718593}
+attack_Word-S_3攻击的最佳z-score阈值是:3.3055577530265925
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.9609756097560975}
+attack_Word-S_5攻击的最佳z-score阈值是:1.7950704321899633
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.945, 'F1': 0.9379652605459057}
+attack_Word-S_7攻击的最佳z-score阈值是:1.7481993454078335
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.93, 'F1': 0.9230769230769231}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.5922500045212602
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'EWD', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0}
+生成200条无水印文本需要的总时间/秒：534.5541484355927
+平均生成每一条无水印文本需要的时间/秒：2.6727707421779634
+生成200条有水印文本需要的总时间/秒：557.7434437274933
+平均生成每一条有水印文本需要的时间/秒：2.7887172186374665
+文本质量PPL指标如下:
+{'watermarked': 12.943202559947968, 'unwatermarked': 10.19056048154831}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.658723623063552, 'unwatermarked': 7.69807556672576}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:5.630192995071411
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.6371588110923767
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:2.340432286262512
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:5.015190601348877
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:3.768478035926819
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9850746268656716}
+attack_Word-D_5攻击的最佳z-score阈值是:2.1425256729125977
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.89, 'F1': 0.8640776699029126}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0526798963546753
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:5.084911823272705
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9975062344139651}
+attack_Word-S_3攻击的最佳z-score阈值是:2.7099156379699707
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.975, 'F1': 0.982367758186398}
+attack_Word-S_5攻击的最佳z-score阈值是:2.285783290863037
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.955, 'F1': 0.9502487562189055}
+attack_Word-S_7攻击的最佳z-score阈值是:1.8284325003623962
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.91005291005291}
+attack_doc_P_dipper攻击的最佳z-score阈值是:2.0218665599823
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Unigram', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'z_threshold': 4.0}
+生成200条无水印文本需要的总时间/秒：522.0332179069519
+平均生成每一条无水印文本需要的时间/秒：2.6101660895347596
+生成200条有水印文本需要的总时间/秒：536.6434519290924
+平均生成每一条有水印文本需要的时间/秒：2.683217259645462
+文本质量PPL指标如下:
+{'watermarked': 12.245974082946777, 'unwatermarked': 10.094788618087769}
+文本质量Log_Diversity指标如下:
+{'watermarked': 6.861463417756605, 'unwatermarked': 7.74103158515011}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:5.413533402579475
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.9580364684689195
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:3.511072772352784
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:5.212057662389016
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:4.780369470090087
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9975062344139651}
+attack_Word-D_5攻击的最佳z-score阈值是:3.5714741447578753
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.985}
+attack_Word-D_7攻击的最佳z-score阈值是:3.3820763190801775
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:5.031818451945087
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_3攻击的最佳z-score阈值是:4.478393120291433
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.99}
+attack_Word-S_5攻击的最佳z-score阈值是:3.4992183142690596
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9875311720698254}
+attack_Word-S_7攻击的最佳z-score阈值是:3.386996904024768
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.945, 'F1': 0.9545454545454546}
+attack_doc_P_dipper攻击的最佳z-score阈值是:2.481237902487643
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'DIP', 'gamma': 0.5, 'alpha': 0.45, 'key': 42, 'prefix_length': 5, 'z_threshold': 1.513, 'ignore_history_generation': 0, 'ignore_history_detection': 0}
+生成200条无水印文本需要的总时间/秒：539.7921187877655
+平均生成每一条无水印文本需要的时间/秒：2.6989605939388275
+生成200条有水印文本需要的总时间/秒：584.2145144939423
+平均生成每一条有水印文本需要的时间/秒：2.9210725724697113
+文本质量PPL指标如下:
+{'watermarked': 11.755212309360504, 'unwatermarked': 10.103574941158294}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.8253199199933725, 'unwatermarked': 7.662137089283059}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.4727280735969543
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:0.7046768665313721
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:1.1444164514541626
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.99}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0485036373138428
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.925, 'F1': 0.7283464566929134}
+attack_Word-D_3攻击的最佳z-score阈值是:-0.11175647005438805
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.6655518394648829}
+attack_Word-D_7攻击的最佳z-score阈值是:-1.46527099609375
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.97, 'F1': 0.6736111111111112}
+attack_Word-D_5攻击的最佳z-score阈值是:-0.6995146870613098
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.975, 'F1': 0.982367758186398}
+attack_Word-S_1攻击的最佳z-score阈值是:1.138927400112152
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.79, 'F1': 0.8102564102564103}
+attack_Word-S_3攻击的最佳z-score阈值是:0.5346580743789673
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.945, 'F1': 0.6774193548387096}
+attack_Word-S_7攻击的最佳z-score阈值是:-0.5180330872535706
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.6799276672694394}
+attack_Word-S_5攻击的最佳z-score阈值是:-0.4686008542776108
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.6746987951807228}
+attack_doc_P_dipper攻击的最佳z-score阈值是:-0.7683471441268921
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'EXP', 'prefix_length': 4, 'hash_key': 15485863, 'threshold': 0.0001, 'sequence_length': 200, 'top_k': 0}
+生成200条无水印文本需要的总时间/秒：530.3035459518433
+平均生成每一条无水印文本需要的时间/秒：2.6515177297592163
+生成200条有水印文本需要的总时间/秒：346.2845730781555
+平均生成每一条有水印文本需要的时间/秒：1.7314228653907775
+文本质量PPL指标如下:
+{'watermarked': 19.910696504116057, 'unwatermarked': 10.135227079391479}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.51882952781366, 'unwatermarked': 7.739938531890285}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:0.002960939314563015
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:0.08257783463781843
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:0.011813524972314532
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:0.003924212012431876
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9949748743718593}
+attack_Word-D_3攻击的最佳z-score阈值是:0.004600496099953763
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.77, 'F1': 0.6814159292035398}
+attack_Word-D_7攻击的最佳z-score阈值是:0.4661969787862437
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.775, 'F1': 0.8051948051948052}
+attack_Word-D_5攻击的最佳z-score阈值是:0.1457075528658165
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:0.002998603181397361
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9949748743718593}
+attack_Word-S_3攻击的最佳z-score阈值是:0.004232850472673717
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.78, 'F1': 0.8501362397820164}
+attack_Word-S_7攻击的最佳z-score阈值是:0.05059161714508602
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.905, 'F1': 0.923469387755102}
+attack_Word-S_5攻击的最佳z-score阈值是:0.05139643489815293
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.79, 'F1': 0.7541766109785203}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.2628906322521398
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'SynthID', 'ngram_len': 5, 'keys': [654, 400, 836, 123, 340, 443, 597, 160, 57, 29, 590, 639, 13, 715, 468, 990, 966, 226, 324, 585, 118, 504, 421, 521, 129, 669, 732, 225, 90, 960], 'sampling_table_size': 65536, 'sampling_table_seed': 0, 'watermark_mode': 'non-distortionary', 'num_leaves': 2, 'context_history_size': 1024, 'detector_type': 'mean', 'threshold': 0.52}
+生成200条无水印文本需要的总时间/秒：528.7121937274933
+平均生成每一条无水印文本需要的时间/秒：2.6435609686374666
+生成200条有水印文本需要的总时间/秒：660.1522274017334
+平均生成每一条有水印文本需要的时间/秒：3.300761137008667
+文本质量PPL指标如下:
+{'watermarked': 6.4639406311512, 'unwatermarked': 10.22144273519516}
+文本质量Log_Diversity指标如下:
+{'watermarked': 6.956538789039983, 'unwatermarked': 7.625820007396189}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.995, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.005, 'P': 1.0, 'R': 0.995, 'F1': 0.9974937343358395, 'ACC': 0.9975}
+无攻击(fpr=best)的最佳z-score阈值是:0.5244315811430955
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:0.5072228111355089
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:0.5148024867957746
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9925558312655087}
+attack_Word-D_1攻击的最佳z-score阈值是:0.5124750514016349
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.895, 'F1': 0.9063291139240506}
+attack_Word-D_3攻击的最佳z-score阈值是:0.5076195102642989
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.664440734557596}
+attack_Word-D_7攻击的最佳z-score阈值是:0.4703401771336554
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.81, 'F1': 0.6821052631578948}
+attack_Word-D_5攻击的最佳z-score阈值是:0.4997781021467327
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9900497512437811}
+attack_Word-S_1攻击的最佳z-score阈值是:0.5129433773093524
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.935, 'F1': 0.9077669902912622}
+attack_Word-S_3攻击的最佳z-score阈值是:0.5062552447552447
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.855, 'F1': 0.7215189873417721}
+attack_Word-S_7攻击的最佳z-score阈值是:0.500483193277311
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.89, 'F1': 0.7401247401247402}
+attack_Word-S_5攻击的最佳z-score阈值是:0.5004861111111112
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.725, 'F1': 0.725}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.5036937039352773
+==========分割线==========
+
+
+数据集与模型的参数信息如下：
+algorithm: SIR dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'SIR', 'delta': 1.0, 'chunk_length': 10, 'scale_dimension': 300, 'z_threshold': 0.2, 'transform_model_input_dim': 1024, 'transform_model_name': 'watermark/sir/model/transform_model_cbert.pth', 'embedding_model_path': './models/compositional-bert-large-uncased/', 'mapping_name': 'watermark/sir/mapping/300_mapping_50272.json'}
+生成200条无水印文本需要的总时间/秒：533.2589693069458
+平均生成每一条无水印文本需要的时间/秒：2.666294846534729
+生成200条有水印文本需要的总时间/秒：1563.6746897697449
+平均生成每一条有水印文本需要的时间/秒：7.818373448848725
+文本质量PPL指标如下:
+{'watermarked': 12.727073121070863, 'unwatermarked': 10.089674456119537}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.497126805166917, 'unwatermarked': 7.674386640440686}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.985, 'TNR': 0.995, 'FPR': 0.005, 'FNR': 0.015, 'P': 0.9949494949494949, 'R': 0.985, 'F1': 0.9899497487437185, 'ACC': 0.99}
+无攻击(fpr=best)的最佳z-score阈值是:0.14340162490113328
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:0.03875921216426881
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.985, 'F1': 0.9874686716791979}
+无攻击(fpr=1%)的最佳z-score阈值是:0.1314824170086871
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.965, 'F1': 0.9722921914357683}
+attack_Word-D_1攻击的最佳z-score阈值是:0.09862712564163778
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.865, 'F1': 0.9081364829396326}
+attack_Word-D_3攻击的最佳z-score阈值是:0.06560547893914466
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.64, 'F1': 0.6956521739130435}
+attack_Word-D_7攻击的最佳z-score阈值是:-0.00198988952813683
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.75, 'F1': 0.7915567282321899}
+attack_Word-D_5攻击的最佳z-score阈值是:0.022009781094002742
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.975, 'F1': 0.967741935483871}
+attack_Word-S_1攻击的最佳z-score阈值是:0.06530762333096893
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.82, 'F1': 0.8840970350404312}
+attack_Word-S_3攻击的最佳z-score阈值是:0.06810416833676283
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.74, 'F1': 0.7344913151364765}
+attack_Word-S_7攻击的最佳z-score阈值是:-0.01841182623070649
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.785, 'F1': 0.7584541062801933}
+attack_Word-S_5攻击的最佳z-score阈值是:-0.021061193493438775
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.835, 'F1': 0.8835978835978836}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.055092108367100295
+==========分割线==========
+
+parameter of config as follows:
+algorithm: Unbiased dataset: c4 model: opt-1.3b temperature_inner: 1.0 max_new_tokens: 300 min_length: 300 data_lines: 200
+parameter of algorithm as follows:
+{'algorithm_name': 'Unbiased', 'gamma': 0.5, 'key': 42, 'prefix_length': 5, 'z_threshold': 1.513, 'ignore_history': 1, 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 11.701569800376893, 'unwatermarked': 9.862180652618408}
+Log_Diversity:
+{'watermarked': 7.841717782760405, 'unwatermarked': 7.575024583785893}
+detection accuracy of attack_Word-D_1:
+{'TPR': 0.945, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.055, 'P': 1.0, 'R': 0.945, 'F1': 0.9717223650385605, 'ACC': 0.9725}
+z-score of attack_Word-D_1:1.150753676891327
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.85, 'TNR': 0.79, 'FPR': 0.21, 'FNR': 0.15, 'P': 0.8018867924528302, 'R': 0.85, 'F1': 0.8252427184466019, 'ACC': 0.82}
+z-score of attack_Word-D_3:0.30410750210285187
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.905, 'TNR': 0.26, 'FPR': 0.74, 'FNR': 0.095, 'P': 0.5501519756838906, 'R': 0.905, 'F1': 0.6843100189035917, 'ACC': 0.5825}
+z-score of attack_Word-D_5:-0.43667441606521606
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 0.015, 'FPR': 0.985, 'FNR': 0.0, 'P': 0.5037783375314862, 'R': 1.0, 'F1': 0.6700167504187605, 'ACC': 0.5075}
+z-score of attack_Word-D_7:-1.1949759125709534
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.985, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.015, 'P': 1.0, 'R': 0.985, 'F1': 0.9924433249370277, 'ACC': 0.9925}
+z-score of attack_Word-S_1:1.1274598240852356
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.86, 'TNR': 0.79, 'FPR': 0.21, 'FNR': 0.14, 'P': 0.8037383177570093, 'R': 0.86, 'F1': 0.8309178743961353, 'ACC': 0.825}
+z-score of attack_Word-S_3:0.3053792268037796
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.895, 'TNR': 0.38, 'FPR': 0.62, 'FNR': 0.105, 'P': 0.5907590759075908, 'R': 0.895, 'F1': 0.7117296222664016, 'ACC': 0.6375}
+z-score of attack_Word-S_5:-0.22840207070112228
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.88, 'TNR': 0.295, 'FPR': 0.705, 'FNR': 0.12, 'P': 0.555205047318612, 'R': 0.88, 'F1': 0.6808510638297872, 'ACC': 0.5875}
+z-score of attack_Word-S_7:-0.38996388018131256
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.91, 'TNR': 0.31, 'FPR': 0.69, 'FNR': 0.09, 'P': 0.56875, 'R': 0.91, 'F1': 0.7, 'ACC': 0.61}
+z-score of attack_doc_P_dipper-0.3821171224117279
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :1.290566623210907
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+z-score of fpr=1% :1.076699435710907
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :0.6577394604682922
+execution_time_unwatermarked_sum:630.9752154350281
+execution_time_unwatermarked_avg:3.1548760771751403
+execution_time_watermarked_sum:674.183219909668
+execution_time_watermarked_avg:3.37091609954834
+=========================

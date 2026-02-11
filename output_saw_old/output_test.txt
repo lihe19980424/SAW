@@ -1,0 +1,1300 @@
+
+parameter of config as follows:
+algorithm: EXP dataset: c4 model: opt-1.3b max_new_tokens: 30 min_length: 30 data_lines: 2
+parameter of algorithm as follows:
+{'algorithm_name': 'EXP', 'prefix_length': 4, 'hash_key': 15485863, 'threshold': 0.0001, 'sequence_length': 200, 'top_k': 0, 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 8.206724524497986, 'unwatermarked': 13.01814603805542}
+Log_Diversity:
+{'watermarked': 5.371799498744516, 'unwatermarked': 20.0}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.5, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.5, 'P': 0.5, 'R': 0.5, 'F1': 0.5, 'ACC': 0.5}
+z-score of attack_doc_P_dipper0.2933364433073198
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:0.036517226979874216
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_3:0.036690773359138916
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.5, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.5, 'P': 1.0, 'R': 0.5, 'F1': 0.6666666666666666, 'ACC': 0.75}
+z-score of attack_Word-S_5:0.03673223404867172
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-S_7:0.31791673703773743
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:0.03651722689390985
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:0.03924985257406991
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-D_5:0.41501187195580136
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.5, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.5, 'P': 1.0, 'R': 0.5, 'F1': 0.6666666666666666, 'ACC': 0.75}
+z-score of attack_Word-D_7:0.03784669302212526
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :0.03651722689278819
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :0.03651722689278819
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=10% :0.03651722689278819
+execution_time_unwatermarked_sum:0.7932329177856445
+execution_time_unwatermarked_avg:0.39661645889282227
+execution_time_watermarked_sum:3.611595869064331
+execution_time_watermarked_avg:1.8057979345321655
+=========================
+
+parameter of config as follows:
+algorithm: EXP dataset: c4 model: opt-1.3b max_new_tokens: 50 min_length: 50 data_lines: 25
+parameter of algorithm as follows:
+{'algorithm_name': 'EXP', 'prefix_length': 4, 'hash_key': 15485863, 'threshold': 0.0001, 'sequence_length': 200, 'top_k': 0, 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 5.1411827325820925, 'unwatermarked': 9.288644561767578}
+Log_Diversity:
+{'watermarked': 5.466526603877336, 'unwatermarked': 15.113127718415008}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.6, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.4, 'P': 1.0, 'R': 0.6, 'F1': 0.75, 'ACC': 0.8}
+z-score of attack_doc_P_dipper0.059359448176259474
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:0.07131644182078947
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_3:0.0637597757056956
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.72, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.28, 'P': 0.782608695652174, 'R': 0.72, 'F1': 0.75, 'ACC': 0.76}
+z-score of attack_Word-S_5:0.14431939424283208
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.96, 'TNR': 0.28, 'FPR': 0.72, 'FNR': 0.04, 'P': 0.5714285714285714, 'R': 0.96, 'F1': 0.7164179104477612, 'ACC': 0.62}
+z-score of attack_Word-S_7:0.627286161785498
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:0.03886029864921795
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.88, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.12, 'P': 1.0, 'R': 0.88, 'F1': 0.9361702127659575, 'ACC': 0.94}
+z-score of attack_Word-D_3:0.07580226716045498
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.6, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.4, 'P': 0.9375, 'R': 0.6, 'F1': 0.7317073170731707, 'ACC': 0.78}
+z-score of attack_Word-D_5:0.10417601856711231
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.96, 'TNR': 0.16, 'FPR': 0.84, 'FNR': 0.04, 'P': 0.5333333333333333, 'R': 0.96, 'F1': 0.6857142857142857, 'ACC': 0.56}
+z-score of attack_Word-D_7:0.8287280241251791
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :0.038751084168335094
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :0.038751084168335094
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.92, 'FPR': 0.08, 'FNR': 0.0, 'P': 0.9259259259259259, 'R': 1.0, 'F1': 0.9615384615384616, 'ACC': 0.96}
+z-score of fpr=10% :0.10891491522058151
+execution_time_unwatermarked_sum:10.924086093902588
+execution_time_unwatermarked_avg:0.4369634437561035
+execution_time_watermarked_sum:43.359649658203125
+execution_time_watermarked_avg:1.734385986328125
+=========================
+
+parameter of config as follows:
+algorithm: SynthID dataset: c4 model: opt-1.3b max_new_tokens: 50 min_length: 50 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SynthID', 'ngram_len': 5, 'keys': [654, 400, 836, 123, 340, 443, 597, 160, 57, 29, 590, 639, 13, 715, 468, 990, 966, 226, 324, 585, 118, 504, 421, 521, 129, 669, 732, 225, 90, 960], 'sampling_table_size': 65536, 'sampling_table_seed': 0, 'watermark_mode': 'non-distortionary', 'num_leaves': 2, 'context_history_size': 1024, 'detector_type': 'mean', 'threshold': 0.52, 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 11.902755212783813, 'unwatermarked': 11.12291431427002}
+Log_Diversity:
+{'watermarked': 16.333722511464888, 'unwatermarked': 13.7196827169888}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.1, 'P': 0.5625, 'R': 0.9, 'F1': 0.6923076923076923, 'ACC': 0.6}
+z-score of attack_doc_P_dipper0.4918771043771044
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-S_1:0.5196527777777777
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.0, 'P': 0.5882352941176471, 'R': 1.0, 'F1': 0.7407407407407407, 'ACC': 0.65}
+z-score of attack_Word-S_3:0.4890993265993266
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.7, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.3, 'P': 0.7, 'R': 0.7, 'F1': 0.7, 'ACC': 0.7}
+z-score of attack_Word-S_5:0.5055094130675526
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.1, 'P': 0.5625, 'R': 0.9, 'F1': 0.6923076923076923, 'ACC': 0.6}
+z-score of attack_Word-S_7:0.48571083172147
+detection accuracy of attack_Word-D_1:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-D_1:0.5185663082437276
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.9, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.1, 'P': 0.6428571428571429, 'R': 0.9, 'F1': 0.75, 'ACC': 0.7}
+z-score of attack_Word-D_3:0.5006172839506173
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.9, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.1, 'P': 0.5625, 'R': 0.9, 'F1': 0.6923076923076923, 'ACC': 0.6}
+z-score of attack_Word-D_5:0.4876748251748252
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.1, 'P': 0.5, 'R': 0.9, 'F1': 0.6428571428571429, 'ACC': 0.5}
+z-score of attack_Word-D_7:0.4747465712581992
+detection accuracy of fpr=best :
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of fpr=best :0.5218970189701897
+detection accuracy of fpr=1% :
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of fpr=1% :0.5218970189701897
+detection accuracy of fpr=10% :
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of fpr=10% :0.5164646464646465
+execution_time_unwatermarked_sum:4.633382797241211
+execution_time_unwatermarked_avg:0.4633382797241211
+execution_time_watermarked_sum:5.3859148025512695
+execution_time_watermarked_avg:0.5385914802551269
+=========================
+
+parameter of config as follows:
+algorithm: SynthID dataset: c4 model: opt-1.3b max_new_tokens: 50 min_length: 50 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SynthID', 'ngram_len': 5, 'keys': [654, 400, 836, 123, 340, 443, 597, 160, 57, 29, 590, 639, 13, 715, 468, 990, 966, 226, 324, 585, 118, 504, 421, 521, 129, 669, 732, 225, 90, 960], 'sampling_table_size': 65536, 'sampling_table_seed': 0, 'watermark_mode': 'non-distortionary', 'num_leaves': 2, 'context_history_size': 1024, 'detector_type': 'mean', 'threshold': 0.52, 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 14.314710712432861, 'unwatermarked': 9.63278489112854}
+Log_Diversity:
+{'watermarked': 11.194895471109515, 'unwatermarked': 16.357592952960758}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.1, 'P': 0.6428571428571429, 'R': 0.9, 'F1': 0.75, 'ACC': 0.7}
+z-score of attack_doc_P_dipper0.4947293447293447
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.8, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.2, 'P': 1.0, 'R': 0.8, 'F1': 0.8888888888888888, 'ACC': 0.9}
+z-score of attack_Word-S_1:0.5195121951219512
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.8, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.2, 'P': 0.8888888888888888, 'R': 0.8, 'F1': 0.8421052631578947, 'ACC': 0.85}
+z-score of attack_Word-S_3:0.5093055555555555
+detection accuracy of attack_Word-S_5:
+{'TPR': 1.0, 'TNR': 0.4, 'FPR': 0.6, 'FNR': 0.0, 'P': 0.625, 'R': 1.0, 'F1': 0.7692307692307693, 'ACC': 0.7}
+z-score of attack_Word-S_5:0.4888007054673721
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.0, 'P': 0.5882352941176471, 'R': 1.0, 'F1': 0.7407407407407407, 'ACC': 0.65}
+z-score of attack_Word-S_7:0.4849079025549614
+detection accuracy of attack_Word-D_1:
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of attack_Word-D_1:0.5109572072072072
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.0, 'P': 0.8333333333333334, 'R': 1.0, 'F1': 0.9090909090909091, 'ACC': 0.9}
+z-score of attack_Word-D_3:0.5066228790366721
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.9, 'TNR': 0.4, 'FPR': 0.6, 'FNR': 0.1, 'P': 0.6, 'R': 0.9, 'F1': 0.72, 'ACC': 0.65}
+z-score of attack_Word-D_5:0.4889751552795031
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-D_7:0.4166666666666667
+detection accuracy of fpr=best :
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of fpr=best :0.519626850114655
+detection accuracy of fpr=1% :
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of fpr=1% :0.519626850114655
+detection accuracy of fpr=10% :
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of fpr=10% :0.5126930894308943
+execution_time_unwatermarked_sum:4.598668098449707
+execution_time_unwatermarked_avg:0.4598668098449707
+execution_time_watermarked_sum:5.355749607086182
+execution_time_watermarked_avg:0.5355749607086182
+=========================
+
+parameter of config as follows:
+algorithm: EXP dataset: c4 model: opt-1.3b max_new_tokens: 50 min_length: 50 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'EXP', 'prefix_length': 4, 'hash_key': 15485863, 'threshold': 0.0001, 'sequence_length': 200, 'top_k': 0, 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 20.619930219650268, 'unwatermarked': 13.955248594284058}
+Log_Diversity:
+{'watermarked': 8.786554877321247, 'unwatermarked': 15.140327197830166}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.8, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.2, 'P': 0.6666666666666666, 'R': 0.8, 'F1': 0.7272727272727273, 'ACC': 0.7}
+z-score of attack_doc_P_dipper0.2666313832525989
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:0.014056656989121914
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_3:0.01405670582388145
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-S_5:0.016459206537358242
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of attack_Word-S_7:0.047101621972790386
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:0.014056656989121914
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:0.01406440377749636
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.8, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.2, 'P': 0.8, 'R': 0.8, 'F1': 0.8, 'ACC': 0.8}
+z-score of attack_Word-D_5:0.11799723551754596
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 0.2, 'FPR': 0.8, 'FNR': 0.0, 'P': 0.5555555555555556, 'R': 1.0, 'F1': 0.7142857142857143, 'ACC': 0.6}
+z-score of attack_Word-D_7:0.7679166552552219
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :0.014056656989121914
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :0.014056656989121914
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :0.04343926302044937
+execution_time_unwatermarked_sum:4.193804740905762
+execution_time_unwatermarked_avg:0.41938047409057616
+execution_time_watermarked_sum:18.154759883880615
+execution_time_watermarked_avg:1.8154759883880616
+=========================
+
+parameter of config as follows:
+algorithm: KGW dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 2
+parameter of algorithm as follows:
+{'algorithm_name': 'KGW', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0, 'f_scheme': 'time', 'window_scheme': 'left', 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 16.040888786315918, 'unwatermarked': 7.242183208465576}
+Log_Diversity:
+{'watermarked': 7.7479829788168, 'unwatermarked': 6.74029580384294}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.5, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.5, 'P': 0.5, 'R': 0.5, 'F1': 0.5, 'ACC': 0.5}
+z-score of attack_doc_P_dipper1.2131351562929282
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:2.7501493262375605
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_3:2.3025692084744236
+detection accuracy of attack_Word-S_5:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_5:2.039307381576347
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-S_7:1.4632140576748967
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:3.052099976006306
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:2.2434098492056957
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-D_5:1.5142609618086125
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-D_7:1.1985940491059737
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :2.8444240682234465
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :2.8444240682234465
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=10% :2.8444240682234465
+execution_time_unwatermarked_sum:2.6095492839813232
+execution_time_unwatermarked_avg:1.3047746419906616
+execution_time_watermarked_sum:2.6751229763031006
+execution_time_watermarked_avg:1.3375614881515503
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 2
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.3, 'gamma': 0.5, 'epsilon': 2.0, 'delta': 1.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 11.572990894317627, 'unwatermarked': 9.363747835159302}
+Log_Diversity:
+{'watermarked': 8.352014373605677, 'unwatermarked': 14.315260938361497}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_doc_P_dipper-5.739406100434152
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:-5.6504493995608955
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-S_3:-6.10432246987151
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.5, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.5, 'P': 1.0, 'R': 0.5, 'F1': 0.6666666666666666, 'ACC': 0.75}
+z-score of attack_Word-S_5:-5.277831360335691
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_7:-5.841270201339238
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:-5.69028704567102
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:-5.035545510722379
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_5:-4.930378634804398
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_7:-4.4570990968179
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :-5.275945715417398
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :-5.275945715417398
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=10% :-5.275945715417398
+execution_time_unwatermarked_sum:2.691366195678711
+execution_time_unwatermarked_avg:1.3456830978393555
+execution_time_watermarked_sum:106.08531928062439
+execution_time_watermarked_avg:53.042659640312195
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 50
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.25, 'gamma': 0.3, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 14.831756248474122, 'unwatermarked': 12.318961725234985}
+Log_Diversity:
+{'watermarked': 10.447031233321132, 'unwatermarked': 12.11704649574096}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 1.0, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.0, 'P': 0.5, 'R': 1.0, 'F1': 0.6666666666666666, 'ACC': 0.5}
+z-score of attack_doc_P_dipper-6.465682958401012
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 0.78, 'FPR': 0.22, 'FNR': 0.0, 'P': 0.819672131147541, 'R': 1.0, 'F1': 0.9009009009009009, 'ACC': 0.89}
+z-score of attack_Word-S_1:-4.018181521141199
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.96, 'TNR': 0.52, 'FPR': 0.48, 'FNR': 0.04, 'P': 0.6666666666666666, 'R': 0.96, 'F1': 0.7868852459016393, 'ACC': 0.74}
+z-score of attack_Word-S_3:-4.7376454371034615
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.88, 'TNR': 0.32, 'FPR': 0.68, 'FNR': 0.12, 'P': 0.5641025641025641, 'R': 0.88, 'F1': 0.6875, 'ACC': 0.6}
+z-score of attack_Word-S_5:-5.186678197804373
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.06, 'FPR': 0.94, 'FNR': 0.0, 'P': 0.5154639175257731, 'R': 1.0, 'F1': 0.6802721088435374, 'ACC': 0.53}
+z-score of attack_Word-S_7:-6.072809168761707
+detection accuracy of attack_Word-D_1:
+{'TPR': 0.92, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.08, 'P': 0.9387755102040817, 'R': 0.92, 'F1': 0.9292929292929293, 'ACC': 0.93}
+z-score of attack_Word-D_1:-3.3915862515745117
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.86, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.14, 'P': 0.9347826086956522, 'R': 0.86, 'F1': 0.8958333333333334, 'ACC': 0.9}
+z-score of attack_Word-D_3:-3.3734498565529636
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.88, 'TNR': 0.92, 'FPR': 0.08, 'FNR': 0.12, 'P': 0.9166666666666666, 'R': 0.88, 'F1': 0.8979591836734694, 'ACC': 0.9}
+z-score of attack_Word-D_5:-3.4485920891830553
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.94, 'TNR': 0.92, 'FPR': 0.08, 'FNR': 0.06, 'P': 0.9215686274509803, 'R': 0.94, 'F1': 0.9306930693069307, 'ACC': 0.93}
+z-score of attack_Word-D_7:-3.4857429373263145
+detection accuracy of fpr=best :
+{'TPR': 0.94, 'TNR': 0.92, 'FPR': 0.08, 'FNR': 0.06, 'P': 0.9215686274509803, 'R': 0.94, 'F1': 0.9306930693069307, 'ACC': 0.93}
+z-score of fpr=best :-3.4791505940741487
+detection accuracy of fpr=1% :
+{'TPR': 0.56, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.44, 'P': 1.0, 'R': 0.56, 'F1': 0.717948717948718, 'ACC': 0.78}
+z-score of fpr=1% :-2.3535900599221677
+detection accuracy of fpr=10% :
+{'TPR': 0.94, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.06, 'P': 0.9038461538461539, 'R': 0.94, 'F1': 0.9215686274509803, 'ACC': 0.92}
+z-score of fpr=10% :-3.5024641051796856
+execution_time_unwatermarked_sum:43.397549629211426
+execution_time_unwatermarked_avg:0.8679509925842285
+execution_time_watermarked_sum:194.68413972854614
+execution_time_watermarked_avg:3.893682794570923
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 50
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.3, 'gamma': 0.5, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 14.01135721206665, 'unwatermarked': 11.699706449508668}
+Log_Diversity:
+{'watermarked': 10.268049366416294, 'unwatermarked': 11.698089967862694}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 1.0, 'TNR': 0.14, 'FPR': 0.86, 'FNR': 0.0, 'P': 0.5376344086021505, 'R': 1.0, 'F1': 0.6993006993006993, 'ACC': 0.57}
+z-score of attack_doc_P_dipper-1.0484815339682734
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.88, 'TNR': 0.76, 'FPR': 0.24, 'FNR': 0.12, 'P': 0.7857142857142857, 'R': 0.88, 'F1': 0.8301886792452831, 'ACC': 0.82}
+z-score of attack_Word-S_1:0.8893718229177311
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.88, 'TNR': 0.56, 'FPR': 0.44, 'FNR': 0.12, 'P': 0.6666666666666666, 'R': 0.88, 'F1': 0.7586206896551724, 'ACC': 0.72}
+z-score of attack_Word-S_3:0.29931075317794364
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.98, 'TNR': 0.14, 'FPR': 0.86, 'FNR': 0.02, 'P': 0.532608695652174, 'R': 0.98, 'F1': 0.6901408450704225, 'ACC': 0.56}
+z-score of attack_Word-S_5:-1.043962641592667
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.98, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.02, 'P': 0.494949494949495, 'R': 0.98, 'F1': 0.6577181208053692, 'ACC': 0.49}
+z-score of attack_Word-S_7:-2.251464652962371
+detection accuracy of attack_Word-D_1:
+{'TPR': 0.84, 'TNR': 0.78, 'FPR': 0.22, 'FNR': 0.16, 'P': 0.7924528301886793, 'R': 0.84, 'F1': 0.8155339805825242, 'ACC': 0.81}
+z-score of attack_Word-D_1:0.9539919745651924
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.86, 'TNR': 0.52, 'FPR': 0.48, 'FNR': 0.14, 'P': 0.6417910447761194, 'R': 0.86, 'F1': 0.7350427350427351, 'ACC': 0.69}
+z-score of attack_Word-D_3:0.130038477104738
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.8, 'TNR': 0.52, 'FPR': 0.48, 'FNR': 0.2, 'P': 0.625, 'R': 0.8, 'F1': 0.7017543859649122, 'ACC': 0.66}
+z-score of attack_Word-D_5:0.10759289760903426
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.98, 'TNR': 0.06, 'FPR': 0.94, 'FNR': 0.02, 'P': 0.5104166666666666, 'R': 0.98, 'F1': 0.6712328767123288, 'ACC': 0.52}
+z-score of attack_Word-D_7:-1.4072743413072097
+detection accuracy of fpr=best :
+{'TPR': 0.86, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.14, 'P': 0.8958333333333334, 'R': 0.86, 'F1': 0.8775510204081632, 'ACC': 0.88}
+z-score of fpr=best :1.328560531976216
+detection accuracy of fpr=1% :
+{'TPR': 0.6, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.4, 'P': 1.0, 'R': 0.6, 'F1': 0.75, 'ACC': 0.8}
+z-score of fpr=1% :2.309294685887104
+detection accuracy of fpr=10% :
+{'TPR': 0.86, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.14, 'P': 0.8958333333333334, 'R': 0.86, 'F1': 0.8775510204081632, 'ACC': 0.88}
+z-score of fpr=10% :1.328560531976216
+execution_time_unwatermarked_sum:42.98100972175598
+execution_time_unwatermarked_avg:0.8596201944351196
+execution_time_watermarked_sum:194.38895845413208
+execution_time_watermarked_avg:3.8877791690826418
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 50
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.25, 'gamma': 0.3, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 14.490556669235229, 'unwatermarked': 12.682299265861511}
+Log_Diversity:
+{'watermarked': 10.490469843207594, 'unwatermarked': 12.171426274405468}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.94, 'TNR': 0.58, 'FPR': 0.42, 'FNR': 0.06, 'P': 0.6911764705882353, 'R': 0.94, 'F1': 0.7966101694915254, 'ACC': 0.76}
+z-score of attack_doc_P_dipper0.07910337593263345
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+z-score of attack_Word-S_1:1.8720455465011807
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.98, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.02, 'P': 0.98, 'R': 0.98, 'F1': 0.98, 'ACC': 0.98}
+z-score of attack_Word-S_3:1.8508077632473785
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.96, 'TNR': 0.84, 'FPR': 0.16, 'FNR': 0.04, 'P': 0.8571428571428571, 'R': 0.96, 'F1': 0.9056603773584906, 'ACC': 0.9}
+z-score of attack_Word-S_5:0.8535878424702512
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 0.84, 'FPR': 0.16, 'FNR': 0.1, 'P': 0.8490566037735849, 'R': 0.9, 'F1': 0.8737864077669902, 'ACC': 0.87}
+z-score of attack_Word-S_7:0.8065462787897777
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:2.433536580949518
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:2.012721374544946
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.86, 'FPR': 0.14, 'FNR': 0.0, 'P': 0.8771929824561403, 'R': 1.0, 'F1': 0.9345794392523364, 'ACC': 0.93}
+z-score of attack_Word-D_5:1.0374094033280077
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.86, 'TNR': 0.84, 'FPR': 0.16, 'FNR': 0.14, 'P': 0.8431372549019608, 'R': 0.86, 'F1': 0.8514851485148515, 'ACC': 0.85}
+z-score of attack_Word-D_7:0.8405091330470453
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :2.279565023105854
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :2.279565023105854
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.5141702923422642
+execution_time_unwatermarked_sum:42.76452422142029
+execution_time_unwatermarked_avg:0.8552904844284057
+execution_time_watermarked_sum:202.82823395729065
+execution_time_watermarked_avg:4.056564679145813
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 50
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.25, 'gamma': 0.3, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 16.02532970428467, 'unwatermarked': 12.11880108833313}
+Log_Diversity:
+{'watermarked': 10.972249191182309, 'unwatermarked': 11.918185540072438}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.74, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.26, 'P': 0.9487179487179487, 'R': 0.74, 'F1': 0.8314606741573034, 'ACC': 0.85}
+z-score of attack_doc_P_dipper1.328563844103305
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:2.5770626481782744
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_3:2.050137341446404
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.94, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.06, 'P': 0.9591836734693877, 'R': 0.94, 'F1': 0.9494949494949495, 'ACC': 0.95}
+z-score of attack_Word-S_5:1.3439562974853925
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.92, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.08, 'P': 0.9583333333333334, 'R': 0.92, 'F1': 0.9387755102040817, 'ACC': 0.94}
+z-score of attack_Word-S_7:1.3938742044906869
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:2.6970634600862433
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:2.1591968385696356
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.94, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.06, 'P': 0.9791666666666666, 'R': 0.94, 'F1': 0.9591836734693877, 'ACC': 0.96}
+z-score of attack_Word-D_5:1.6344900537301426
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.88, 'TNR': 0.86, 'FPR': 0.14, 'FNR': 0.12, 'P': 0.8627450980392157, 'R': 0.88, 'F1': 0.8712871287128713, 'ACC': 0.87}
+z-score of attack_Word-D_7:0.8033019172919351
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :2.8232403544735285
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :2.8232403544735285
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.254710363501916
+execution_time_unwatermarked_sum:43.35264325141907
+execution_time_unwatermarked_avg:0.8670528650283813
+execution_time_watermarked_sum:204.12397837638855
+execution_time_watermarked_avg:4.082479567527771
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 50
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.25, 'gamma': 0.3, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 14.872100448608398, 'unwatermarked': 12.52743085861206}
+Log_Diversity:
+{'watermarked': 11.066757502137719, 'unwatermarked': 11.26127918614725}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.82, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.18, 'P': 0.9318181818181818, 'R': 0.82, 'F1': 0.8723404255319149, 'ACC': 0.88}
+z-score of attack_doc_P_dipper1.1068414722936621
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+z-score of attack_Word-S_1:2.3370238589030663
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+z-score of attack_Word-S_3:1.8501607928891914
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.96, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.04, 'P': 0.9411764705882353, 'R': 0.96, 'F1': 0.9504950495049505, 'ACC': 0.95}
+z-score of attack_Word-S_5:1.1962186488939381
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.94, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.06, 'P': 0.94, 'R': 0.94, 'F1': 0.94, 'ACC': 0.94}
+z-score of attack_Word-S_7:1.1895957438992428
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+z-score of attack_Word-D_1:2.561304492897763
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.0, 'P': 0.9433962264150944, 'R': 1.0, 'F1': 0.970873786407767, 'ACC': 0.97}
+z-score of attack_Word-D_3:1.243917593498923
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.96, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.04, 'P': 0.9411764705882353, 'R': 0.96, 'F1': 0.9504950495049505, 'ACC': 0.95}
+z-score of attack_Word-D_5:1.2802019648183838
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.92, 'TNR': 0.78, 'FPR': 0.22, 'FNR': 0.08, 'P': 0.8070175438596491, 'R': 0.92, 'F1': 0.8598130841121495, 'ACC': 0.85}
+z-score of attack_Word-D_7:0.6170429188701496
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :3.4803628715546866
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :3.4803628715546866
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.0524054763822757
+execution_time_unwatermarked_sum:42.82731580734253
+execution_time_unwatermarked_avg:0.8565463161468506
+execution_time_watermarked_sum:198.51448035240173
+execution_time_watermarked_avg:3.9702896070480347
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 50
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.25, 'gamma': 0.3, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 14.931903715133666, 'unwatermarked': 11.561487760543823}
+Log_Diversity:
+{'watermarked': 9.603786983860736, 'unwatermarked': 11.0889090698258}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.8, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.2, 'P': 0.8, 'R': 0.8, 'F1': 0.8, 'ACC': 0.8}
+z-score of attack_doc_P_dipper0.7410962445491667
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:2.8045291567163946
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.0, 'P': 0.9433962264150944, 'R': 1.0, 'F1': 0.970873786407767, 'ACC': 0.97}
+z-score of attack_Word-S_3:1.500657607338407
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.94, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.06, 'P': 0.94, 'R': 0.94, 'F1': 0.94, 'ACC': 0.94}
+z-score of attack_Word-S_5:1.4367811409008944
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.94, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.06, 'P': 0.8245614035087719, 'R': 0.94, 'F1': 0.8785046728971962, 'ACC': 0.87}
+z-score of attack_Word-S_7:0.7175910471542195
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+z-score of attack_Word-D_1:2.1386174913484917
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.0, 'P': 0.9615384615384616, 'R': 1.0, 'F1': 0.9803921568627451, 'ACC': 0.98}
+z-score of attack_Word-D_3:1.6569569365011574
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.98, 'TNR': 0.82, 'FPR': 0.18, 'FNR': 0.02, 'P': 0.8448275862068966, 'R': 0.98, 'F1': 0.9074074074074074, 'ACC': 0.9}
+z-score of attack_Word-D_5:0.914253936586346
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.98, 'TNR': 0.68, 'FPR': 0.32, 'FNR': 0.02, 'P': 0.7538461538461538, 'R': 0.98, 'F1': 0.8521739130434782, 'ACC': 0.83}
+z-score of attack_Word-D_7:0.19608438184545185
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :3.0792767109682333
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :3.0792767109682333
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.94, 'FPR': 0.06, 'FNR': 0.0, 'P': 0.9433962264150944, 'R': 1.0, 'F1': 0.970873786407767, 'ACC': 0.97}
+z-score of fpr=10% :1.512977577087011
+execution_time_unwatermarked_sum:43.58557152748108
+execution_time_unwatermarked_avg:0.8717114305496216
+execution_time_watermarked_sum:204.65079808235168
+execution_time_watermarked_avg:4.093015961647033
+=========================
+
+parameter of config as follows:
+algorithm: KGW dataset: c4 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 100 min_length: 100 data_lines: 20
+parameter of algorithm as follows:
+{'algorithm_name': 'KGW', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0, 'f_scheme': 'time', 'window_scheme': 'left', 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 9.669127297401428, 'unwatermarked': 9.889826846122741}
+Log_Diversity:
+{'watermarked': 7.577733864634607, 'unwatermarked': 8.20750288769061}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.85, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.15, 'P': 0.8095238095238095, 'R': 0.85, 'F1': 0.8292682926829268, 'ACC': 0.825}
+z-score of attack_doc_P_dipper0.7495418774285892
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:1.6997404819030844
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.9, 'TNR': 0.95, 'FPR': 0.05, 'FNR': 0.1, 'P': 0.9473684210526315, 'R': 0.9, 'F1': 0.9230769230769231, 'ACC': 0.925}
+z-score of attack_Word-S_3:1.2383404944735754
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.75, 'TNR': 0.95, 'FPR': 0.05, 'FNR': 0.25, 'P': 0.9375, 'R': 0.75, 'F1': 0.8333333333333334, 'ACC': 0.85}
+z-score of attack_Word-S_5:1.2383404944735754
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.0, 'P': 0.7692307692307693, 'R': 1.0, 'F1': 0.8695652173913043, 'ACC': 0.85}
+z-score of attack_Word-S_7:0.14110156861764517
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 0.95, 'FPR': 0.05, 'FNR': 0.0, 'P': 0.9523809523809523, 'R': 1.0, 'F1': 0.975609756097561, 'ACC': 0.975}
+z-score of attack_Word-D_1:1.1908959228571665
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.95, 'TNR': 0.95, 'FPR': 0.05, 'FNR': 0.05, 'P': 0.95, 'R': 0.95, 'F1': 0.95, 'ACC': 0.95}
+z-score of attack_Word-D_3:1.1476960418122801
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.85, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.15, 'P': 0.8947368421052632, 'R': 0.85, 'F1': 0.8717948717948718, 'ACC': 0.875}
+z-score of attack_Word-D_5:1.0156037425187363
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.95, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.05, 'P': 0.7037037037037037, 'R': 0.95, 'F1': 0.8085106382978723, 'ACC': 0.775}
+z-score of attack_Word-D_7:-0.48696171421031886
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :1.7910669423779804
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :1.7910669423779804
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.063516663099596
+execution_time_unwatermarked_sum:68.27435374259949
+execution_time_unwatermarked_avg:3.4137176871299744
+execution_time_watermarked_sum:68.45142436027527
+execution_time_watermarked_avg:3.4225712180137635
+=========================
+
+parameter of config as follows:
+algorithm: KGW dataset: eli5 model: opt-1.3b max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'KGW', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0, 'f_scheme': 'time', 'window_scheme': 'left', 'temperature_inner': 1.0}
+PPL:
+{'watermarked': 17.74813346862793, 'unwatermarked': 15.231539821624756}
+Log_Diversity:
+{'watermarked': 7.536529833451086, 'unwatermarked': 7.412263032190997}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_doc_P_dipper1.4755677415595798
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:3.236511299963078
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_3:1.978590970489405
+detection accuracy of attack_Word-S_5:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_5:1.7579185089918827
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-S_7:0.9657613226818146
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:3.213919472090114
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:2.4242126832003157
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-D_5:0.9848418235347114
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.1, 'P': 0.8181818181818182, 'R': 0.9, 'F1': 0.8571428571428571, 'ACC': 0.85}
+z-score of attack_Word-D_7:0.2594125414519506
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :3.979701135620251
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :3.979701135620251
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :0.9869777522751728
+execution_time_unwatermarked_sum:16.267722606658936
+execution_time_unwatermarked_avg:1.6267722606658936
+execution_time_watermarked_sum:16.904773950576782
+execution_time_watermarked_avg:1.6904773950576781
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 1.0, 'alpha': 0.25, 'gamma': 0.33, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 7.499672174453735, 'unwatermarked': 9.333029508590698}
+Log_Diversity:
+{'watermarked': 7.537636299590162, 'unwatermarked': 7.409050046553325}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.7, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.3, 'P': 1.0, 'R': 0.7, 'F1': 0.8235294117647058, 'ACC': 0.85}
+z-score of attack_doc_P_dipper1.6263534483083082
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-S_1:1.9217244166950749
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.8, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.2, 'P': 1.0, 'R': 0.8, 'F1': 0.8888888888888888, 'ACC': 0.9}
+z-score of attack_Word-S_3:1.535080730961119
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.7, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.3, 'P': 0.875, 'R': 0.7, 'F1': 0.7777777777777778, 'ACC': 0.8}
+z-score of attack_Word-S_5:1.4509136876324744
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.4, 'FPR': 0.6, 'FNR': 0.0, 'P': 0.625, 'R': 1.0, 'F1': 0.7692307692307693, 'ACC': 0.7}
+z-score of attack_Word-S_7:0.10384297507474226
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:1.5925863777864362
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.0, 'P': 0.7692307692307693, 'R': 1.0, 'F1': 0.8695652173913043, 'ACC': 0.85}
+z-score of attack_Word-D_3:0.9228360981554353
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.4, 'FPR': 0.6, 'FNR': 0.0, 'P': 0.625, 'R': 1.0, 'F1': 0.7692307692307693, 'ACC': 0.7}
+z-score of attack_Word-D_5:0.12825516498225545
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 0.4, 'FPR': 0.6, 'FNR': 0.0, 'P': 0.625, 'R': 1.0, 'F1': 0.7692307692307693, 'ACC': 0.7}
+z-score of attack_Word-D_7:0.14756002906682394
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=best :1.4384505351225312
+detection accuracy of fpr=1% :
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of fpr=1% :2.0238420540633504
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.4384505351225312
+execution_time_unwatermarked_sum:53.2840096950531
+execution_time_unwatermarked_avg:5.32840096950531
+execution_time_watermarked_sum:170.37350583076477
+execution_time_watermarked_avg:17.037350583076478
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 0.6, 'alpha': 0.15, 'gamma': 0.41, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 6.711879301071167, 'unwatermarked': 6.6672440528869625}
+Log_Diversity:
+{'watermarked': 7.166360414782126, 'unwatermarked': 7.642594655864551}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.1, 'P': 0.6923076923076923, 'R': 0.9, 'F1': 0.782608695652174, 'ACC': 0.75}
+z-score of attack_doc_P_dipper-0.3710181732520782
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of attack_Word-S_1:1.4300033710952031
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.9, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.1, 'P': 0.8181818181818182, 'R': 0.9, 'F1': 0.8571428571428571, 'ACC': 0.85}
+z-score of attack_Word-S_3:0.6951220194402595
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.9, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.1, 'P': 0.75, 'R': 0.9, 'F1': 0.8181818181818182, 'ACC': 0.8}
+z-score of attack_Word-S_5:0.5482527297918315
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-S_7:-0.5579133766994238
+detection accuracy of attack_Word-D_1:
+{'TPR': 0.8, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.2, 'P': 0.8888888888888888, 'R': 0.8, 'F1': 0.8421052631578947, 'ACC': 0.85}
+z-score of attack_Word-D_1:1.771797791514516
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.0, 'P': 0.7142857142857143, 'R': 1.0, 'F1': 0.8333333333333334, 'ACC': 0.8}
+z-score of attack_Word-D_3:-0.41700847562553023
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.9, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.1, 'P': 0.6923076923076923, 'R': 0.9, 'F1': 0.782608695652174, 'ACC': 0.75}
+z-score of attack_Word-D_5:-0.2088376265070476
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.0, 'P': 0.5882352941176471, 'R': 1.0, 'F1': 0.7407407407407407, 'ACC': 0.65}
+z-score of attack_Word-D_7:-1.2332931503222748
+detection accuracy of fpr=best :
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of fpr=best :1.5880739054590851
+detection accuracy of fpr=1% :
+{'TPR': 0.7, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.3, 'P': 1.0, 'R': 0.7, 'F1': 0.8235294117647058, 'ACC': 0.85}
+z-score of fpr=1% :2.5311464360369267
+detection accuracy of fpr=10% :
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of fpr=10% :1.5880739054590851
+execution_time_unwatermarked_sum:54.40466666221619
+execution_time_unwatermarked_avg:5.440466666221619
+execution_time_watermarked_sum:172.70536422729492
+execution_time_watermarked_avg:17.270536422729492
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 0.6, 'alpha': 0.1, 'gamma': 0.4, 'epsilon': 2.0, 'delta': 2.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 7.548465633392334, 'unwatermarked': 7.285362482070923}
+Log_Diversity:
+{'watermarked': 7.170043873339438, 'unwatermarked': 7.234989960068402}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_doc_P_dipper-0.5560433038292616
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-S_1:1.7330117160832845
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.0, 'P': 0.7692307692307693, 'R': 1.0, 'F1': 0.8695652173913043, 'ACC': 0.85}
+z-score of attack_Word-S_3:0.8735525738121138
+detection accuracy of attack_Word-S_5:
+{'TPR': 1.0, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.0, 'P': 0.7692307692307693, 'R': 1.0, 'F1': 0.8695652173913043, 'ACC': 0.85}
+z-score of attack_Word-S_5:0.8306914125906324
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.0, 'P': 0.7142857142857143, 'R': 1.0, 'F1': 0.8333333333333334, 'ACC': 0.8}
+z-score of attack_Word-S_7:0.01437466256221906
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:2.2193234286756542
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-D_3:2.2293845873466074
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.0, 'P': 0.7692307692307693, 'R': 1.0, 'F1': 0.8695652173913043, 'ACC': 0.85}
+z-score of attack_Word-D_5:0.9083821588823148
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.1, 'P': 0.6923076923076923, 'R': 0.9, 'F1': 0.782608695652174, 'ACC': 0.75}
+z-score of attack_Word-D_7:-0.17460757394239454
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :2.6540351239243973
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :2.6540351239243973
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.8528919792826943
+execution_time_unwatermarked_sum:53.934783935546875
+execution_time_unwatermarked_avg:5.3934783935546875
+execution_time_watermarked_sum:171.15572905540466
+execution_time_watermarked_avg:17.115572905540468
+=========================
+
+parameter of config as follows:
+algorithm: SIR dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SIR', 'delta': 1.0, 'chunk_length': 10, 'scale_dimension': 300, 'z_threshold': 0.2, 'transform_model_input_dim': 1024, 'transform_model_name': 'watermark/sir/model/transform_model_cbert.pth', 'embedding_model_path': './models/compositional-bert-large-uncased/', 'mapping_name': 'watermark/sir/mapping/300_mapping_152064.json', 'temperature_inner': 0.6}
+PPL:
+{'watermarked': 6.965498590469361, 'unwatermarked': 7.112629795074463}
+Log_Diversity:
+{'watermarked': 7.553833166150616, 'unwatermarked': 7.4061837652717895}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 1.0, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.0, 'P': 0.5882352941176471, 'R': 1.0, 'F1': 0.7407407407407407, 'ACC': 0.65}
+z-score of attack_doc_P_dipper-0.01128387292608027
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of attack_Word-S_1:0.14149603891024293
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.8, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.2, 'P': 0.7272727272727273, 'R': 0.8, 'F1': 0.7619047619047619, 'ACC': 0.75}
+z-score of attack_Word-S_3:0.0689732303495253
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.7, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.3, 'P': 0.7, 'R': 0.7, 'F1': 0.7, 'ACC': 0.7}
+z-score of attack_Word-S_5:0.0658169421067573
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.2, 'FPR': 0.8, 'FNR': 0.0, 'P': 0.5555555555555556, 'R': 1.0, 'F1': 0.7142857142857143, 'ACC': 0.6}
+z-score of attack_Word-S_7:-0.047900007790645155
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.0, 'P': 0.7692307692307693, 'R': 1.0, 'F1': 0.8695652173913043, 'ACC': 0.85}
+z-score of attack_Word-D_1:0.08270652186420038
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.6, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.4, 'P': 0.6666666666666666, 'R': 0.6, 'F1': 0.631578947368421, 'ACC': 0.65}
+z-score of attack_Word-D_3:0.0814727267128284
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-D_5:-0.1312798477539962
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-D_7:-0.2994146907391647
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :0.1660859442126992
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :0.1660859442126992
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :0.1451723293079366
+execution_time_unwatermarked_sum:52.258686780929565
+execution_time_unwatermarked_avg:5.225868678092956
+execution_time_watermarked_sum:88.98782110214233
+execution_time_watermarked_avg:8.898782110214233
+=========================
+
+parameter of config as follows:
+algorithm: DIP dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'DIP', 'gamma': 0.5, 'alpha': 0.45, 'key': 42, 'prefix_length': 5, 'z_threshold': 1.513, 'ignore_history_generation': 0, 'ignore_history_detection': 0, 'temperature_inner': 0.6}
+PPL:
+{'watermarked': 6.9802008152008055, 'unwatermarked': 6.735686302185059}
+Log_Diversity:
+{'watermarked': 7.365887488549985, 'unwatermarked': 7.609968021621279}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 0.2, 'FPR': 0.8, 'FNR': 0.1, 'P': 0.5294117647058824, 'R': 0.9, 'F1': 0.6666666666666666, 'ACC': 0.55}
+z-score of attack_doc_P_dipper-0.40500226616859436
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.9, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.1, 'P': 0.75, 'R': 0.9, 'F1': 0.8181818181818182, 'ACC': 0.8}
+z-score of attack_Word-S_1:0.3100603073835373
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.8, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.2, 'P': 0.7272727272727273, 'R': 0.8, 'F1': 0.7619047619047619, 'ACC': 0.75}
+z-score of attack_Word-S_3:0.25771617889404297
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.8, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.2, 'P': 0.6666666666666666, 'R': 0.8, 'F1': 0.7272727272727273, 'ACC': 0.7}
+z-score of attack_Word-S_5:0.10192792117595673
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.1, 'P': 0.5, 'R': 0.9, 'F1': 0.6428571428571429, 'ACC': 0.5}
+z-score of attack_Word-S_7:-0.5044786632061005
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 0.5, 'FPR': 0.5, 'FNR': 0.0, 'P': 0.6666666666666666, 'R': 1.0, 'F1': 0.8, 'ACC': 0.75}
+z-score of attack_Word-D_1:-0.034836649894714355
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.0, 'P': 0.5263157894736842, 'R': 1.0, 'F1': 0.6896551724137931, 'ACC': 0.55}
+z-score of attack_Word-D_3:-0.5119113326072693
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.0, 'P': 0.5263157894736842, 'R': 1.0, 'F1': 0.6896551724137931, 'ACC': 0.55}
+z-score of attack_Word-D_5:-0.4836104214191437
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.2, 'FPR': 0.8, 'FNR': 0.1, 'P': 0.5294117647058824, 'R': 0.9, 'F1': 0.6666666666666666, 'ACC': 0.55}
+z-score of attack_Word-D_7:-0.3995200842618942
+detection accuracy of fpr=best :
+{'TPR': 0.8, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.2, 'P': 1.0, 'R': 0.8, 'F1': 0.8888888888888888, 'ACC': 0.9}
+z-score of fpr=best :0.9079593122005463
+detection accuracy of fpr=1% :
+{'TPR': 0.8, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.2, 'P': 1.0, 'R': 0.8, 'F1': 0.8888888888888888, 'ACC': 0.9}
+z-score of fpr=1% :0.9079593122005463
+detection accuracy of fpr=10% :
+{'TPR': 0.8, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.2, 'P': 0.8888888888888888, 'R': 0.8, 'F1': 0.8421052631578947, 'ACC': 0.85}
+z-score of fpr=10% :0.6802057325839996
+execution_time_unwatermarked_sum:54.310497522354126
+execution_time_unwatermarked_avg:5.431049752235412
+execution_time_watermarked_sum:55.37954354286194
+execution_time_watermarked_avg:5.537954354286194
+=========================
+
+parameter of config as follows:
+algorithm: SynthID dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SynthID', 'ngram_len': 5, 'keys': [654, 400, 836, 123, 340, 443, 597, 160, 57, 29, 590, 639, 13, 715, 468, 990, 966, 226, 324, 585, 118, 504, 421, 521, 129, 669, 732, 225, 90, 960], 'sampling_table_size': 65536, 'sampling_table_seed': 0, 'watermark_mode': 'non-distortionary', 'num_leaves': 2, 'context_history_size': 1024, 'detector_type': 'mean', 'threshold': 0.52, 'temperature_inner': 0.6}
+PPL:
+{'watermarked': 6.452956819534302, 'unwatermarked': 6.343760633468628}
+Log_Diversity:
+{'watermarked': 8.513775864332821, 'unwatermarked': 7.333429571760203}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_doc_P_dipper0.4906622023809524
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-S_1:0.5064487179487179
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.6, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.4, 'P': 1.0, 'R': 0.6, 'F1': 0.75, 'ACC': 0.8}
+z-score of attack_Word-S_3:0.506250754147813
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-S_5:0.4927089947089947
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-S_7:0.49117975223562227
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:0.5068665644171779
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.8, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.2, 'P': 1.0, 'R': 0.8, 'F1': 0.8888888888888888, 'ACC': 0.9}
+z-score of attack_Word-D_3:0.5078618881118881
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.8, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.2, 'P': 0.5333333333333333, 'R': 0.8, 'F1': 0.64, 'ACC': 0.55}
+z-score of attack_Word-D_5:0.501050605060506
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-D_7:0.4930463209219858
+detection accuracy of fpr=best :
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of fpr=best :0.5115025773195876
+detection accuracy of fpr=1% :
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of fpr=1% :0.5115025773195876
+detection accuracy of fpr=10% :
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of fpr=10% :0.5061136363636364
+execution_time_unwatermarked_sum:53.68978548049927
+execution_time_unwatermarked_avg:5.368978548049927
+execution_time_watermarked_sum:57.69977068901062
+execution_time_watermarked_avg:5.769977068901062
+=========================
+
+parameter of config as follows:
+algorithm: Unbiased dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'Unbiased', 'gamma': 0.5, 'key': 42, 'prefix_length': 5, 'z_threshold': 1.513, 'ignore_history': 1, 'temperature_inner': 0.6}
+PPL:
+{'watermarked': 7.519454479217529, 'unwatermarked': 6.443351221084595}
+Log_Diversity:
+{'watermarked': 7.4374417572602765, 'unwatermarked': 7.671981798894832}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.7, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.3, 'P': 0.7777777777777778, 'R': 0.7, 'F1': 0.7368421052631579, 'ACC': 0.75}
+z-score of attack_doc_P_dipper0.19874966144561768
+detection accuracy of attack_Word-S_1:
+{'TPR': 0.9, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.1, 'P': 0.8181818181818182, 'R': 0.9, 'F1': 0.8571428571428571, 'ACC': 0.85}
+z-score of attack_Word-S_1:0.19267814606428146
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.0, 'P': 0.5263157894736842, 'R': 1.0, 'F1': 0.6896551724137931, 'ACC': 0.55}
+z-score of attack_Word-S_3:-0.577680766582489
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.9, 'TNR': 0.2, 'FPR': 0.8, 'FNR': 0.1, 'P': 0.5294117647058824, 'R': 0.9, 'F1': 0.6666666666666666, 'ACC': 0.55}
+z-score of attack_Word-S_5:-0.4856116324663162
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.1, 'P': 0.5, 'R': 0.9, 'F1': 0.6428571428571429, 'ACC': 0.5}
+z-score of attack_Word-S_7:-0.5910070836544037
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 0.6, 'FPR': 0.4, 'FNR': 0.0, 'P': 0.7142857142857143, 'R': 1.0, 'F1': 0.8333333333333334, 'ACC': 0.8}
+z-score of attack_Word-D_1:0.01879115030169487
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.1, 'FPR': 0.9, 'FNR': 0.0, 'P': 0.5263157894736842, 'R': 1.0, 'F1': 0.6896551724137931, 'ACC': 0.55}
+z-score of attack_Word-D_3:-0.5807203352451324
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-D_5:-1.0026026964187622
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.9, 'TNR': 0.0, 'FPR': 1.0, 'FNR': 0.1, 'P': 0.47368421052631576, 'R': 0.9, 'F1': 0.6206896551724138, 'ACC': 0.45}
+z-score of attack_Word-D_7:-0.7065028548240662
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.0, 'P': 0.8333333333333334, 'R': 1.0, 'F1': 0.9090909090909091, 'ACC': 0.9}
+z-score of fpr=best :0.28118035942316055
+detection accuracy of fpr=1% :
+{'TPR': 0.7, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.3, 'P': 1.0, 'R': 0.7, 'F1': 0.8235294117647058, 'ACC': 0.85}
+z-score of fpr=1% :1.3237926959991455
+detection accuracy of fpr=10% :
+{'TPR': 0.9, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.1, 'P': 0.9, 'R': 0.9, 'F1': 0.9, 'ACC': 0.9}
+z-score of fpr=10% :0.6383553892374039
+execution_time_unwatermarked_sum:54.053576946258545
+execution_time_unwatermarked_avg:5.405357694625854
+execution_time_watermarked_sum:54.9695611000061
+execution_time_watermarked_avg:5.49695611000061
+=========================
+
+parameter of config as follows:
+algorithm: Unigram dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'Unigram', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'z_threshold': 4.0, 'temperature_inner': 0.6}
+PPL:
+{'watermarked': 7.350417757034302, 'unwatermarked': 6.760260677337646}
+Log_Diversity:
+{'watermarked': 7.339455635404635, 'unwatermarked': 7.205908387922824}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_doc_P_dipper1.0611478482042078
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:1.6833821110846143
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_3:1.1722305900468064
+detection accuracy of attack_Word-S_5:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_5:1.1185459179315218
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-S_7:1.4401861984031799
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:1.3667828505505657
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_3:1.4055455522625317
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-D_5:1.8810862424428567
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_7:1.2016998525824585
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :1.603852993585533
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :1.603852993585533
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :0.799979240859334
+execution_time_unwatermarked_sum:53.39421486854553
+execution_time_unwatermarked_avg:5.339421486854553
+execution_time_watermarked_sum:53.48958492279053
+execution_time_watermarked_avg:5.348958492279053
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'soft', 'temperature_inner': 0.6, 'alpha': 0.2, 'gamma': 0.3, 'epsilon': 0.1, 'delta': 2.0, 'eta': 3.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 6.642025423049927, 'unwatermarked': 7.442265367507934}
+Log_Diversity:
+{'watermarked': 7.3218938751569995, 'unwatermarked': 7.636151585849757}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.9, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.1, 'P': 0.8181818181818182, 'R': 0.9, 'F1': 0.8571428571428571, 'ACC': 0.85}
+z-score of attack_doc_P_dipper1.078451467688705
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:2.2466435091988632
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-S_3:1.9493791902501523
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.8, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.2, 'P': 0.8, 'R': 0.8, 'F1': 0.8, 'ACC': 0.8}
+z-score of attack_Word-S_5:1.1075511237738511
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.7, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.3, 'P': 0.875, 'R': 0.7, 'F1': 0.7777777777777778, 'ACC': 0.8}
+z-score of attack_Word-S_7:1.4043428816449328
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:2.1884184187169233
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-D_3:1.5238945130619188
+detection accuracy of attack_Word-D_5:
+{'TPR': 0.8, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.2, 'P': 0.8888888888888888, 'R': 0.8, 'F1': 0.8421052631578947, 'ACC': 0.85}
+z-score of attack_Word-D_5:1.484604582566741
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 0.2, 'FPR': 0.8, 'FNR': 0.0, 'P': 0.5555555555555556, 'R': 1.0, 'F1': 0.7142857142857143, 'ACC': 0.6}
+z-score of attack_Word-D_7:-0.27272778909703205
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :2.139513450226498
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :2.139513450226498
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.5731779117259777
+execution_time_unwatermarked_sum:53.870713233947754
+execution_time_unwatermarked_avg:5.387071323394776
+execution_time_watermarked_sum:170.70337176322937
+execution_time_watermarked_avg:17.070337176322937
+=========================
+
+parameter of config as follows:
+algorithm: KGW dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'KGW', 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'z_threshold': 4.0, 'f_scheme': 'time', 'window_scheme': 'left', 'temperature_inner': 0.6}
+PPL:
+{'watermarked': 7.756261920928955, 'unwatermarked': 6.418381023406982}
+Log_Diversity:
+{'watermarked': 7.414562606596862, 'unwatermarked': 7.580375854592201}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.8, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.2, 'P': 0.8888888888888888, 'R': 0.8, 'F1': 0.8421052631578947, 'ACC': 0.85}
+z-score of attack_doc_P_dipper0.35128597943290646
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-S_1:1.0315379518422236
+detection accuracy of attack_Word-S_3:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-S_3:0.5014341567413823
+detection accuracy of attack_Word-S_5:
+{'TPR': 0.9, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.1, 'P': 0.8181818181818182, 'R': 0.9, 'F1': 0.8571428571428571, 'ACC': 0.85}
+z-score of attack_Word-S_5:-0.1097872015871781
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.0, 'P': 0.8333333333333334, 'R': 1.0, 'F1': 0.9090909090909091, 'ACC': 0.9}
+z-score of attack_Word-S_7:-0.1097872015871781
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-D_1:0.4366317917547837
+detection accuracy of attack_Word-D_3:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-D_3:0.5989765024026541
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of attack_Word-D_5:0.4369136970540719
+detection accuracy of attack_Word-D_7:
+{'TPR': 0.8, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.2, 'P': 0.8, 'R': 0.8, 'F1': 0.8, 'ACC': 0.8}
+z-score of attack_Word-D_7:-0.17460757394239454
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :2.3101397474293366
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :2.3101397474293366
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.157900734033975
+execution_time_unwatermarked_sum:54.16746282577515
+execution_time_unwatermarked_avg:5.416746282577515
+execution_time_watermarked_sum:54.64720106124878
+execution_time_watermarked_avg:5.464720106124878
+=========================
+
+parameter of config as follows:
+algorithm: SMOOTH dataset: eli5 model: DeepSeek-R1-Distill-Qwen-7B max_new_tokens: 200 min_length: 200 data_lines: 10
+parameter of algorithm as follows:
+{'algorithm_name': 'SMOOTH', 'resilience': 'hard', 'temperature_inner': 0.6, 'alpha': 0.2, 'gamma': 0.3, 'epsilon': 0.1, 'delta': 2.0, 'eta': 3.0, 'z_threshold': 4.0, 'entropy_threshold': 0.9, 'min_length': 100, 'hash_key': 15485863, 'prefix_length': 1, 'f_scheme': 'time', 'window_scheme': 'left'}
+PPL:
+{'watermarked': 8.18950309753418, 'unwatermarked': 6.664825105667115}
+Log_Diversity:
+{'watermarked': 7.426352543223599, 'unwatermarked': 7.325366399995761}
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.7, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.3, 'P': 0.7777777777777778, 'R': 0.7, 'F1': 0.7368421052631579, 'ACC': 0.75}
+z-score of attack_doc_P_dipper0.8525454694590537
+detection accuracy of attack_Word-S_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-S_1:2.5381494684852686
+detection accuracy of attack_Word-S_3:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-S_3:2.344342023912232
+detection accuracy of attack_Word-S_5:
+{'TPR': 1.0, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.0, 'P': 0.8333333333333334, 'R': 1.0, 'F1': 0.9090909090909091, 'ACC': 0.9}
+z-score of attack_Word-S_5:1.082350203740925
+detection accuracy of attack_Word-S_7:
+{'TPR': 0.9, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.1, 'P': 0.8181818181818182, 'R': 0.9, 'F1': 0.8571428571428571, 'ACC': 0.85}
+z-score of attack_Word-S_7:0.9383381719306414
+detection accuracy of attack_Word-D_1:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of attack_Word-D_1:2.5623782682037204
+detection accuracy of attack_Word-D_3:
+{'TPR': 0.9, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.1, 'P': 1.0, 'R': 0.9, 'F1': 0.9473684210526315, 'ACC': 0.95}
+z-score of attack_Word-D_3:2.5024145283501507
+detection accuracy of attack_Word-D_5:
+{'TPR': 1.0, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.0, 'P': 0.8333333333333334, 'R': 1.0, 'F1': 0.9090909090909091, 'ACC': 0.9}
+z-score of attack_Word-D_5:1.1345185335201633
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 0.3, 'FPR': 0.7, 'FNR': 0.0, 'P': 0.5882352941176471, 'R': 1.0, 'F1': 0.7407407407407407, 'ACC': 0.65}
+z-score of attack_Word-D_7:0.07142857142857142
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=best :2.942845546310779
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+z-score of fpr=1% :2.942845546310779
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95}
+z-score of fpr=10% :1.955604828154819
+execution_time_unwatermarked_sum:53.91990613937378
+execution_time_unwatermarked_avg:5.391990613937378
+execution_time_watermarked_sum:171.51734495162964
+execution_time_watermarked_avg:17.151734495162962
+=========================

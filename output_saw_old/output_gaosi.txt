@@ -1,0 +1,1387 @@
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.09, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.6655433177948
+平均生成每一条无水印文本需要的时间/秒：0.893310866355896
+生成200条有水印文本需要的总时间/秒：45.91572427749634
+平均生成每一条有水印文本需要的时间/秒：0.9183144855499268
+文本质量PPL指标如下:
+{'watermarked': 13.554415349960328, 'unwatermarked': 12.80480477333069}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.856943710510128, 'unwatermarked': 11.730083550154943}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0474581122398376
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0330443978309631
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0474581122398376
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0452521443367004
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.9423076923076923}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0320141315460205
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.9473684210526315}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.03801029920578
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.08, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.30429148674011
+平均生成每一条无水印文本需要的时间/秒：0.8860858297348022
+生成200条有水印文本需要的总时间/秒：45.4509813785553
+平均生成每一条有水印文本需要的时间/秒：0.909019627571106
+文本质量PPL指标如下:
+{'watermarked': 13.802229270935058, 'unwatermarked': 13.045050287246704}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.137324468582744, 'unwatermarked': 11.171089664518881}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0378408432006836
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0278306603431702
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0378408432006836
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0366936922073364
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.8958333333333334}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0280761122703552
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.9361702127659575}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0303040742874146
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.657904386520386
+平均生成每一条无水印文本需要的时间/秒：0.8931580877304077
+生成200条有水印文本需要的总时间/秒：45.94564700126648
+平均生成每一条有水印文本需要的时间/秒：0.9189129400253296
+文本质量PPL指标如下:
+{'watermarked': 12.451151647567748, 'unwatermarked': 12.50712586402893}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.930824581835065, 'unwatermarked': 11.058774930956988}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.034466564655304
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0241746306419373
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.034466564655304
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.98989898989899}
+attack_Word-D_5攻击的最佳z-score阈值是:1.033740520477295
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.9142857142857143}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0198041200637817
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.9142857142857143}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0202714204788208
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.06, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.276570320129395
+平均生成每一条无水印文本需要的时间/秒：0.8855314064025879
+生成200条有水印文本需要的总时间/秒：45.4939603805542
+平均生成每一条有水印文本需要的时间/秒：0.909879207611084
+文本质量PPL指标如下:
+{'watermarked': 13.163107376098633, 'unwatermarked': 12.22422176361084}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.716412768214461, 'unwatermarked': 11.417195076523173}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0236282348632812
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.021309494972229
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0236282348632812
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.9795918367346939}
+attack_Word-D_5攻击的最佳z-score阈值是:1.022648572921753
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.8403361344537815}
+attack_Word-S_5攻击的最佳z-score阈值是:1.013855516910553
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.8, 'F1': 0.8247422680412371}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0205036997795105
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.05, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.57746195793152
+平均生成每一条无水印文本需要的时间/秒：0.8915492391586304
+生成200条有水印文本需要的总时间/秒：45.79366397857666
+平均生成每一条有水印文本需要的时间/秒：0.9158732795715332
+文本质量PPL指标如下:
+{'watermarked': 12.80900676727295, 'unwatermarked': 11.7390700340271}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.423691800820825, 'unwatermarked': 11.269414513706792}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.94, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.06, 'P': 0.9591836734693877, 'R': 0.94, 'F1': 0.9494949494949495, 'ACC': 0.95}
+无攻击(fpr=best)的最佳z-score阈值是:1.0193521976470947
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.96, 'F1': 0.9320388349514563}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0166449546813965
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.74, 'F1': 0.8505747126436781}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0261343717575073
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.96}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0196037888526917
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.7903225806451613}
+attack_Word-S_5攻击的最佳z-score阈值是:1.009855329990387
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.84, 'F1': 0.8155339805825242}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.014561951160431
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.04, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.85121178627014
+平均生成每一条无水印文本需要的时间/秒：0.8770242357254028
+生成200条有水印文本需要的总时间/秒：44.992852449417114
+平均生成每一条有水印文本需要的时间/秒：0.8998570489883423
+文本质量PPL指标如下:
+{'watermarked': 12.344062366485595, 'unwatermarked': 11.646087923049926}
+文本质量Log_Diversity指标如下:
+{'watermarked': 11.311690080106539, 'unwatermarked': 10.73365885660364}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.98, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.02, 'P': 0.9074074074074074, 'R': 0.98, 'F1': 0.9423076923076923, 'ACC': 0.94}
+无攻击(fpr=best)的最佳z-score阈值是:1.0135539174079895
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.98, 'F1': 0.9423076923076923}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0135539174079895
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.54, 'F1': 0.7012987012987013}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0190929174423218
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.9}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0137625336647034
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.7194244604316546}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0040003061294556
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.7678571428571429}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0097465515136719
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.03, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.84222674369812
+平均生成每一条无水印文本需要的时间/秒：0.8768445348739624
+生成200条有水印文本需要的总时间/秒：45.26565194129944
+平均生成每一条有水印文本需要的时间/秒：0.9053130388259888
+文本质量PPL指标如下:
+{'watermarked': 12.395752649307251, 'unwatermarked': 12.409223232269287}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.829599409219297, 'unwatermarked': 10.753027787167728}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.96, 'TNR': 0.82, 'FPR': 0.18, 'FNR': 0.04, 'P': 0.8421052631578947, 'R': 0.96, 'F1': 0.897196261682243, 'ACC': 0.89}
+无攻击(fpr=best)的最佳z-score阈值是:1.008962631225586
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.86, 'F1': 0.8775510204081632}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0101495385169983
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.68, 'F1': 0.8095238095238095}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0126177668571472
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.82, 'F1': 0.8631578947368421}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0104113221168518
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.7213114754098361}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0048381686210632
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.8}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0073436498641968
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.02, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.32778000831604
+平均生成每一条无水印文本需要的时间/秒：0.8865556001663208
+生成200条有水印文本需要的总时间/秒：45.82511830329895
+平均生成每一条有水印文本需要的时间/秒：0.916502366065979
+文本质量PPL指标如下:
+{'watermarked': 12.228954124450684, 'unwatermarked': 12.44079197883606}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.39653350080991, 'unwatermarked': 12.993178799428463}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.72, 'TNR': 0.8, 'FPR': 0.2, 'FNR': 0.28, 'P': 0.782608695652174, 'R': 0.72, 'F1': 0.75, 'ACC': 0.76}
+无攻击(fpr=best)的最佳z-score阈值是:1.006321668624878
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.34, 'F1': 0.4722222222222222}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0083300471305847
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.14, 'F1': 0.24561403508771928}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0097509026527405
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.68, 'F1': 0.7311827956989247}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0064964294433594
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.6577181208053692}
+attack_Word-S_5攻击的最佳z-score阈值是:0.999175637960434
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.7153284671532847}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0029118657112122
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.01, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.81794023513794
+平均生成每一条无水印文本需要的时间/秒：0.8963588047027587
+生成200条有水印文本需要的总时间/秒：46.12242364883423
+平均生成每一条有水印文本需要的时间/秒：0.9224484729766845
+文本质量PPL指标如下:
+{'watermarked': 10.996324844360352, 'unwatermarked': 12.685453157424927}
+文本质量Log_Diversity指标如下:
+{'watermarked': 11.60070682759638, 'unwatermarked': 11.305898540313137}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.98, 'TNR': 0.16, 'FPR': 0.84, 'FNR': 0.02, 'P': 0.5384615384615384, 'R': 0.98, 'F1': 0.6950354609929078, 'ACC': 0.57}
+无攻击(fpr=best)的最佳z-score阈值是:1.0005120038986206
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.42, 'F1': 0.5526315789473685}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0033395290374756
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.22, 'F1': 0.36065573770491804}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0041351318359375
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.82, 'F1': 0.6890756302521008}
+attack_Word-D_5攻击的最佳z-score阈值是:1.001745343208313
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.6666666666666666}
+attack_Word-S_5攻击的最佳z-score阈值是:0.9998564720153809
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.688}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.001516044139862
+==========分割线==========
+
+数据集与模型的参数信息如下：
+ dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.09, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.80565142631531
+平均生成每一条无水印文本需要的时间/秒：0.8961130285263061
+生成200条有水印文本需要的总时间/秒：46.063475370407104
+平均生成每一条有水印文本需要的时间/秒：0.9212695074081421
+文本质量PPL指标如下:
+{'watermarked': 13.642994213104249, 'unwatermarked': 11.764800472259521}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.349968386416016, 'unwatermarked': 10.544781787688668}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0238419771194458
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0115580558776855
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0238419771194458
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.9484536082474226}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0172949433326721
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.8, 'F1': 0.8791208791208791}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0161661505699158
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.7226890756302521}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0016736388206482
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.08, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.681612491607666
+平均生成每一条无水印文本需要的时间/秒：0.8936322498321533
+生成200条有水印文本需要的总时间/秒：45.918559312820435
+平均生成每一条有水印文本需要的时间/秒：0.9183711862564087
+文本质量PPL指标如下:
+{'watermarked': 14.267514362335206, 'unwatermarked': 12.074676475524903}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.318073037093425, 'unwatermarked': 12.239518581078746}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0228859186172485
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0075794458389282
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0228859186172485
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.9306930693069307}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0076971650123596
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.9292929292929293}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0079883933067322
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.76, 'F1': 0.7835051546391752}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0037813782691956
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.208160161972046
+平均生成每一条无水印文本需要的时间/秒：0.8841632032394409
+生成200条有水印文本需要的总时间/秒：45.438600301742554
+平均生成每一条有水印文本需要的时间/秒：0.9087720060348511
+文本质量PPL指标如下:
+{'watermarked': 13.375675144195556, 'unwatermarked': 11.647211513519288}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.86049353825767, 'unwatermarked': 11.112703284615149}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0171226263046265
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0092030763626099
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0171226263046265
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.9292929292929293}
+attack_Word-D_5攻击的最佳z-score阈值是:1.009596347808838
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.84, 'F1': 0.875}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0092996954917908
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.7894736842105263}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.000639021396637
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.06, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.699647426605225
+平均生成每一条无水印文本需要的时间/秒：0.8739929485321045
+生成200条有水印文本需要的总时间/秒：44.93478536605835
+平均生成每一条有水印文本需要的时间/秒：0.898695707321167
+文本质量PPL指标如下:
+{'watermarked': 13.176996126174927, 'unwatermarked': 12.204383592605591}
+文本质量Log_Diversity指标如下:
+{'watermarked': 12.324298100137057, 'unwatermarked': 10.938997255747834}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+无攻击(fpr=best)的最佳z-score阈值是:1.0122091174125671
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0100947618484497
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.94, 'F1': 0.9690721649484536}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0155097246170044
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.8431372549019608}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0062233209609985
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.8543689320388349}
+attack_Word-S_5攻击的最佳z-score阈值是:1.006182074546814
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.76, 'F1': 0.6972477064220184}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0016810894012451
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.05, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.32691240310669
+平均生成每一条无水印文本需要的时间/秒：0.8865382480621338
+生成200条有水印文本需要的总时间/秒：45.54495859146118
+平均生成每一条有水印文本需要的时间/秒：0.9108991718292236
+文本质量PPL指标如下:
+{'watermarked': 13.326995315551757, 'unwatermarked': 12.292415523529053}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.957701974971364, 'unwatermarked': 9.86748696864489}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+无攻击(fpr=best)的最佳z-score阈值是:1.0071940422058105
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0049994587898254
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.94, 'F1': 0.9690721649484536}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0105038285255432
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.8888888888888888}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0047540068626404
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.782608695652174}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0001530051231384
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.72}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.997143030166626
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.04, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.986199378967285
+平均生成每一条无水印文本需要的时间/秒：0.8797239875793457
+生成200条有水印文本需要的总时间/秒：45.21844410896301
+平均生成每一条有水印文本需要的时间/秒：0.9043688821792603
+文本质量PPL指标如下:
+{'watermarked': 12.049666509628295, 'unwatermarked': 12.667988033294678}
+文本质量Log_Diversity指标如下:
+{'watermarked': 11.36647179408445, 'unwatermarked': 11.623806217623674}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.96, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.04, 'P': 0.96, 'R': 0.96, 'F1': 0.96, 'ACC': 0.96}
+无攻击(fpr=best)的最佳z-score阈值是:1.006529152393341
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.98, 'F1': 0.9423076923076923}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0053632855415344
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.72, 'F1': 0.8372093023255814}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0093479752540588
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.78, 'F1': 0.8041237113402062}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0034242272377014
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.7818181818181819}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0011183023452759
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.7333333333333333}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.9991296529769897
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.03, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.78378510475159
+平均生成每一条无水印文本需要的时间/秒：0.8956757020950318
+生成200条有水印文本需要的总时间/秒：46.061864376068115
+平均生成每一条有水印文本需要的时间/秒：0.9212372875213624
+文本质量PPL指标如下:
+{'watermarked': 12.096739730834962, 'unwatermarked': 12.369900217056275}
+文本质量Log_Diversity指标如下:
+{'watermarked': 12.15907866852429, 'unwatermarked': 11.337568505736987}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.96, 'TNR': 0.86, 'FPR': 0.14, 'FNR': 0.04, 'P': 0.8727272727272727, 'R': 0.96, 'F1': 0.9142857142857143, 'ACC': 0.91}
+无攻击(fpr=best)的最佳z-score阈值是:1.0026633739471436
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.86, 'F1': 0.8775510204081632}
+无攻击(fpr=10%)的最佳z-score阈值是:1.003596544265747
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.56, 'F1': 0.717948717948718}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0062923431396484
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.76, 'F1': 0.7524752475247525}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0012234449386597
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.7559055118110236}
+attack_Word-S_5攻击的最佳z-score阈值是:0.9990217387676239
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.6870229007633588}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.997899979352951
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.02, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.60650038719177
+平均生成每一条无水印文本需要的时间/秒：0.8921300077438354
+生成200条有水印文本需要的总时间/秒：45.92501401901245
+平均生成每一条有水印文本需要的时间/秒：0.918500280380249
+文本质量PPL指标如下:
+{'watermarked': 12.088814692497253, 'unwatermarked': 11.271126146316528}
+文本质量Log_Diversity指标如下:
+{'watermarked': 11.64138876231804, 'unwatermarked': 11.008991562985678}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.86, 'TNR': 0.7, 'FPR': 0.3, 'FNR': 0.14, 'P': 0.7413793103448276, 'R': 0.86, 'F1': 0.7962962962962963, 'ACC': 0.78}
+无攻击(fpr=best)的最佳z-score阈值是:1.001218318939209
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.5, 'F1': 0.625}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0031374096870422
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.04, 'F1': 0.07692307692307693}
+无攻击(fpr=1%)的最佳z-score阈值是:1.006354570388794
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.7076923076923077}
+attack_Word-D_5攻击的最佳z-score阈值是:0.998496413230896
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.7666666666666667}
+attack_Word-S_5攻击的最佳z-score阈值是:0.9997765123844147
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.6906474820143885}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.99738809466362
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.01, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.17139768600464
+平均生成每一条无水印文本需要的时间/秒：0.8834279537200928
+生成200条有水印文本需要的总时间/秒：45.42120933532715
+平均生成每一条有水印文本需要的时间/秒：0.908424186706543
+文本质量PPL指标如下:
+{'watermarked': 11.81140076637268, 'unwatermarked': 12.362529964447022}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.71032843616642, 'unwatermarked': 11.500900466737503}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.96, 'TNR': 0.38, 'FPR': 0.62, 'FNR': 0.04, 'P': 0.6075949367088608, 'R': 0.96, 'F1': 0.7441860465116279, 'ACC': 0.67}
+无攻击(fpr=best)的最佳z-score阈值是:0.9995023012161255
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.46, 'F1': 0.5897435897435898}
+无攻击(fpr=10%)的最佳z-score阈值是:1.000876009464264
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.16, 'F1': 0.27586206896551724}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0019897818565369
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.6857142857142857}
+attack_Word-D_5攻击的最佳z-score阈值是:0.998672604560852
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.732824427480916}
+attack_Word-S_5攻击的最佳z-score阈值是:0.999352216720581
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.6896551724137931}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.9982707500457764
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.86741900444031
+平均生成每一条无水印文本需要的时间/秒：0.8773483800888061
+生成200条有水印文本需要的总时间/秒：45.03562617301941
+平均生成每一条有水印文本需要的时间/秒：0.9007125234603882
+文本质量PPL指标如下:
+{'watermarked': 12.978396806716919, 'unwatermarked': 13.07742166519165}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.473844256804254, 'unwatermarked': 11.450941388454583}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.029131829738617
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0256163477897644
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.029131829738617
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.98989898989899}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0288709998130798
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.8627450980392157}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0226756930351257
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.8703703703703703}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0206910967826843
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.9, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.884944438934326
+平均生成每一条无水印文本需要的时间/秒：0.8976988887786865
+生成200条有水印文本需要的总时间/秒：46.12420678138733
+平均生成每一条有水印文本需要的时间/秒：0.9224841356277466
+文本质量PPL指标如下:
+{'watermarked': 13.708825922012329, 'unwatermarked': 12.131146125793457}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.53286505528062, 'unwatermarked': 11.61905299583971}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0326303243637085
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0224676132202148
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0326303243637085
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9900990099009901}
+attack_Word-D_5攻击的最佳z-score阈值是:1.028702974319458
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.8990825688073395}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0194305181503296
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.8785046728971962}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0193615555763245
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.8, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.85559153556824
+平均生成每一条无水印文本需要的时间/秒：0.8771118307113648
+生成200条有水印文本需要的总时间/秒：45.10208439826965
+平均生成每一条有水印文本需要的时间/秒：0.9020416879653931
+文本质量PPL指标如下:
+{'watermarked': 12.411595077514649, 'unwatermarked': 12.35974063873291}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.672575473523871, 'unwatermarked': 12.729243880772318}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.033869743347168
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0262259244918823
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.033869743347168
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.9690721649484536}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0323259234428406
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.8545454545454545}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0189937353134155
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.8990825688073395}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0207157731056213
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.7, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.50316882133484
+平均生成每一条无水印文本需要的时间/秒：0.8900633764266968
+生成200条有水印文本需要的总时间/秒：45.718252420425415
+平均生成每一条有水印文本需要的时间/秒：0.9143650484085083
+文本质量PPL指标如下:
+{'watermarked': 12.88273904800415, 'unwatermarked': 13.073399310112}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.560635312928303, 'unwatermarked': 11.98634419291884}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.0, 'P': 0.9803921568627451, 'R': 1.0, 'F1': 0.9900990099009901, 'ACC': 0.99}
+无攻击(fpr=best)的最佳z-score阈值是:1.030851423740387
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.021672546863556
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.96, 'F1': 0.9795918367346939}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0371811389923096
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.98}
+attack_Word-D_5攻击的最佳z-score阈值是:1.029581606388092
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.86}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0203331112861633
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.8737864077669902}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0196625590324402
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.6, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.425419092178345
+平均生成每一条无水印文本需要的时间/秒：0.8885083818435668
+生成200条有水印文本需要的总时间/秒：45.68605160713196
+平均生成每一条有水印文本需要的时间/秒：0.9137210321426391
+文本质量PPL指标如下:
+{'watermarked': 12.956018419265748, 'unwatermarked': 11.753129444122315}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.522407881785567, 'unwatermarked': 11.247323183972094}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0341375470161438
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0246420502662659
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0341375470161438
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.9591836734693877}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0263460874557495
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.76, 'F1': 0.8539325842696629}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0255241990089417
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.8932038834951457}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.023814618587494
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.5, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.903992891311646
+平均生成每一条无水印文本需要的时间/秒：0.8980798578262329
+生成200条有水印文本需要的总时间/秒：46.15745258331299
+平均生成每一条有水印文本需要的时间/秒：0.9231490516662597
+文本质量PPL指标如下:
+{'watermarked': 12.616037225723266, 'unwatermarked': 12.94277196407318}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.09244565196219, 'unwatermarked': 10.623038947848185}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0343304872512817
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.022152066230774
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0343304872512817
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.9702970297029703}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0257962942123413
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.9142857142857143}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0197915434837341
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.897196261682243}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0184978246688843
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.4, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.97402834892273
+平均生成每一条无水印文本需要的时间/秒：0.8794805669784546
+生成200条有水印文本需要的总时间/秒：45.1744749546051
+平均生成每一条有水印文本需要的时间/秒：0.9034894990921021
+文本质量PPL指标如下:
+{'watermarked': 13.256026182174683, 'unwatermarked': 11.341055545806885}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.981043398349385, 'unwatermarked': 11.429660347539683}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0280020236968994
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.019273281097412
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0280020236968994
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.9696969696969697}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0231541395187378
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.9052631578947369}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0213224291801453
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.82, 'F1': 0.803921568627451}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.014685869216919
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.3, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.00831985473633
+平均生成每一条无水印文本需要的时间/秒：0.8801663970947265
+生成200条有水印文本需要的总时间/秒：45.24387788772583
+平均生成每一条有水印文本需要的时间/秒：0.9048775577545166
+文本质量PPL指标如下:
+{'watermarked': 12.709014415740967, 'unwatermarked': 11.817919330596924}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.825398373684843, 'unwatermarked': 12.247944017344844}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.0, 'P': 0.9615384615384616, 'R': 1.0, 'F1': 0.9803921568627451, 'ACC': 0.98}
+无攻击(fpr=best)的最佳z-score阈值是:1.0297576785087585
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.021953523159027
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.9, 'F1': 0.9473684210526315}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0410599112510681
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.96}
+attack_Word-D_5攻击的最佳z-score阈值是:1.025774896144867
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.8679245283018868}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0182268619537354
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.78, 'F1': 0.8041237113402062}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0193933248519897
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.2, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.09911799430847
+平均生成每一条无水印文本需要的时间/秒：0.8819823598861695
+生成200条有水印文本需要的总时间/秒：45.3424813747406
+平均生成每一条有水印文本需要的时间/秒：0.906849627494812
+文本质量PPL指标如下:
+{'watermarked': 12.955118494033814, 'unwatermarked': 12.25468334197998}
+文本质量Log_Diversity指标如下:
+{'watermarked': 10.367125160894336, 'unwatermarked': 12.572458526873804}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.96, 'FPR': 0.04, 'FNR': 0.0, 'P': 0.9615384615384616, 'R': 1.0, 'F1': 0.9803921568627451, 'ACC': 0.98}
+无攻击(fpr=best)的最佳z-score阈值是:1.0259532928466797
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0210413336753845
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.96, 'F1': 0.9795918367346939}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0357155799865723
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9615384615384616}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0224811434745789
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.8598130841121495}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0181795954704285
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.82, 'F1': 0.8367346938775511}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0192537903785706
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.1, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：44.708818674087524
+平均生成每一条无水印文本需要的时间/秒：0.8941763734817505
+生成200条有水印文本需要的总时间/秒：45.97548246383667
+平均生成每一条有水印文本需要的时间/秒：0.9195096492767334
+文本质量PPL指标如下:
+{'watermarked': 13.016743993759155, 'unwatermarked': 12.667662076950073}
+文本质量Log_Diversity指标如下:
+{'watermarked': 11.89008049192879, 'unwatermarked': 12.185801009512122}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.02933669090271
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0176259875297546
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 1.0}
+无攻击(fpr=1%)的最佳z-score阈值是:1.02933669090271
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.94}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0197079181671143
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.9, 'F1': 0.8823529411764706}
+attack_Word-S_5攻击的最佳z-score阈值是:1.016147792339325
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.8037383177570093}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0104488134384155
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 50
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 0.0, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：43.8044171333313
+平均生成每一条无水印文本需要的时间/秒：0.8760883426666259
+生成200条有水印文本需要的总时间/秒：45.009506940841675
+平均生成每一条有水印文本需要的时间/秒：0.9001901388168335
+文本质量PPL指标如下:
+{'watermarked': 13.747921695709229, 'unwatermarked': 12.30936427116394}
+文本质量Log_Diversity指标如下:
+{'watermarked': 11.99690628858557, 'unwatermarked': 12.753604220912711}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.98, 'TNR': 0.98, 'FPR': 0.02, 'FNR': 0.02, 'P': 0.98, 'R': 0.98, 'F1': 0.98, 'ACC': 0.98}
+无攻击(fpr=best)的最佳z-score阈值是:1.0127378106117249
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.98, 'F1': 0.9423076923076923}
+无攻击(fpr=10%)的最佳z-score阈值是:1.010033369064331
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.96, 'F1': 0.9795918367346939}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0200900435447693
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.94}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0108746886253357
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.8543689320388349}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0068228244781494
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.7480916030534351}
+attack_doc_P_dipper攻击的最佳z-score阈值是:0.996116042137146
+==========分割线==========
+
+
+
+
+
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 400 min_length: 430 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：697.125274181366
+平均生成每一条无水印文本需要的时间/秒：3.48562637090683
+生成200条有水印文本需要的总时间/秒：720.082188129425
+平均生成每一条有水印文本需要的时间/秒：3.600410940647125
+文本质量PPL指标如下:
+{'watermarked': 10.199241290092468, 'unwatermarked': 9.752238385677337}
+文本质量Log_Diversity指标如下:
+{'watermarked': 6.792547674705216, 'unwatermarked': 7.379951668470041}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0353456139564514
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.021326720714569
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0274593234062195
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0351883172988892
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0341699719429016
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_7攻击的最佳z-score阈值是:1.031135380268097
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_5攻击的最佳z-score阈值是:1.034795343875885
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0335956811904907
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0294660329818726
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.945, 'F1': 0.9569620253164557}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0238779187202454
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.9751243781094527}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0238161087036133
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.955, 'F1': 0.9695431472081218}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0263386368751526
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.085, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：179.03169918060303
+平均生成每一条无水印文本需要的时间/秒：0.8951584959030151
+生成200条有水印文本需要的总时间/秒：184.8135802745819
+平均生成每一条有水印文本需要的时间/秒：0.9240679013729095
+文本质量PPL指标如下:
+{'watermarked': 13.613868889808655, 'unwatermarked': 12.151297740936279}
+文本质量Log_Diversity指标如下:
+{'watermarked': 8.78108993726744, 'unwatermarked': 11.558094471162395}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=best)的最佳z-score阈值是:1.0395858883857727
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0305227637290955
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0395858883857727
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.995}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0434916615486145
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+attack_Word-D_3攻击的最佳z-score阈值是:1.03948974609375
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.97, 'F1': 0.9797979797979798}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0394547581672668
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9925187032418953}
+attack_Word-D_5攻击的最佳z-score阈值是:1.03953218460083
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.9899497487437185}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0414246916770935
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9658536585365853}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0316812992095947
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.945, 'F1': 0.883177570093458}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0254152417182922
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.935, 'F1': 0.88}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0254534482955933
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.895, 'F1': 0.9156010230179028}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0315799713134766
+==========分割线==========
+
+
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 400 min_length: 430 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.06, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：723.919144153595
+平均生成每一条无水印文本需要的时间/秒：3.619595720767975
+生成200条有水印文本需要的总时间/秒：748.4165496826172
+平均生成每一条有水印文本需要的时间/秒：3.742082748413086
+文本质量PPL指标如下:
+{'watermarked': 10.043902900218963, 'unwatermarked': 9.959168765544891}
+文本质量Log_Diversity指标如下:
+{'watermarked': 6.943678945468663, 'unwatermarked': 7.467177704498116}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.995, 'FPR': 0.005, 'FNR': 0.0, 'P': 0.9950248756218906, 'R': 1.0, 'F1': 0.9975062344139651, 'ACC': 0.9975}
+无攻击(fpr=best)的最佳z-score阈值是:1.0217616558074951
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0169824361801147
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0213173031806946
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9975062344139651}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0218535661697388
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0233566164970398
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9974937343358395}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0225610136985779
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9974937343358395}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0234232544898987
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9974937343358395}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0233909487724304
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9875930521091811}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0196008086204529
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.915, 'F1': 0.9242424242424242}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0173665881156921
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.9543147208121827}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0189979672431946
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.96, 'F1': 0.964824120603015}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.018990933895111
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 200 min_length: 230 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.06, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：356.8550970554352
+平均生成每一条无水印文本需要的时间/秒：1.7842754852771758
+生成200条有水印文本需要的总时间/秒：369.01240372657776
+平均生成每一条有水印文本需要的时间/秒：1.8450620186328888
+文本质量PPL指标如下:
+{'watermarked': 11.14506318807602, 'unwatermarked': 10.658948664665223}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.437951385019882, 'unwatermarked': 8.125215168696798}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.995, 'TNR': 0.995, 'FPR': 0.005, 'FNR': 0.005, 'P': 0.995, 'R': 0.995, 'F1': 0.995, 'ACC': 0.995}
+无攻击(fpr=best)的最佳z-score阈值是:1.0272261500358582
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0188362002372742
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.995, 'F1': 0.9925187032418953}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0271016359329224
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9949748743718593}
+attack_Word-D_1攻击的最佳z-score阈值是:1.027830958366394
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9949748743718593}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0278368592262268
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9777777777777777}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0237494707107544
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.98989898989899}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0275254249572754
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9803921568627451}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0232264399528503
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.9537712895377128}
+attack_Word-S_3攻击的最佳z-score阈值是:1.020744264125824
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.88, 'F1': 0.8205128205128205}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0157907009124756
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.855, 'F1': 0.8724489795918368}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0187046527862549
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.9108910891089109}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.01883065700531
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.075, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：176.81987714767456
+平均生成每一条无水印文本需要的时间/秒：0.8840993857383728
+生成200条有水印文本需要的总时间/秒：182.70903849601746
+平均生成每一条有水印文本需要的时间/秒：0.9135451924800873
+文本质量PPL指标如下:
+{'watermarked': 13.073111896514893, 'unwatermarked': 12.438919332027435}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.80159504736489, 'unwatermarked': 11.787009202019476}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.995, 'TNR': 0.995, 'FPR': 0.005, 'FNR': 0.005, 'P': 0.995, 'R': 0.995, 'F1': 0.995, 'ACC': 0.995}
+无攻击(fpr=best)的最佳z-score阈值是:1.0362790822982788
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0263888835906982
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.995, 'F1': 0.9925187032418953}
+无攻击(fpr=1%)的最佳z-score阈值是:1.035442590713501
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9900497512437811}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0332859754562378
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.985}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0332356691360474
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.965, 'F1': 0.9722921914357683}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0326467156410217
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.9899497487437185}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0358057022094727
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9900497512437811}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0335659384727478
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.915, 'F1': 0.9408740359897172}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0308037400245667
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.93, 'F1': 0.8671328671328671}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0210098624229431
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.92, 'F1': 0.8803827751196173}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0230088233947754
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.875, 'F1': 0.8883248730964467}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.02646404504776
+==========分割线==========
+
+
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 400 min_length: 430 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.055, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：710.5596430301666
+平均生成每一条无水印文本需要的时间/秒：3.5527982151508333
+生成200条有水印文本需要的总时间/秒：735.4054543972015
+平均生成每一条有水印文本需要的时间/秒：3.6770272719860078
+文本质量PPL指标如下:
+{'watermarked': 10.172271111011504, 'unwatermarked': 9.69174057483673}
+文本质量Log_Diversity指标如下:
+{'watermarked': 6.985594492597712, 'unwatermarked': 7.377390134586565}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.99, 'FPR': 0.01, 'FNR': 0.0, 'P': 0.9900990099009901, 'R': 1.0, 'F1': 0.9950248756218906, 'ACC': 0.995}
+无攻击(fpr=best)的最佳z-score阈值是:1.0229472517967224
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.017020046710968
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0229472517967224
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.995}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0243842601776123
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9975062344139651}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0239319205284119
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.995}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0235273241996765
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 0.9975062344139651}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0242720246315002
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9924812030075187}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0240408182144165
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.9752475247524752}
+attack_Word-S_3攻击的最佳z-score阈值是:1.018927276134491
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.89, 'F1': 0.8790123456790123}
+attack_Word-S_7攻击的最佳z-score阈值是:1.015571415424347
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.965, 'F1': 0.9212410501193318}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0159192085266113
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.935, 'F1': 0.9444444444444444}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0183154344558716
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 300 min_length: 330 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.055, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：531.0635414123535
+平均生成每一条无水印文本需要的时间/秒：2.6553177070617675
+生成200条有水印文本需要的总时间/秒：549.9373509883881
+平均生成每一条有水印文本需要的时间/秒：2.74968675494194
+文本质量PPL指标如下:
+{'watermarked': 10.291511888504028, 'unwatermarked': 10.288142023086548}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.184265142633219, 'unwatermarked': 7.6507122984682585}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0}
+无攻击(fpr=best)的最佳z-score阈值是:1.0227994322776794
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0172622799873352
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0212310552597046
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 1.0, 'F1': 1.0}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0224816799163818
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9974937343358395}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0224995017051697
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9949748743718593}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0217724442481995
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.9924433249370277}
+attack_Word-D_5攻击的最佳z-score阈值是:1.022642433643341
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.9974937343358395}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0217836499214172
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.9679012345679012}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0180294513702393
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.845, 'F1': 0.8428927680798005}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0150712132453918
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.915, 'F1': 0.8861985472154964}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0151745080947876
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.91, 'F1': 0.926208651399491}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.017844021320343
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 200 min_length: 230 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.055, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：354.04438757896423
+平均生成每一条无水印文本需要的时间/秒：1.7702219378948212
+生成200条有水印文本需要的总时间/秒：365.966197013855
+平均生成每一条有水印文本需要的时间/秒：1.8298309850692749
+文本质量PPL指标如下:
+{'watermarked': 11.137979402542115, 'unwatermarked': 10.733670952320098}
+文本质量Log_Diversity指标如下:
+{'watermarked': 7.5538260241700605, 'unwatermarked': 8.03677536041306}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 1.0, 'TNR': 0.995, 'FPR': 0.005, 'FNR': 0.0, 'P': 0.9950248756218906, 'R': 1.0, 'F1': 0.9975062344139651, 'ACC': 0.9975}
+无攻击(fpr=best)的最佳z-score阈值是:1.0234434604644775
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9523809523809523}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0180033445358276
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 1.0, 'F1': 0.9950248756218906}
+无攻击(fpr=1%)的最佳z-score阈值是:1.023336410522461
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.995}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0242357850074768
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.995, 'F1': 0.995}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0234254598617554
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.97, 'F1': 0.9748743718592965}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0220494866371155
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.98, 'F1': 0.98}
+attack_Word-D_5攻击的最佳z-score阈值是:1.0221652388572693
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.99, 'F1': 0.9924812030075187}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0234281420707703
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.975, 'F1': 0.9443099273607748}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0184754729270935
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.82, 'F1': 0.8019559902200489}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0153213739395142
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.915, 'F1': 0.8776978417266187}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0163236260414124
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.86, 'F1': 0.882051282051282}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0184236764907837
+==========分割线==========
+
+数据集与模型的参数信息如下：
+algorithm: Rethinking_gaosi dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 130 data_lines: 200
+算法的参数信息如下：
+{'algorithm_name': 'Rethinking', 'beta': 1.0, 'std': 0.07, 'topk': 50272, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 1.03, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 1.0, 'a': 1.0, 'theta': 0.0}
+生成200条无水印文本需要的总时间/秒：178.10597395896912
+平均生成每一条无水印文本需要的时间/秒：0.8905298697948456
+生成200条有水印文本需要的总时间/秒：184.09936594963074
+平均生成每一条有水印文本需要的时间/秒：0.9204968297481537
+文本质量PPL指标如下:
+{'watermarked': 12.80487650156021, 'unwatermarked': 12.060769691467286}
+文本质量Log_Diversity指标如下:
+{'watermarked': 9.198287993992924, 'unwatermarked': 11.269399479319542}
+无攻击(fpr=best)的检测成功率：
+{'TPR': 0.985, 'TNR': 0.995, 'FPR': 0.005, 'FNR': 0.015, 'P': 0.9949494949494949, 'R': 0.985, 'F1': 0.9899497487437185, 'ACC': 0.99}
+无攻击(fpr=best)的最佳z-score阈值是:1.0331971049308777
+无攻击(fpr=10%)的检测成功率：
+{'TPR': 0.995, 'F1': 0.9498806682577565}
+无攻击(fpr=10%)的最佳z-score阈值是:1.0261408686637878
+无攻击(fpr=1%)的检测成功率：
+{'TPR': 0.985, 'F1': 0.9874686716791979}
+无攻击(fpr=1%)的最佳z-score阈值是:1.0314645171165466
+attack_Word-D_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.985, 'F1': 0.9899497487437185}
+attack_Word-D_1攻击的最佳z-score阈值是:1.0321534872055054
+attack_Word-D_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.97, 'F1': 0.9822784810126582}
+attack_Word-D_3攻击的最佳z-score阈值是:1.0321060419082642
+attack_Word-D_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.93, 'F1': 0.9562982005141388}
+attack_Word-D_7攻击的最佳z-score阈值是:1.0307655930519104
+attack_Word-D_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.955, 'F1': 0.9744897959183674}
+attack_Word-D_5攻击的最佳z-score阈值是:1.032105267047882
+attack_Word-S_1攻击下检测成功率(动态阈值)：
+{'TPR': 0.975, 'F1': 0.9848484848484849}
+attack_Word-S_1攻击的最佳z-score阈值是:1.0317502617835999
+attack_Word-S_3攻击下检测成功率(动态阈值)：
+{'TPR': 0.94, 'F1': 0.9170731707317074}
+attack_Word-S_3攻击的最佳z-score阈值是:1.0251030921936035
+attack_Word-S_7攻击下检测成功率(动态阈值)：
+{'TPR': 0.93, 'F1': 0.8}
+attack_Word-S_7攻击的最佳z-score阈值是:1.0160347819328308
+attack_Word-S_5攻击下检测成功率(动态阈值)：
+{'TPR': 0.83, 'F1': 0.8137254901960784}
+attack_Word-S_5攻击的最佳z-score阈值是:1.0215632319450378
+attack_doc_P_dipper攻击下检测成功率(动态阈值)：
+{'TPR': 0.905, 'F1': 0.8765133171912833}
+attack_doc_P_dipper攻击的最佳z-score阈值是:1.0222583413124084
+==========分割线==========
