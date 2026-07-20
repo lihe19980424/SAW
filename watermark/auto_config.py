@@ -42,6 +42,8 @@ CONFIG_MAPPING_NAMES = {
     'SMOOTH': 'watermark.smooth.SMOOTHConfig',
     'KGW_plus_UNI': 'watermark.kgw_plus_uni.KGW_plus_UNIConfig',
     'SAW': 'watermark.saw.SAWConfig',
+    'SAW_ADD': 'watermark.saw_add.SAWAddConfig',
+    'saw_add': 'watermark.saw_add.SAWAddConfig',
     'ColorMark': 'watermark.colormark.ColorMarkConfig',
 }
 

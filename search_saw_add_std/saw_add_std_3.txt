@@ -1,0 +1,44 @@
+
+parameter of config as follows:
+algorithm: SAW_ADD dataset: c4 model: opt-1.3b max_new_tokens: 100 min_length: 100 data_lines: 20
+parameter of algorithm as follows:
+{'algorithm_name': 'SAW_ADD', 'noise': 'uniform', 'beta': 0.9, 'std': 3.0, 'topk': 100, 'left_rand': 0.0, 'gamma': 0.5, 'delta': 2.0, 'hash_key': 15485863, 'prefix_length': 1, 'prev_n': 1, 'z_threshold': 4.0, 'f_scheme': 'time', 'window_scheme': 'left', 'ignore_history': True, 'p': 0.3, 'α': 1.0, 'mean': 0.0, 'a': 1.0, 'theta': 0.0}
+PPL:
+{'watermarked': 33.158567142486575, 'unwatermarked': 15.399984359741211}
+Log_Diversity:
+{'watermarked': 8.32446469075107, 'unwatermarked': 12.770107680633036}
+detection accuracy of attack_Word-D_7:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0, 'AUC': 1.0}
+z-score of attack_Word-D_7:2.067550539970398
+detection accuracy of attack_Word-S_7:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0, 'AUC': 1.0}
+z-score of attack_Word-S_7:1.7457388043403625
+detection accuracy of attack_Word-S(context):
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0, 'AUC': 1.0}
+z-score of attack_Word-S(context):1.735389530658722
+detection accuracy of attack_doc_P_dipper
+{'TPR': 0.85, 'TNR': 0.75, 'FPR': 0.25, 'FNR': 0.15, 'P': 0.7727272727272727, 'R': 0.85, 'F1': 0.8095238095238095, 'ACC': 0.8, 'AUC': 0.885}
+z-score of attack_doc_P_dipper1.3900827765464783
+detection accuracy of attack_typo:
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0, 'AUC': 1.0}
+z-score of attack_typo:1.867807388305664
+detection accuracy of fpr=best :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0, 'AUC': 1.0}
+z-score of fpr=best :2.33532178401947
+detection accuracy of fpr=1% :
+{'TPR': 1.0, 'TNR': 1.0, 'FPR': 0.0, 'FNR': 0.0, 'P': 1.0, 'R': 1.0, 'F1': 1.0, 'ACC': 1.0, 'AUC': 1.0}
+z-score of fpr=1% :2.33532178401947
+detection accuracy of fpr=10% :
+{'TPR': 1.0, 'TNR': 0.9, 'FPR': 0.1, 'FNR': 0.0, 'P': 0.9090909090909091, 'R': 1.0, 'F1': 0.9523809523809523, 'ACC': 0.95, 'AUC': 1.0}
+z-score of fpr=10% :1.5554446578025818
+--- Generation Time Statistics ---
+execution_time_generate_unwatermarked_sum:16.40356469154358
+execution_time_generate_unwatermarked_avg:0.820178234577179
+execution_time_generate_watermarked_sum:16.52478003501892
+execution_time_generate_watermarked_avg:0.826239001750946
+--- Detection Time Statistics ---
+execution_time_detect_unwatermarked_sum: 0.5408792495727539
+execution_time_detect_unwatermarked_avg: 0.027043962478637697
+execution_time_detect_watermarked_sum: 0.5221905708312988
+execution_time_detect_watermarked_avg: 0.026109528541564942
+=========================

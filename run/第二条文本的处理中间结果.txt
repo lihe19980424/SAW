@@ -1,0 +1,148 @@
+"第二条文本的prompt": "Belying expectations, Prasar Bharti has earned only Rs 58.19 crore (Rs 581.9 million) as revenue during the", 
+"第二条文本的prompt的编码": [[    2,  9325, 13010,  2113,     6,  2869, 31126,  5371,  2013,   118,    34,  2208,   129,  2144,  4893,     4,  1646,  4963,    36, 18591,   195,  6668,     4,   466,   153,    43,    25,   903,   148,     5]]
+"第二条文本的natural_text": " Commonwealth Games last month.\nThe gross revenue earned by PB on account of telecasting/broadcasting of advertisements on Doordarshan channel and All India Radio during coverage of the Commonwealth Games is Rs 58.17 crore, Minister of State for Information and Broadcasting S Jagathrakshakan informed the Lok Sabha on Tuesday.\nWhile AIR earned Rs 2.18 crore (Rs 21.8 million), Doordarshan garnered Rs 55.99 crore (Rs 559.9 million) as revenue, he said. Prasar Bharati had earlier said it knew in advance that the recently concluded Commonwealth Games, for which Doordarshan was the official broadcaster, would not bring in huge advertising revenues.\nas a result of luke warm response from advertisers.\nNotably, DD was not allowed to air advertisements during the closing ceremony of the CWG Games following complaints that the opening ceremony had been shown deferred live to accommodate advertisements.\nAfter a successful opening ceremony, DD had h"
+"第二条文本的un_watermarked_text": first 30 days of the current financial year.\n\nThe revenue collection agency’s earnings dropped by more than 22 percent from Rs. 82.56 crore (Rs. 101.5 million) recorded in the same period last year. According to an official release, the company’s first-month collections fell short of the target set by the government.\n\nAt the end of June, total revenue collection stands at Rs 59.65 crore (Rs 710.8 million) as against target of Rs 76.25 crore (Rs 936.7 million).\n\nThis includes collections from the spectrum revenues and license fees.\n\n“The lower collection was due to a slight shortfall in service revenues. Besides, other revenue streams such as spectrum-related fees did not match the government targets,” the press release reads.\n\nIt is worth noting that in the first two months of the previous financial year, the company had collected Rs 84.37 crore (Rs'
+
+前缀为1时：
+"第二条文本的BB_watermarked_text": past six months, which is about one-third of the total revenues generated during that period.\n\nPrasar Bhartis Managing Director Rajan S Mathews said revenues are the one key factor determining the group’s financial results. “It has not been a good day for TV. We had low ratings during the first quarter. Even major sprinters...\n\nThe billboards linking Baba Ka Dhaba and Karven are gone. For some reason, one of them was erected in Sector 53 and the other in Sector 25.\n\nThe two billboards are identical, and one said “Baba ka Dhaba” that was a reference to one of the most popular eateries. But, the other, which was an advertisement for Karven, was also removed.\n\nThis prompted a lot of questions from observers — such as did papa Riaz throw all his support behind his son (Haseeb) and...\n\nCulver�
+"第二条文本的watermarked_text的编码":[[   375,   411,   377,     6,    61,    16,    59,    65,    12, 12347,
+                                          9,     5,  2144,   290,  3714,     4,  4027,  4963,   829,    11,
+                                        392,   193,    13,  2308,   518,     6,    63,   458,  1392, 20170,
+                                          8,  1832,  3109, 14980,   260,     4, 50118, 50118,   133, 26472,
+                                        4029,     6,    50,     5,   903,  9702,     7,   903,    31, 26472,
+                                        3154,    36,   627,  1427,   701,     7,   935,    73, 42182,  1761,
+                                          73,  7443,   371,   537,   544,    36, 12347,   537,   544,    43,
+                                          13,    63,  1761, 26472,    43,    25,   203,   287,     5,  1280,
+                                          9,   903,   829,    30,  2869, 31126,  5371,  7870,   118,    11,
+                                        392,   193,     4, 50118, 50118,  2264,    16,    55,     6,   221,
+                                        8863, 15061,  2603,   293,    14,  1135,    63,  2687,     6,  2869,
+                                      31126, 11452,  3648,    34,    57,   441,     7,  1004,    10,  1963,
+                                          9,  2144,   365,     4,  1244,  4963,    31,  2144,   973,     4,
+                                        246,  4963,    11,     5,    76,    12,  6643,   675,     4, 50118,
+                                      50118,   713,  3278,    16,   190,   795,    87,     5,  2144,   753,
+                                        4963,    14,     5,  6010,    34,  1146,    11,    11,  1633,  1963,
+                                          11,   392,     4,   152,    16,  4412,   142,     9,     5, 15910,
+                                          11,     5,   923,     9,     5,  6365, 12084,   136,     5,  1404,
+                                          4, 50118, 50118,   250,  5375,     9,     5,  2869, 31126,  5371,
+                                        3648,  1107,   445,    19,     5,  2415,  2801,  1065,    56,    67]]
+前缀为1时：
+"第二条文本的KGW_watermarked_text":' first quarter of the 2017-18 (April-June) financial year. The loss from the communications company for the period has been significantly less as compared to Rs 1,210.39 crore (Rs 657.50 million) in the same period last fiscal. During the preceding fiscal, it earned only Rs 53.67 crore (Rs 476.36 million) in revenues.\nBharti Airtel has been reporting losses and revenue losses in the past few years due to steep cut in spectrum costs, but it earned an impressive revenue of Rs 7,195.97 crore (Rs 60.59 billion) in the 2016-17 (July-March) financial year, as against Rs 8,340 crore (Rs 71.35 billion) in 2015-16. In the 2017-16 academic year, it earned an income of Rs 715.40 crore (Rs 69.68 billion). The company’s total expenses were in the budgeted range of Rs 32,'
+"第二条文本的KGW_watermarked_text的编码":   [[   78,   297,     9,     5,   193,    12,  1366,    36, 13949,    12,
+                                            11983,    43,   613,    76,     4,    20,   872,    31,     5,  4372,
+                                              138,    13,     5,   675,    34,    57,  3625,   540,    25,  1118,
+                                                7,  2144,   112,     6, 22146,     4,  3416,  4963,    36, 18591,
+                                              231,  4390,     4,  1096,   153,    43,    11,     5,   276,   675,
+                                                94,  2358,     4,  1590,     5, 25029,  2358,     6,    24,  2208,
+                                              129,  2144,  4268,     4,  4111,  4963,    36, 18591,   204,  5067,
+                                                4,  3367,   153,    43,    11,  3883,     4, 50118,   387, 11567,
+                                              118,    83,  9211,   523,    34,    57,  2207,  2687,     8,   903,
+                                              2687,    11,     5,   375,   367,   107,   528,     7,  8431,   847,
+                                                11,  8576,  1042,     6,    53,    24,  2208,    41,  3444,   903,
+                                                9,  2144,   262,     6, 23688,     4,  6750,  4963,    36, 18591,
+                                              1191,     4,  4156,   325,    43,    11,     5,   336,    12,  1360,
+                                                36, 13882,    12, 11770,    43,   613,    76,     6,    25,   136,
+                                              2144,   290,     6, 24334,  4963,    36, 18591,  6121,     4,  2022,
+                                              325,    43,    11,   570,    12,  1549,     4,    96,     5,   193,
+                                                12,  1549,  5286,    76,     6,    24,  2208,    41,  1425,     9,
+                                              2144,   262,   996,     4,  1749,  4963,    36, 18591,  5913,     4,
+                                              4671,   325,   322,    20,   138,    17,    27,    29,   746,  4068,
+                                                58,    11,     5,  1229,   196,  1186,     9,  2144,  2107,     6]]
+前缀为1时：
+"第二条文本的KGW_watermarked_text":' the first month of the new commercial broadcast season.\n\nThe digitally-based timeslot-based re-run of the first season of the Prasar Bharati-airborne radio and satellite services were the least successful as the revenue for this was only Rs 5.10 crore (Rs 29.7 million) in just February.\n\n"We have not given up. Since we are the only government agency in India, we are the ones who have the responsibility to make it happen. We are the ones getting the benefit of the Doordarshan and Bharat Broadband projects. We are, however, where we are. We are a little over three years away from the end of the next financial year. And it is not just the end of this year. I can assure you that Prasar Bhaiyya, by that time, will be there with the same amount of experience, (of the now-defunct DTH/Ayodhya DTH) and the same'
+"第二条文本的KGW_watermarked_text的编码":    [[        5,    78,   353,     9,     5,    92,  1861,  2308,   191,     4,
+                                                  50118, 50118,   133, 25318,    12,   805,   498, 17508,    12,   805,
+                                                    769,    12,  2962,     9,     5,    78,   191,     9,     5,  2869,
+                                                  31126, 11452,  3648,    12,  2456, 17080,  3188,     8,  7595,   518,
+                                                    58,     5,   513,  1800,    25,     5,   903,    13,    42,    21,
+                                                    129,  2144,   195,     4,   698,  4963,    36, 18591,  1132,     4,
+                                                    406,   153,    43,    11,    95,   902,     4, 50118, 50118,   113,
+                                                    170,    33,    45,   576,    62,     4,  1773,    52,    32,     5,
+                                                    129,   168,  1218,    11,   666,     6,    52,    32,     5,  1980,
+                                                    54,    33,     5,  2640,     7,   146,    24,  1369,     4,   166,
+                                                    32,     5,  1980,   562,     5,  1796,     9,     5,  1832,  3109,
+                                                  14980,   260,     8, 11452,   415,  8397,  9484,  1377,     4,   166,
+                                                    32,     6,   959,     6,   147,    52,    32,     4,   166,    32,
+                                                    10,   410,    81,   130,   107,   409,    31,     5,   253,     9,
+                                                      5,   220,   613,    76,     4,   178,    24,    16,    45,    95,
+                                                      5,   253,     9,    42,    76,     4,    38,    64, 14144,    47,
+                                                    14,  2869, 31126,  5371,  1439,   219,  2636,     6,    30,    14,
+                                                    86,     6,    40,    28,    89,    19,     5,   276,  1280,     9,
+                                                    676,     6,    36,  1116,     5,   122,    12,  9232, 27688,   211,
+                                                  3732,    73, 41585,  1630, 18321,   211,  3732,    43,     8,     5,
+                                                    276]]
+前缀为5时：
+"第二条文本的KGW_watermarked_text":  period since its power-to-digital service became commercial. Almost seven months into the first phase of the project, Prasar\'s initial analysts are considering a pay cut, even as the government in its own November Budget said the pay-out for digital services would be Rs 1 per population.\n\nNetwork expansion and the new digital service have been seen as the primary reasons for Prasar\'s revenue decline.\n\nSo far this year, Prasar has earned revenue of just Rs 221.83 crore (Rs 1.2 billion) as against Rs 1.35 billion in the same period in the previous year.\n\nBut sources in the government and publici-\n\ncation said the government has come up with a full-year target of an additional Rs 1.11 billion due to Prasar\'s performance.\n\n"The government has full confidence in Prasar, and the revenue generation for the coming year is based on the performance of the company in the past three years," said a'
+"第二条文本的KGW_watermarked_text的编码": [[ 675,   187,    63,   476,    12,   560,    12, 29563,   544,  1059,
+                                          1861,     4, 11206,   707,   377,    88,     5,    78,  4359,     9,
+                                            5,   695,     6,  2869, 31126,    18,  2557,  1066,    32,  2811,
+                                            10,   582,   847,     6,   190,    25,     5,   168,    11,    63,
+                                          308,   759,  8587,    26,     5,   582,    12,   995,    13,  1778,
+                                          518,    74,    28,  2144,   112,   228,  1956,     4, 50118, 50118,
+                                        40283,  2919,     8,     5,    92,  1778,   544,    33,    57,   450,
+                                            25,     5,  2270,  2188,    13,  2869, 31126,    18,   903,  2991,
+                                            4, 50118, 50118,  2847,   444,    42,    76,     6,  2869, 31126,
+                                            34,  2208,   903,     9,    95,  2144, 31488,     4,  6361,  4963,
+                                            36, 18591,   112,     4,   176,   325,    43,    25,   136,  2144,
+                                          112,     4,  2022,   325,    11,     5,   276,   675,    11,     5,
+                                          986,    76,     4, 50118, 50118,  1708,  1715,    11,     5,   168,
+                                            8,   285,   118,    12, 50118, 50118, 41684,    26,     5,   168,
+                                            34,   283,    62,    19,    10,   455,    12,   180,  1002,     9,
+                                            41,   943,  2144,   112,     4,  1225,   325,   528,     7,  2869,
+                                        31126,    18,   819,     4, 50118, 50118,   113,   133,   168,    34,
+                                          455,  2123,    11,  2869, 31126,     6,     8,     5,   903,  2706,
+                                            13,     5,   567,    76,    16,   716,    15,     5,   819,     9,
+                                            5,   138,    11,     5,   375,   130,   107,    60,    26,    10]]
+
+
+
+"UPV生成文本"：Belying expectations, Prasar Bharti has earned only Rs 58.19 crore (Rs 581.9 million) as revenue during the 
+              third quarter of the current fiscal (October-December) compared to Rs 1,547.5 crore in the same period of 2009-10.\n\nAccording to a press release issued by Star Plus, Prasar Board’s revenue from advertising activities increased to Rs 1.2 crore in the current budget period compared to Rs 6.5 crore last quarter.\n\nHowever, its overall income declined to Rs 6,958.2 crore (Rs 3,569.5 million) compared to the Rs 7,974.9 crore (Rs 4,079.0 million) a year earlier. This is due to a drop in its operating profit of 29.9 per cent (Rs 1.2 billion) in the current fiscal compared to Rs 2.2 billion a year earlier, according to Prasar Bhargav.\n\nPrasar Bhargavia’s net profit in the nine-month period (2009-10) has also fallen by 18'
+"tokenizer" :       [12347,   297,     9,     5,   595,  2358,    36, 20144,    12, 17704,
+                        43,  1118,     7,  2144,   112,     6,   245,  3706,     4,   245,
+                      4963,    11,     5,   276,   675,     9,  2338,    12,   698,     4,
+                        767,     7,    10,  1228,   800,  1167,    30,  2141,  4642,     6,
+                      2869, 31126,  1785,    17,    27,    29,   903,    31,  4579,  1713,
+                      1130,     7,  2144,   112,     4,   176,  4963,    11,     5,   595,
+                      1229,   675,  1118,     7,  2144,   231,     4,   245,  4963,    94,
+                        297,     4,   635,     6,    63,  1374,  1425,  1981,     7,  2144,
+                        231,     6,   466,  4432,     4,   176,  4963,    36, 18591,   155,
+                          6,   245,  4563,     4,   245,   153,    43,  1118,     7,     5,
+                      2144,   262,     6,   466,  5243,     4,   466,  4963,    36, 18591,
+                        204,     6,  3570,   466,     4,   288,   153,    43,    10,    76,
+                        656,     4,   152,    16,   528,     7,    10,  1874,    11,    63,
+                      1633,  1963,     9,  1132,     4,   466,   228,   715,    36, 18591,
+                        112,     4,   176,   325,    43,    11,     5,   595,  2358,  1118,
+                          7,  2144,   132,     4,   176,   325,    10,    76,   656,     6,
+                        309,     7,  2869, 31126,  5371,  5384,  1469,     4,  2869, 31126,
+                      5371,  5384, 21866,    17,    27,    29,  1161,  1963,    11,     5,
+                      1117,    12,  2151,   675,    36, 23301,    12,   698,    43,    34,
+                        67,  4491,    30,   504]
+"bin"               [[0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1], [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0], [0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1], [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1], [0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1], [0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1], [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1], [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0], [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1], [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0], [0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1], [0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0], [0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1], [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1], [0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1], [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1], ...]
+
+
+rethinking生成/检测199/2464,    12,  1646,   613,    76,   136,    10,  1002,     9,  2144,
+                        231,  3305,     4,  4432,  4963,     4,    20,   194,    12,  2962,
+                        933,    17,    27,    29,  1633,  1425,  3359,    23,  2144,   231,
+                      3305,   153,   148,     5,   199,  7127,    76,   136,    10,  2144,
+                        231,  3305,  4963,  1229,     9,  3247,     4,   287,    10,   898,
+                          9,    42,     6,    63,   872,     9,  2144,   231,  3079,  4963,
+                      3311,    25,     5,  2373,    24,    34,  2713,    11,     5,    94,
+                        707,   613,   107,    25,     5,   903,  2783,    67,   784, 11290,
+                          4,    44,    48,   133,   194,    12,  4447, 12772,    16,   878,
+                        639,  1002,    15,   484, 18958,     6,    25,     5,   903,     9,
+                      4358,   451,    34,  2442,   784, 12771,    11,     5,    94,   613,
+                        76,   136,     5,  3247,     4, 18709,    24,    16,    45,   421,
+                        14,  2869, 31126,  5371,  1469,   927,   271,  5371,  2013,   118,
+                        74,   972,    63,  3247,     9,  2144, 37101,     4,  4432,  4963,
+                      1229,     9,  4358,   451,   148,     5,   199,   613,    76,   136,
+                      2144,   231,  3305,  8305,     9,  3247,     4, 18709,    89,    74,
+                        28, 17413,    11,   903,  2783,    42,   613,    76,   136,  1002,
+                          9,  2144,   204,  5067,     4,  3305,  4963,  1229,    13,   199,
+                        12,  1646,    25,     5, 12772,    16,   878,   159,     5,  3247,
+                          9,  4358,   451
+
+{"task_id": "HumanEval/29", "prompt": "from typing import List\n\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> filter_by_prefix([], 'a')\n    []\n    >>> filter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n", "canonical_solution": "    return [x for x in strings if x.startswith(prefix)]\n", "test": "\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([], 'john') == []\n    assert candidate(['xxx', 'asd', 'xxy', 'john doe', 'xxxAAA', 'xxx'], 'xxx') == ['xxx', 'xxxAAA', 'xxx']\n", "entry_point": "filter_by_prefix"}
+{"task_id": "HumanEval/49", "prompt": "\n\ndef modp(n: int, p: int):\n    \"\"\"Return 2^n modulo p (be aware of numerics).\n    >>> modp(3, 5)\n    3\n    >>> modp(1101, 101)\n    2\n    >>> modp(0, 101)\n    1\n    >>> modp(3, 11)\n    8\n    >>> modp(100, 101)\n    1\n    \"\"\"\n", "canonical_solution": "    ret = 1\n    for i in range(n):\n        ret = (2 * ret) % p\n    return ret\n", "test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3, 5) == 3\n    assert candidate(1101, 101) == 2\n    assert candidate(0, 101) == 1\n    assert candidate(3, 11) == 8\n    assert candidate(100, 101) == 1\n    assert candidate(30, 5) == 4\n    assert candidate(31, 5) == 3\n\n", "entry_point": "modp"}
+{"task_id": "HumanEval/77", "prompt": "\ndef iscube(a):\n    '''\n    Write a function that takes an integer a and returns True \n    if this ingeger is a cube of some integer number.\n    Note: you may assume the input is always valid.\n    Examples:\n    iscube(1) ==> True\n    iscube(2) ==> False\n    iscube(-1) ==> True\n    iscube(64) ==> True\n    iscube(0) ==> True\n    iscube(180) ==> False\n    '''\n", "canonical_solution": "    a = abs(a)\n    return int(round(a ** (1. / 3))) ** 3 == a\n", "test": "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(1) == True, \"First test error: \" + str(candidate(1))\n    assert candidate(2) == False, \"Second test error: \" + str(candidate(2))\n    assert candidate(-1) == True, \"Third test error: \" + str(candidate(-1))\n    assert candidate(64) == True, \"Fourth test error: \" + str(candidate(64))\n    assert candidate(180) == False, \"Fifth test error: \" + str(candidate(180))\n    assert candidate(1000) == True, \"Sixth test error: \" + str(candidate(1000))\n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(0) == True, \"1st edge test error: \" + str(candidate(0))\n    assert candidate(1729) == False, \"2nd edge test error: \" + str(candidate(1728))\n\n", "entry_point": "iscube"}
+{"task_id": "HumanEval/88", "prompt": "\ndef sort_array(array):\n    \"\"\"\n    Given an array of non-negative integers, return a copy of the given array after sorting,\n    you will sort the given array in ascending order if the sum( first index value, last index value) is odd,\n    or sort it in descending order if the sum( first index value, last index value) is even.\n\n    Note:\n    * don't change the given array.\n\n    Examples:\n    * sort_array([]) => []\n    * sort_array([5]) => [5]\n    * sort_array([2, 4, 3, 0, 1, 5]) => [0, 1, 2, 3, 4, 5]\n    * sort_array([2, 4, 3, 0, 1, 5, 6]) => [6, 5, 4, 3, 2, 1, 0]\n    \"\"\"\n", "canonical_solution": "    return [] if len(array) == 0 else sorted(array, reverse= (array[0]+array[-1]) % 2 == 0) \n", "test": "def check(candidate):\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([]) == [], \"Error\"\n    assert candidate([5]) == [5], \"Error\"\n    assert candidate([2, 4, 3, 0, 1, 5]) == [0, 1, 2, 3, 4, 5], \"Error\"\n    assert candidate([2, 4, 3, 0, 1, 5, 6]) == [6, 5, 4, 3, 2, 1, 0], \"Error\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate([2, 1]) == [1, 2], \"Error\"\n    assert candidate([15, 42, 87, 32 ,11, 0]) == [0, 11, 15, 32, 42, 87], \"Error\"\n    assert candidate([21, 14, 23, 11]) == [23, 21, 14, 11], \"Error\"\n\n", "entry_point": "sort_array"}
+{"task_id": "HumanEval/100", "prompt": "\ndef make_a_pile(n):\n    \"\"\"\n    Given a positive integer n, you have to make a pile of n levels of stones.\n    The first level has n stones.\n    The number of stones in the next level is:\n        - the next odd number if n is odd.\n        - the next even number if n is even.\n    Return the number of stones in each level in a list, where element at index\n    i represents the number of stones in the level (i+1).\n\n    Examples:\n    >>> make_a_pile(3)\n    [3, 5, 7]\n    \"\"\"\n", "canonical_solution": "    return [n + 2*i for i in range(n)]\n", "test": "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(3) == [3, 5, 7], \"Test 3\"\n    assert candidate(4) == [4,6,8,10], \"Test 4\"\n    assert candidate(5) == [5, 7, 9, 11, 13]\n    assert candidate(6) == [6, 8, 10, 12, 14, 16]\n    assert candidate(8) == [8, 10, 12, 14, 16, 18, 20, 22]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n", "entry_point": "make_a_pile"}

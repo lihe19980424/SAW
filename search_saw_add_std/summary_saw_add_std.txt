@@ -1,0 +1,6 @@
+std	auc_word_d_7	ppl_watermarked	mean	log_file
+0.5	0.8775	15.160366630554199	0.0	/home/lihe/MarkLLM/output/search_saw_add_std/saw_add_std_0.5.txt
+1.0	0.9275000000000001	15.702973747253418	0.0	/home/lihe/MarkLLM/output/search_saw_add_std/saw_add_std_1.txt
+1.5	0.9724999999999999	19.464536476135255	0.0	/home/lihe/MarkLLM/output/search_saw_add_std/saw_add_std_1.5.txt
+2.0	1.0	23.87417631149292	0.0	/home/lihe/MarkLLM/output/search_saw_add_std/saw_add_std_2.txt
+3.0	1.0	33.158567142486575	0.0	/home/lihe/MarkLLM/output/search_saw_add_std/saw_add_std_3.txt

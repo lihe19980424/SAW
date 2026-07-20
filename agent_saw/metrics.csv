@@ -1,0 +1,4 @@
+attacked_detection_z,detection_z,drop_detection_z,gold_action,paraphrase_detection_z,rename_detection_z,scenario_id,selected_action,task,task_success
+1.188205939934106,1.188205939934106,,check_weather,,,weather_tokyo,check_weather,tool_selection,True
+0.6517523063242436,0.6517523063242436,,book_flight,,,flight_price,book_flight,tool_selection,True
+,0.968913518593969,1.1078550409273857,,0.1373057193527603,0.968913518593969,beijing_tokyo_3day,,travel_planning,1.0

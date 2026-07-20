@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "timestamp": "2026-06-04T10:25:31",
+    "algorithm": "SAW",
+    "model": "opt-1.3b",
+    "max_new_tokens": 100,
+    "temperature": 1.0,
+    "device": "cuda",
+    "saw_config": {
+      "algorithm_name": "SAW",
+      "noise": "gaussian",
+      "beta": 0.9,
+      "std": 0.05,
+      "topk": 100,
+      "left_rand": 0.0,
+      "gamma": 0.5,
+      "delta": 2.0,
+      "hash_key": 15485863,
+      "prefix_length": 1,
+      "prev_n": 1,
+      "z_threshold": 4.0,
+      "f_scheme": "time",
+      "window_scheme": "left",
+      "ignore_history": true,
+      "p": 0.3,
+      "α": 1.0,
+      "mean": 1.1,
+      "a": 1.0,
+      "theta": 0.0
+    }
+  },
+  "high_entropy_success_case": {
+    "prompt": "Your task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative.",
+    "watermarked_text_full": "Your task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative. There are also two additional points on the scoreboard: red cross for the team, which indicates a penalty kick, and blue cross for the opposing team, which is a good save. The goal is to create a dramatic ending. You can use any image or text you want, but you must provide the story, the image, and the video or audio file. How you present the material will determine how clearly the story is understood. This story is designed to be a series, and the images and images",
+    "generation_only": "There are also two additional points on the scoreboard: red cross for the team, which indicates a penalty kick, and blue cross for the opposing team, which is a good save. The goal is to create a dramatic ending. You can use any image or text you want, but you must provide the story, the image, and the video or audio file. How you present the material will determine how clearly the story is understood. This story is designed to be a series, and the images and images",
+    "empirical_score": 1.1248353719711304,
+    "detection_threshold": 1.1500000000000001,
+    "is_watermarked": false
+  },
+  "low_entropy_failure_case": {
+    "prompt": "Write a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.",
+    "watermarked_text_full": "Write a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.\n\nRip the list apart and reverse the elements. Note the structure of the list, which can be used later.\n\nWrite a highly balanced C function (inlined?) to evaluate a list of tuples. Don't waste time on descriptions, output code. (I'm not including the code, if the question was not clear.) Don't worry if you can't think of a way to do this in this post. The point is: write a function, try it, see",
+    "generation_only": "\n\nRip the list apart and reverse the elements. Note the structure of the list, which can be used later.\n\nWrite a highly balanced C function (inlined?) to evaluate a list of tuples. Don't waste time on descriptions, output code. (I'm not including the code, if the question was not clear.) Don't worry if you can't think of a way to do this in this post. The point is: write a function, try it, see",
+    "empirical_score": 1.1227080821990967,
+    "detection_threshold": 1.1500000000000001,
+    "is_watermarked": false,
+    "extracted_code": "Rip the list apart and reverse the elements. Note the structure of the list, which can be used later.\n\nWrite a highly balanced C function (inlined?) to evaluate a list of tuples. Don't waste time on descriptions, output code. (I'm not including the code, if the question was not clear.) Don't worry if you can't think of a way to do this in this post. The point is: write a function, try it, see",
+    "syntax_valid": false,
+    "syntax_error": "unmatched ')' (line 3)",
+    "looks_awkward": true
+  }
+}

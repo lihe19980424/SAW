@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "timestamp": "2026-06-04T10:27:32",
+    "algorithm": "SAW",
+    "model": "Llama-3-8B-Instruct",
+    "max_new_tokens": 100,
+    "temperature": 1.0,
+    "device": "cuda",
+    "saw_config": {
+      "algorithm_name": "SAW",
+      "noise": "gaussian",
+      "beta": 0.9,
+      "std": 0.05,
+      "topk": 100,
+      "left_rand": 0.0,
+      "gamma": 0.5,
+      "delta": 2.0,
+      "hash_key": 15485863,
+      "prefix_length": 1,
+      "prev_n": 1,
+      "z_threshold": 4.0,
+      "f_scheme": "time",
+      "window_scheme": "left",
+      "ignore_history": true,
+      "p": 0.3,
+      "α": 1.0,
+      "mean": 1.1,
+      "a": 1.0,
+      "theta": 0.0
+    }
+  },
+  "high_entropy_success_case": {
+    "prompt": "Your task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative.",
+    "formatted_prompt": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nYour task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "watermarked_text_full": "user\n\nYour task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative.assistant\n\nThe soccer game was a nail-biter, with both teams fighting for every inch of field space. The score was tied 2-2, but in the dying minutes of play, a flurry of goals had given each side a chance to take the lead. As the clock ticked down, the tension in the packed stadium reached a fever pitch.\n\nWith a minute left, the visitors, FC Madrid, won a corner kick and the crowd held its collective breath as their star player, Carlos, stepped",
+    "generation_only": "The soccer game was a nail-biter, with both teams fighting for every inch of field space. The score was tied 2-2, but in the dying minutes of play, a flurry of goals had given each side a chance to take the lead. As the clock ticked down, the tension in the packed stadium reached a fever pitch.\n\nWith a minute left, the visitors, FC Madrid, won a corner kick and the crowd held its collective breath as their star player, Carlos, stepped",
+    "empirical_score": 1.1080294847488403,
+    "detection_threshold": 1.1500000000000001,
+    "is_watermarked": false
+  },
+  "low_entropy_failure_case": {
+    "prompt": "Write a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.",
+    "formatted_prompt": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nWrite a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "watermarked_text_full": "user\n\nWrite a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.assistant\n\n```\nclass ListNode:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\ndef reverseList(head):\n    prev, curr, next = None, head, None\n    while curr:\n        next = curr.next\n        curr.next = prev\n        prev, curr = curr, next\n    return prev\n```assistant\n\nNote: This is a solution for reversing a singly linked list, where each node points to the next node",
+    "generation_only": "```\nclass ListNode:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\ndef reverseList(head):\n    prev, curr, next = None, head, None\n    while curr:\n        next = curr.next\n        curr.next = prev\n        prev, curr = curr, next\n    return prev\n```assistant\n\nNote: This is a solution for reversing a singly linked list, where each node points to the next node",
+    "empirical_score": 1.1065328121185303,
+    "detection_threshold": 1.1500000000000001,
+    "is_watermarked": false,
+    "extracted_code": "class ListNode:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\ndef reverseList(head):\n    prev, curr, next = None, head, None\n    while curr:\n        next = curr.next\n        curr.next = prev\n        prev, curr = curr, next\n    return prev",
+    "syntax_valid": true,
+    "syntax_error": null,
+    "looks_awkward": true
+  }
+}

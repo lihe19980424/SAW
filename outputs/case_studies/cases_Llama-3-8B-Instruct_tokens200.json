@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "timestamp": "2026-06-04T10:50:43",
+    "algorithm": "SAW",
+    "model": "Llama-3-8B-Instruct",
+    "max_new_tokens": 200,
+    "temperature": 1.0,
+    "device": "cuda",
+    "saw_config": {
+      "algorithm_name": "SAW",
+      "noise": "gaussian",
+      "beta": 0.9,
+      "std": 0.05,
+      "topk": 100,
+      "left_rand": 0.0,
+      "gamma": 0.5,
+      "delta": 2.0,
+      "hash_key": 15485863,
+      "prefix_length": 1,
+      "prev_n": 1,
+      "z_threshold": 4.0,
+      "f_scheme": "time",
+      "window_scheme": "left",
+      "ignore_history": true,
+      "p": 0.3,
+      "α": 1.0,
+      "mean": 1.1,
+      "a": 1.0,
+      "theta": 0.0
+    }
+  },
+  "high_entropy_success_case": {
+    "prompt": "Your task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative. Please write a fully completed story extension within the token limit.",
+    "formatted_prompt": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nYour task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative. Please write a fully completed story extension within the token limit.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "watermarked_text_full": "user\n\nYour task is to continue the story beginning with The soccer game was tied 3 to 3 and there was a minute left to play. Incorporate the words goalkeeper penalty kick stadium seamlessly to develop a coherent and compelling narrative. Please write a fully completed story extension within the token limit.assistant\n\nThe soccer game was tying 3-3, and there was only a minute left on the clock. The tension in the stadium was palpable as both teams fought for a victory. The crowd was on their feet, cheering and chanting for their respective teams.\n\nAs the clock ticked away, the opposing teams jostled for possession of the ball, each trying to gain a foothold in the game. But it was clear that neither side would be able to score in regular play, and the game seemed destined for a draw.\n\nJust when it seemed like all hope was gone, a foul was called on the opposing team, and a player from my team, Marcus, stepped up for a goalkeeper penalty kick.\n\nMarcus, known for his powerful shots, took a deep breath and focused on the opponent's goalkeeper, who was crouched in front of him, a look of determination in her eyes.\n\nWith a swift motion, Marcus kicked the ball, sending it soaring towards the top left corner of",
+    "generation_only": "The soccer game was tying 3-3, and there was only a minute left on the clock. The tension in the stadium was palpable as both teams fought for a victory. The crowd was on their feet, cheering and chanting for their respective teams.\n\nAs the clock ticked away, the opposing teams jostled for possession of the ball, each trying to gain a foothold in the game. But it was clear that neither side would be able to score in regular play, and the game seemed destined for a draw.\n\nJust when it seemed like all hope was gone, a foul was called on the opposing team, and a player from my team, Marcus, stepped up for a goalkeeper penalty kick.\n\nMarcus, known for his powerful shots, took a deep breath and focused on the opponent's goalkeeper, who was crouched in front of him, a look of determination in her eyes.\n\nWith a swift motion, Marcus kicked the ball, sending it soaring towards the top left corner of",
+    "empirical_score": 1.1141880750656128,
+    "detection_threshold": 1.1500000000000001,
+    "is_watermarked": false
+  },
+  "low_entropy_failure_case": {
+    "prompt": "Write a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.",
+    "formatted_prompt": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nWrite a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "watermarked_text_full": "user\n\nWrite a highly optimized Python function to reverse a linked list. Do not write any explanations, output code block only.assistant\n\n```\nclass Node:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\nclass Solution:\n    def reverseList(self, head):\n        prev, curr = None, head\n        while curr:\n            curr.next, prev, curr  = prev, curr, curr.next\n        return prev\n\n# Example of usage:\nnode1 = Node(1)\nnode2 = Node(2)\nnode3 = Node(3)\n\nnode1.next, node2.next, node3.next = node2, node3, None\n\nsolution = Solution()\nhead = solution.reverseList(node1)\nwhile head:\n    print(head.val)\n    head = head.next\n```assistant？」\n\nNote that this solution has a time complexity of O(N), where N is the number of elements in the linked list, as it visits each element exactly once. It also has a space complexity of O(1), as it only uses a constant amount of space to",
+    "generation_only": "```\nclass Node:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\nclass Solution:\n    def reverseList(self, head):\n        prev, curr = None, head\n        while curr:\n            curr.next, prev, curr  = prev, curr, curr.next\n        return prev\n\n# Example of usage:\nnode1 = Node(1)\nnode2 = Node(2)\nnode3 = Node(3)\n\nnode1.next, node2.next, node3.next = node2, node3, None\n\nsolution = Solution()\nhead = solution.reverseList(node1)\nwhile head:\n    print(head.val)\n    head = head.next\n```assistant？」\n\nNote that this solution has a time complexity of O(N), where N is the number of elements in the linked list, as it visits each element exactly once. It also has a space complexity of O(1), as it only uses a constant amount of space to",
+    "empirical_score": 1.102245807647705,
+    "detection_threshold": 1.1500000000000001,
+    "is_watermarked": false,
+    "extracted_code": "class Node:\n    def __init__(self, x):\n        self.val = x\n        self.next = None\n\nclass Solution:\n    def reverseList(self, head):\n        prev, curr = None, head\n        while curr:\n            curr.next, prev, curr  = prev, curr, curr.next\n        return prev\n\n# Example of usage:\nnode1 = Node(1)\nnode2 = Node(2)\nnode3 = Node(3)\n\nnode1.next, node2.next, node3.next = node2, node3, None\n\nsolution = Solution()\nhead = solution.reverseList(node1)\nwhile head:\n    print(head.val)\n    head = head.next",
+    "syntax_valid": true,
+    "syntax_error": null,
+    "looks_awkward": true
+  }
+}

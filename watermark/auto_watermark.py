@@ -38,6 +38,8 @@ WATERMARK_MAPPING_NAMES={
     "Rethinking_uni":"watermark.rethinking_uni.Rethinking",
     "Rethinking_gaosi":"watermark.rethinking_gaosi.Rethinking",
     "SAW":"watermark.saw.SAW",
+    "SAW_ADD":"watermark.saw_add.SAWAdd",
+    "saw_add":"watermark.saw_add.SAWAdd",
     "SMOOTH":"watermark.smooth.SMOOTH",
     'ColorMark': 'watermark.colormark.ColorMark'
 }
